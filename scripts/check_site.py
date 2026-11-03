@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import json
 import subprocess
 import sys
 import tempfile
@@ -42,7 +43,17 @@ def check_prod(out: Path) -> None:
     robots = (out / "robots.txt").read_text(encoding="utf-8")
     if "Allow: /" not in robots or "Sitemap: https://igorpiovezan.com/sitemap.xml" not in robots:
         fail("production robots.txt must allow crawlers and list the sitemap")
-    for bot in ("Googlebot", "GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "CCBot"):
+    for bot in (
+        "Googlebot",
+        "GPTBot",
+        "ClaudeBot",
+        "PerplexityBot",
+        "Google-Extended",
+        "CCBot",
+        "GrokBot",
+        "xAI-SearchBot",
+        "GrokAgent",
+    ):
         if f"User-agent: {bot}" not in robots:
             fail(f"production robots.txt missing {bot}")
     if "Disallow: /" in robots:
@@ -66,8 +77,13 @@ def check_prod(out: Path) -> None:
         if not ids:
             fail(f"{name} missing JSON-LD @id on the canonical host")
         for kind in ("Person", "WebSite", "WebPage"):
-            if f'"@type": "{kind}"' not in html and f'"@type":"{kind}"' not in html:
+            if f'"{kind}"' not in html:
                 fail(f"{name} missing JSON-LD {kind}")
+        if name in {"index.html", "pt-br/index.html"}:
+            if '"ProfilePage"' not in html or '"mainEntity"' not in html:
+                fail(f"{name} home JSON-LD must be a ProfilePage whose mainEntity is the person")
+            if "Approved and ranked 8th, IFSC federal civil-service exam Edital 42/2014 (IT Technician)" not in html and "Aprovado e classificado em 8º lugar, concurso público federal do IFSC, Edital 42/2014 (Técnico em Tecnologia da Informação)" not in html:
+                fail(f"{name} missing the IFSC exam award")
         if "linkedin.com/in/igorpiovezan" not in html or "github.com/igorpiovezan" not in html:
             fail(f"{name} Person sameAs links missing")
         if name == "404.html":
@@ -117,6 +133,16 @@ def check_prod(out: Path) -> None:
         fail(f"sitemap URLs must be exactly the indexable pages, found {locs}")
     if f"{HOST}/404.html" in locs or "llms.txt" in "".join(locs):
         fail("sitemap includes a non-indexable URL")
+    site = json.loads((ROOT / "content" / "site.json").read_text(encoding="utf-8"))
+    key = site["indexNow"]
+    key_file = out / f"{key}.txt"
+    if not re.fullmatch(r"[0-9a-f]{32}", key) or not key_file.is_file() or key_file.read_text(encoding="utf-8") != key:
+        fail("IndexNow key file must be published as /<key>.txt containing the key")
+    if any(key in (loc or "") for loc in locs):
+        fail("sitemap must not list the IndexNow key file")
+    llms = (out / "llms.txt").read_text(encoding="utf-8")
+    if "#footprint" not in llms or "Press, talks, credentials, and milestones" not in llms:
+        fail("llms.txt must point at the footprint section")
     for url in tree.findall("sm:url", NS):
         langs = [link.attrib.get("hreflang") for link in url.findall("xhtml:link", NS)]
         if langs != ["en", "pt-BR", "x-default"]:
@@ -138,8 +164,9 @@ def check_test(out: Path) -> None:
     robots = (out / "robots.txt").read_text(encoding="utf-8")
     if "Allow: /" in robots or "Sitemap:" in robots:
         fail("preview robots.txt must not allow crawling or advertise the sitemap")
-    if "Disallow: /" not in robots or "User-agent: GPTBot" not in robots:
-        fail("preview robots.txt must disallow every crawler, including AI crawlers")
+    for bot in ("GPTBot", "GrokBot", "xAI-SearchBot", "GrokAgent"):
+        if f"User-agent: {bot}" not in robots or "Disallow: /" not in robots:
+            fail("preview robots.txt must disallow every crawler, including AI crawlers")
     for path in html_files(out):
         html = path.read_text(encoding="utf-8")
         if 'content="noindex, nofollow"' not in html:

@@ -281,5 +281,13 @@
         "pt-BR": "Perfil público publicado como ipiovezan."
       }
     }
-  ]
+  ],
+  "awards": {
+    "en": [
+      "Approved and ranked 8th, IFSC federal civil-service exam Edital 42/2014 (IT Technician)"
+    ],
+    "pt-BR": [
+      "Aprovado e classificado em 8º lugar, concurso público federal do IFSC, Edital 42/2014 (Técnico em Tecnologia da Informação)"
+    ]
+  }
 }

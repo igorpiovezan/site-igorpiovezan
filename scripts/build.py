@@ -51,6 +51,9 @@ BOTS = (
     "DeepSeekBot",
     "Bytespider",
     "YouBot",
+    "GrokBot",
+    "xAI-SearchBot",
+    "GrokAgent",
 )
 
 MONTHS = {
@@ -230,6 +233,24 @@ def json_ld(bundle, lang: str, page_url: str, title: str, description: str, og_u
         "knowsAbout": knows_about(profile, lang),
         "knowsLanguage": [text(item["name"], "en") for item in profile["languages"]],
     }
+    awards = (bundle.get("footprint") or {}).get("awards") or {}
+    award_list = awards.get(lang) or awards.get("en") or []
+    if award_list:
+        person["award"] = award_list
+    profile_page = page_url.rstrip("/") in {host, f"{host}/pt-br"}
+    webpage = {
+        "@type": ["WebPage", "ProfilePage"] if profile_page else "WebPage",
+        "@id": page_url + "#webpage",
+        "url": page_url,
+        "name": title,
+        "description": description,
+        "isPartOf": {"@id": website_id},
+        "about": {"@id": person_id},
+        "inLanguage": "pt-BR" if lang == "pt-BR" else "en",
+        "primaryImageOfPage": og_url,
+    }
+    if profile_page:
+        webpage["mainEntity"] = {"@id": person_id}
     graph = {
         "@context": "https://schema.org",
         "@graph": [
@@ -242,17 +263,7 @@ def json_ld(bundle, lang: str, page_url: str, title: str, description: str, og_u
                 "inLanguage": ["en", "pt-BR"],
                 "publisher": {"@id": person_id},
             },
-            {
-                "@type": "WebPage",
-                "@id": page_url + "#webpage",
-                "url": page_url,
-                "name": title,
-                "description": description,
-                "isPartOf": {"@id": website_id},
-                "about": {"@id": person_id},
-                "inLanguage": "pt-BR" if lang == "pt-BR" else "en",
-                "primaryImageOfPage": og_url,
-            },
+            webpage,
         ],
     }
     payload = json.dumps(graph, ensure_ascii=False).replace("<", "\\u003c")
@@ -935,6 +946,18 @@ def llms_txt(bundle) -> str:
         "",
         "This site publishes his public career only. It has no phone number, no personal email, and no contact form.",
         "",
+        "## Footprint",
+        "",
+        text(profile["headline"], "en"),
+        "",
+        f"Press, talks, credentials, and milestones: {host}/#footprint",
+        f"Portuguese: {host}/pt-br/#footprint",
+        "",
+        *[
+            f"- {item['outlet']}: {text(item['title'], 'en')} {item['url']}"
+            for item in bundle["footprint"]["press"]
+        ],
+        "",
         "## Pages",
         "",
         f"- [Home]({host}/)",
@@ -1132,7 +1155,16 @@ def build(env: str, out: Path) -> None:
     (out / "llms.txt").write_text(llms_txt(bundle), encoding="utf-8")
     (out / "llms-full.txt").write_text(llms_full(bundle), encoding="utf-8")
     (out / "site.webmanifest").write_text(manifest(assets), encoding="utf-8")
+    key = indexnow_key(bundle["site"])
+    (out / f"{key}.txt").write_text(key, encoding="utf-8")
     print(f"built {env} -> {out}")
+
+
+def indexnow_key(site: dict) -> str:
+    key = site.get("indexNow") or ""
+    if not re.fullmatch(r"[0-9a-f]{32}", key):
+        raise SystemExit("content/site.json indexNow must be 32 lowercase hex characters")
+    return key
 
 
 def main() -> None:
