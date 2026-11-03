@@ -39,6 +39,10 @@
     "en": "Based in",
     "pt-BR": "Em"
   },
+  "taglineLabel": {
+    "en": "LinkedIn headline",
+    "pt-BR": "Manchete do LinkedIn"
+  },
   "profiles": {
     "en": "Profiles",
     "pt-BR": "Perfis"

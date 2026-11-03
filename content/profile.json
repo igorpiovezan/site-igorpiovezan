@@ -25,6 +25,58 @@
     "en": "Igor Agenor Piovezan, CTO at Segware, where I lead 100+ engineers building AI-native cloud platforms that connect over 2 million IoT devices across security, smart home, and multimedia, helping more than 16 million people live safer, better lives.",
     "pt-BR": "Igor Agenor Piovezan, CTO da Segware, onde lidero mais de 100 engenheiros na construção de plataformas em nuvem AI-native que conectam mais de 2 milhões de dispositivos IoT de segurança, casa inteligente e multimídia, ajudando mais de 16 milhões de pessoas a viverem de forma mais segura e com mais qualidade."
   },
+  "tagline": {
+    "en": [
+      "CTO at Segware",
+      "AI First",
+      "Certifications from AWS, MongoDB, Tech Management",
+      "FinOps Expert",
+      "Connecting Strategy, Tech, People, Product, Project Management",
+      "Leading 100+",
+      "Driving Innovation",
+      "6x AWS re:Invent"
+    ],
+    "pt-BR": [
+      "CTO na Segware",
+      "AI First",
+      "Certificações em AWS, MongoDB e gestão da tecnologia",
+      "Especialista em FinOps",
+      "Conectando estratégia, tecnologia, pessoas, produto e gestão de projetos",
+      "Liderando mais de 100",
+      "Impulsionando a inovação",
+      "6 vezes no AWS re:Invent"
+    ]
+  },
+  "knowsAbout": {
+    "en": [
+      "Artificial Intelligence (AI)",
+      "AI First",
+      "Technology Management",
+      "MongoDB",
+      "Amazon Web Services (AWS)",
+      "FinOps",
+      "Financial Operations",
+      "Leadership",
+      "Strategy",
+      "Product Management",
+      "Project Management",
+      "Innovation"
+    ],
+    "pt-BR": [
+      "Inteligência artificial",
+      "AI First",
+      "Gestão da tecnologia",
+      "MongoDB",
+      "Amazon Web Services (AWS)",
+      "FinOps",
+      "Operações financeiras",
+      "Liderança",
+      "Estratégia",
+      "Gestão de produto",
+      "Gestão de projetos",
+      "Inovação"
+    ]
+  },
   "metaDescription": {
     "en": "Igor Agenor Piovezan, CTO at Segware. I lead 100+ engineers building AI-native cloud platforms that connect 2 million+ IoT devices and help 16 million+ people.",
     "pt-BR": "Igor Agenor Piovezan, CTO da Segware. Lidero mais de 100 engenheiros em plataformas AI-native que conectam mais de 2 milhões de dispositivos IoT e ajudam mais de 16 milhões de pessoas."

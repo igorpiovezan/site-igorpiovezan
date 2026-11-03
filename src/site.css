@@ -152,6 +152,35 @@ h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.4rem); }
 
 .headline { font-size: 1.15rem; color: #f6f1e7; }
 
+.hero .headline { margin: 0.85rem 0 0; }
+
+.tagline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.45rem;
+  max-width: 46rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tagline li {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.38rem 0.75rem;
+  border: 1px solid #e2b56a;
+  border-radius: 999px;
+  background: #f6f1e7;
+  color: #10211e;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+.hero .lede { margin: 0.9rem 0 0; }
+
 .hero a { color: #f6f1e7; }
 
 .hero-actions, .profile-links {
@@ -328,4 +357,9 @@ summary {
 @media print {
   .site-header, .consent, .skip { display: none !important; }
   body { background: #fff; color: #000; }
+  .tagline li {
+    background: #fff;
+    color: #000;
+    border-color: #000;
+  }
 }
