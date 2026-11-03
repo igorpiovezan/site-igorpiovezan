@@ -38,7 +38,10 @@ publish.sh /tmp/igor-preview --slug "$HERENOW_TEST_SLUG" --client cursor
 
 python3 scripts/build.py --env prod --out /tmp/igor-prod
 publish.sh /tmp/igor-prod --slug "$HERENOW_PROD_SLUG" --client cursor
+python3 scripts/indexnow_ping.py --sitemap /tmp/igor-prod/sitemap.xml
 ```
+
+Run the IndexNow ping only after that production publish. It POSTs every URL in the sitemap to `https://api.indexnow.org/indexnow` for host `igorpiovezan.com`. The key file must already be live at `https://igorpiovezan.com/<key>.txt`. The key is the public `indexNow` field in `content/site.json`; the build writes it to `/<key>.txt`. Do not ping a preview host.
 
 Production canonical host is `https://igorpiovezan.com`. Point the here.now primary domain at that host. `igorpiovezan.com.br` may serve the same files; every canonical, `og:url`, sitemap URL, and JSON-LD `@id` still uses `https://igorpiovezan.com`.
 
@@ -46,7 +49,9 @@ Binary files under `/assets/` are content-hashed because here.now caches that pa
 
 ## SEO
 
-Production `robots.txt` allows search and AI crawlers and lists `https://igorpiovezan.com/sitemap.xml`. The sitemap lists only indexable HTML URLs, each with `en`, `pt-BR`, and `x-default`. `404.html` is `noindex` and is not in the sitemap. `llms.txt` and `llms-full.txt` summarize the public career. JSON-LD is `Person` (with `sameAs`), `WebSite`, and `WebPage`. There is no `FAQPage`.
+Production `robots.txt` allows search and AI crawlers, including `GrokBot`, `xAI-SearchBot`, and `GrokAgent`, and lists `https://igorpiovezan.com/sitemap.xml`. The sitemap lists only indexable HTML URLs, each with `en`, `pt-BR`, and `x-default`. `404.html` is `noindex` and is not in the sitemap. `llms.txt` and `llms-full.txt` summarize the public career. `llms.txt` points at `/#footprint` and lists the press links. JSON-LD is `Person` (with `sameAs` and `award`), `WebSite`, and, on the home pages, `["WebPage","ProfilePage"]` with `mainEntity` set to the person. Other pages stay `WebPage`. There is no `FAQPage`.
+
+IndexNow uses a public 32-character hex key. `scripts/build.py` publishes it as `/<key>.txt`. After each production deploy, run `scripts/indexnow_ping.py` as shown above.
 
 ## Analytics
 
