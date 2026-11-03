@@ -338,6 +338,7 @@ def header(bundle, lang, page_id) -> str:
         ("experience", "navExperience"),
         ("work", "navWork"),
         ("speaking", "navSpeaking"),
+        ("footprint", "navFootprint"),
         ("background", "navBackground"),
     )
     nav = []
@@ -646,7 +647,100 @@ def render_home(bundle, lang, assets) -> str:
         f'<section id="experience"><div class="wrap"><h2>{e(ui(bundle, lang, "experienceTitle"))}</h2>'
         + "".join(grouped)
         + "</div></section>"
-    ) + work + speaking + background + notes
+    ) + work + speaking + render_footprint(bundle, lang) + background + notes
+
+
+def footprint_when(value, lang: str) -> str:
+    if not value or value == "null":
+        return ""
+    if len(value) == 4:
+        return value
+    if len(value) == 7:
+        return fmt_month(value, lang)
+    return fmt_day(value, lang)
+
+
+def outbound(url: str, label: str) -> str:
+    return f'<a href="{e(url)}" rel="noopener noreferrer">{e(label)}</a>'
+
+
+def render_footprint(bundle, lang: str) -> str:
+    data = bundle["footprint"]
+
+    def links(items) -> str:
+        if not items:
+            return ""
+        return "<p>" + " · ".join(
+            outbound(item["url"], text(item["label"], lang)) for item in items
+        ) + "</p>"
+
+    press = []
+    for item in data["press"]:
+        when = footprint_when(item.get("date") or "", lang)
+        press.append(
+            '<article class="pub">'
+            f'<h4>{outbound(item["url"], text(item["title"], lang))}</h4>'
+            f'<p class="muted">{e(item["outlet"])}{(" · " + e(when)) if when else ""}</p>'
+            f'<p>{e(text(item["summary"], lang))}</p>'
+            "</article>"
+        )
+    talks = []
+    for item in data["talks"]:
+        when = footprint_when(item.get("date") or "", lang)
+        talks.append(
+            '<article class="talk">'
+            f'<a class="video-facade" href="{e(item["url"])}" rel="noopener noreferrer">'
+            '<span class="play" aria-hidden="true"></span>'
+            "<span>"
+            f'<strong>{e(text(item["title"], lang))}</strong>'
+            f'<span class="muted">{e(ui(bundle, lang, "watchYouTube"))}'
+            f'{(" · " + e(when)) if when else ""}</span>'
+            "</span></a>"
+            f'<p>{e(text(item["summary"], lang))}</p>'
+            "</article>"
+        )
+    credentials = []
+    for item in data["credentials"]:
+        credentials.append(
+            '<article class="cert">'
+            f'<h4>{outbound(item["url"], text(item["title"], lang))}</h4>'
+            f'<p class="muted">{e(item["issuer"])}</p>'
+            f'<p>{e(text(item["summary"], lang))}</p>'
+            "</article>"
+        )
+    milestones = []
+    for item in data["milestones"]:
+        milestones.append(
+            "<li>"
+            f'<p class="when">{e(text(item["when"], lang))}</p>'
+            f'<h4>{e(text(item["title"], lang))}</h4>'
+            f'<p>{e(text(item["summary"], lang))}</p>'
+            f'{links(item.get("links") or [])}'
+            "</li>"
+        )
+    elsewhere = []
+    for item in data["elsewhere"]:
+        elsewhere.append(
+            "<li>"
+            f'{outbound(item["url"], text(item["title"], lang))}. '
+            f'{e(text(item["summary"], lang))}'
+            "</li>"
+        )
+    return (
+        f'<section id="footprint"><div class="wrap"><h2>{e(ui(bundle, lang, "navFootprint"))}</h2>'
+        f'<p class="lede">{e(ui(bundle, lang, "footprintLead"))}</p>'
+        f'<h3 id="press">{e(ui(bundle, lang, "pressTitle"))}</h3>'
+        + "".join(press)
+        + f'<h3 id="talks">{e(ui(bundle, lang, "talksTitle"))}</h3>'
+        + "".join(talks)
+        + f'<h3 id="credentials">{e(ui(bundle, lang, "credentialLinksTitle"))}</h3>'
+        + "".join(credentials)
+        + f'<h3 id="milestones">{e(ui(bundle, lang, "milestonesTitle"))}</h3>'
+        + f'<ol class="timeline">{"".join(milestones)}</ol>'
+        + f'<h3>{e(ui(bundle, lang, "elsewhereTitle"))}</h3>'
+        + f'<ul class="plain-list">{"".join(elsewhere)}</ul>'
+        + "</div></section>"
+    )
 
 
 def render_notes(bundle, lang) -> str:
@@ -879,6 +973,30 @@ def llms_full(bundle) -> str:
             lines.append("")
             lines.append("Technologies: " + "; ".join(role["technologies"]) + ".")
         lines.append("")
+    lines.append("## Public footprint")
+    lines.append("")
+    lines.append("Milestones")
+    lines.append("")
+    for item in bundle["footprint"]["milestones"]:
+        lines.append(f"- {text(item['when'], 'en')}: {text(item['summary'], 'en')}")
+        for link in item.get("links") or []:
+            lines.append(f"  {text(link['label'], 'en')}: {link['url']}")
+    lines.append("")
+    lines.append("Press")
+    lines.append("")
+    for item in bundle["footprint"]["press"]:
+        lines.append(f"- {item['outlet']}: {text(item['title'], 'en')} {item['url']}")
+    lines.append("")
+    lines.append("Talks and videos")
+    lines.append("")
+    for item in bundle["footprint"]["talks"]:
+        lines.append(f"- {text(item['title'], 'en')} {item['url']}")
+    lines.append("")
+    lines.append("Credential links")
+    lines.append("")
+    for item in bundle["footprint"]["credentials"]:
+        lines.append(f"- {text(item['title'], 'en')} — {item['issuer']}. {item['url']}")
+    lines.append("")
     lines.append("## Education")
     lines.append("")
     for school in bundle["credentials"]["education"]:
@@ -932,6 +1050,7 @@ def build(env: str, out: Path) -> None:
         "profile": load_json("profile.json"),
         "experience": load_json("experience.json"),
         "credentials": load_json("credentials.json"),
+        "footprint": load_json("footprint.json"),
         "ui": load_json("ui.json"),
         "posts": load_json("posts.json"),
         "privacy": load_json("privacy.json"),

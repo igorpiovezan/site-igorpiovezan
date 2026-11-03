@@ -1,0 +1,273 @@
+{
+  "press": [
+    {
+      "outlet": "TI Inside",
+      "date": "2025-07-31",
+      "url": "https://tiinside.com.br/31/07/2025/segware-reduz-tempo-de-resposta-em-50-com-ia-generativa/",
+      "title": {
+        "en": "Segware cuts response time by 50% with generative AI",
+        "pt-BR": "Segware reduz o tempo de resposta em 50% com IA generativa"
+      },
+      "summary": {
+        "en": "TI Inside reports the generative-AI work and quotes Igor Piovezan.",
+        "pt-BR": "A TI Inside cobre o trabalho de IA generativa e cita Igor Piovezan."
+      }
+    },
+    {
+      "outlet": "IT Forum",
+      "date": "2025-07-28",
+      "url": "https://itforum.com.br/noticias/segware-ia-generativa-operadores/",
+      "title": {
+        "en": "Segware uses generative AI for monitoring operators",
+        "pt-BR": "Segware usa IA generativa para os operadores"
+      },
+      "summary": {
+        "en": "IT Forum quotes Igor Piovezan, then technology manager, on shorter operator response times.",
+        "pt-BR": "O IT Forum cita Igor Piovezan, então gerente de tecnologia, sobre o menor tempo de resposta dos operadores."
+      }
+    },
+    {
+      "outlet": "Engenharia e",
+      "date": "2025",
+      "url": "https://engenhariae.com.br/tecnologia/segware-acelera-respostas-em-50-com-ia-generativa-criada-em-parceria-com-realcloud-e-aws",
+      "title": {
+        "en": "Segware, RealCloud, and AWS on generative AI",
+        "pt-BR": "Segware, RealCloud e AWS em IA generativa"
+      },
+      "summary": {
+        "en": "Coverage of the Segware and RealCloud partnership on AWS, with a quote from Igor.",
+        "pt-BR": "Cobertura da parceria Segware e RealCloud na AWS, com citação de Igor."
+      }
+    },
+    {
+      "outlet": "IA Brasil Notícias",
+      "date": "2025",
+      "url": "https://iabrasilnoticias.com.br/segware-reduz-tempo-de-resposta-em-50-com-uso-de-ia-generativa-desenvolvida-em-parceria-com-realcloud-e-aws/",
+      "title": {
+        "en": "Generative AI developed with RealCloud and AWS",
+        "pt-BR": "IA generativa desenvolvida com RealCloud e AWS"
+      },
+      "summary": {
+        "en": "IA Brasil Notícias on the same Segware generative-AI partnership.",
+        "pt-BR": "IA Brasil Notícias sobre a mesma parceria de IA generativa da Segware."
+      }
+    },
+    {
+      "outlet": "Segware",
+      "date": "2025",
+      "url": "https://segware.com/como-reduzimos-mais-de-50-do-tempo-de-resposta-dos-operadores-com-ia-generativa/",
+      "title": {
+        "en": "How operator response time fell by more than 50%",
+        "pt-BR": "Como o tempo de resposta dos operadores caiu mais de 50%"
+      },
+      "summary": {
+        "en": "Segware’s own account of the generative-AI result. Igor is named in the post.",
+        "pt-BR": "O relato da própria Segware sobre o resultado com IA generativa. Igor é citado no texto."
+      }
+    },
+    {
+      "outlet": "RealCloud",
+      "date": "2025",
+      "url": "https://www.realcloud.ai/case-segware",
+      "title": {
+        "en": "SIGMA AI on Amazon Bedrock",
+        "pt-BR": "SIGMA AI no Amazon Bedrock"
+      },
+      "summary": {
+        "en": "Case study of Segware SIGMA AI with RealCloud. The quote is from Igor Piovezan, then technology manager.",
+        "pt-BR": "Case do SIGMA AI da Segware com a RealCloud. A citação é de Igor Piovezan, então gerente de tecnologia."
+      }
+    },
+    {
+      "outlet": "MongoDB",
+      "date": "2020",
+      "url": "https://www.mongodb.com/blog/post/atlas-data-federation-segware-tames-growing-demands-security-companies-affordably",
+      "title": {
+        "en": "Atlas Data Federation at Segware",
+        "pt-BR": "Atlas Data Federation na Segware"
+      },
+      "summary": {
+        "en": "Quoted as a Segware software specialist on Atlas Data Federation and the MongoDB query language.",
+        "pt-BR": "Citado como especialista de software da Segware sobre Atlas Data Federation e a linguagem de consulta da MongoDB."
+      }
+    }
+  ],
+  "talks": [
+    {
+      "date": "2026-05",
+      "url": "https://www.youtube.com/watch?v=wlxcWPRgmYg",
+      "title": {
+        "en": "Real Cloud Talks, episode 5: the future of security with GenAI",
+        "pt-BR": "Real Cloud Talks, episódio 5: o futuro da segurança com GenAI"
+      },
+      "summary": {
+        "en": "Igor Agenor Piovezan, CTO at Segware, on generative AI for alarm monitoring centers, with Silvio Pereira and Leandro Marinho.",
+        "pt-BR": "Igor Agenor Piovezan, CTO da Segware, sobre IA generativa em centrais de monitoramento, com Silvio Pereira e Leandro Marinho."
+      }
+    },
+    {
+      "date": "2025",
+      "url": "https://www.youtube.com/watch?v=TYpIwKSLiRE",
+      "title": {
+        "en": "25 years of electronic security: AI, automation, and monitoring centers",
+        "pt-BR": "25 anos de segurança eletrônica: IA, automações e centrais"
+      },
+      "summary": {
+        "en": "Segware company video on 25 years of electronic security, AI, automation, and monitoring centers.",
+        "pt-BR": "Vídeo da Segware sobre 25 anos de segurança eletrônica, IA, automações e centrais de monitoramento."
+      }
+    },
+    {
+      "date": "2024-09",
+      "url": "https://www.youtube.com/watch?v=yrm7_OIMaY8",
+      "title": {
+        "en": "NetSeg Videocast at ISC Brasil 2024",
+        "pt-BR": "NetSeg Videocast na ISC Brasil 2024"
+      },
+      "summary": {
+        "en": "Interview with Igor Piovezan of Segware at ISC Brasil 2024.",
+        "pt-BR": "Entrevista com Igor Piovezan, da Segware, na ISC Brasil 2024."
+      }
+    }
+  ],
+  "credentials": [
+    {
+      "issuer": "Credly",
+      "url": "https://www.credly.com/badges/fa6e47ec-b1df-42da-8736-344ea4649612",
+      "title": {
+        "en": "AWS Certified Database – Specialty",
+        "pt-BR": "AWS Certified Database – Specialty"
+      },
+      "summary": {
+        "en": "Public badge, issued November 2023.",
+        "pt-BR": "Badge público, emitido em novembro de 2023."
+      }
+    },
+    {
+      "issuer": "MIT Professional Education",
+      "url": "https://www.credential.net/9a542380-c45f-4ab4-8151-e451e2fa5443",
+      "title": {
+        "en": "Technology Management: Roadmap & Development",
+        "pt-BR": "Technology Management: Roadmap & Development"
+      },
+      "summary": {
+        "en": "Public certificate, issued October 2023.",
+        "pt-BR": "Certificado público, emitido em outubro de 2023."
+      }
+    },
+    {
+      "issuer": "Credly",
+      "url": "https://www.credly.com/badges/51674310-5aaf-4d09-be08-756d43b29b7c",
+      "title": {
+        "en": "MongoDB Certified DBA Associate",
+        "pt-BR": "MongoDB Certified DBA Associate"
+      },
+      "summary": {
+        "en": "Public badge for C100DBA, issued March 2021.",
+        "pt-BR": "Badge público do C100DBA, emitido em março de 2021."
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "when": {
+        "en": "2010–2014",
+        "pt-BR": "2010–2014"
+      },
+      "title": {
+        "en": "IFSC, telecommunications",
+        "pt-BR": "IFSC, telecomunicações"
+      },
+      "summary": {
+        "en": "Studied at IFSC — Instituto Federal de Santa Catarina, a public federal institute: integrated telecommunications technician, 2010–2014.",
+        "pt-BR": "Estudou no IFSC — Instituto Federal de Santa Catarina, instituto público federal: técnico integrado em telecomunicações, 2010–2014."
+      },
+      "links": [
+        {
+          "label": {
+            "en": "Education record",
+            "pt-BR": "Registro de formação"
+          },
+          "url": "https://www.linkedin.com/in/igorpiovezan/details/education/"
+        }
+      ]
+    },
+    {
+      "when": {
+        "en": "2014/2015",
+        "pt-BR": "2014/2015"
+      },
+      "title": {
+        "en": "IFSC federal exam, Edital 42/2014",
+        "pt-BR": "Concurso federal do IFSC, Edital 42/2014"
+      },
+      "summary": {
+        "en": "Approved and ranked 8th in the IFSC federal civil-service exam (Edital 42/2014, IT Technician), 2014/2015; chose to stay in the private sector.",
+        "pt-BR": "Aprovado e classificado em 8º lugar no concurso público federal do IFSC (Edital 42/2014, Técnico em Tecnologia da Informação), em 2014/2015; optou por seguir no setor privado."
+      },
+      "links": [
+        {
+          "label": {
+            "en": "Edital 42/2014",
+            "pt-BR": "Edital 42/2014"
+          },
+          "url": "https://eticaconcursos.com.br/provas/arquivos/edital/if-sc-2014-professor-e-tecnico-administrativo-edital.pdf"
+        },
+        {
+          "label": {
+            "en": "Public list",
+            "pt-BR": "Lista pública"
+          },
+          "url": "https://ptdocz.com/doc/997414/tae-n%C3%ADvel-d---lista-de-espera-atualizada-em-11-09-2015"
+        }
+      ]
+    },
+    {
+      "when": {
+        "en": "2015–2017",
+        "pt-BR": "2015–2017"
+      },
+      "title": {
+        "en": "USJ, systems analysis and development",
+        "pt-BR": "USJ, análise e desenvolvimento de sistemas"
+      },
+      "summary": {
+        "en": "Studied systems analysis and development at Centro Universitário Municipal de São José (USJ), a public municipal college, from 2015 to 2017.",
+        "pt-BR": "Estudou análise e desenvolvimento de sistemas no Centro Universitário Municipal de São José (USJ), centro universitário público municipal, de 2015 a 2017."
+      },
+      "links": [
+        {
+          "label": {
+            "en": "Education record",
+            "pt-BR": "Registro de formação"
+          },
+          "url": "https://www.linkedin.com/in/igorpiovezan/details/education/"
+        }
+      ]
+    }
+  ],
+  "elsewhere": [
+    {
+      "url": "https://www.pensador.com/autor/igor_agenor_piovezan/",
+      "title": {
+        "en": "Pensador",
+        "pt-BR": "Pensador"
+      },
+      "summary": {
+        "en": "A public page of sayings attributed to this name.",
+        "pt-BR": "Página pública de frases atribuídas a este nome."
+      }
+    },
+    {
+      "url": "https://www.superme.ai/ipiovezan",
+      "title": {
+        "en": "SuperMe",
+        "pt-BR": "SuperMe"
+      },
+      "summary": {
+        "en": "Public profile published as ipiovezan.",
+        "pt-BR": "Perfil público publicado como ipiovezan."
+      }
+    }
+  ]
+}
