@@ -19,6 +19,10 @@
     "en": "Speaking",
     "pt-BR": "Falando"
   },
+  "navFootprint": {
+    "en": "Footprint",
+    "pt-BR": "Presença"
+  },
   "navBackground": {
     "en": "Background",
     "pt-BR": "Formação"
@@ -86,6 +90,34 @@
   "speakingTitle": {
     "en": "Speaking and writing",
     "pt-BR": "Palestras e textos"
+  },
+  "footprintLead": {
+    "en": "Public records, coverage, and talks. Each item links to the source.",
+    "pt-BR": "Registros públicos, cobertura e conversas. Cada item aponta para a fonte."
+  },
+  "pressTitle": {
+    "en": "In the press",
+    "pt-BR": "Na imprensa"
+  },
+  "talksTitle": {
+    "en": "Talks and videos",
+    "pt-BR": "Palestras e vídeos"
+  },
+  "watchYouTube": {
+    "en": "Watch on YouTube",
+    "pt-BR": "Assistir no YouTube"
+  },
+  "credentialLinksTitle": {
+    "en": "Credentials",
+    "pt-BR": "Credenciais"
+  },
+  "milestonesTitle": {
+    "en": "Milestones",
+    "pt-BR": "Marcos"
+  },
+  "elsewhereTitle": {
+    "en": "Also public",
+    "pt-BR": "Também público"
   },
   "honorsTitle": {
     "en": "Honors",
