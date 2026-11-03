@@ -205,6 +205,7 @@ def json_ld(bundle, lang: str, page_url: str, title: str, description: str, og_u
         "additionalName": profile["additionalName"],
         "familyName": profile["familyName"],
         "jobTitle": text(profile["jobTitle"], lang),
+        "description": text(profile["headline"], lang),
         "url": host + "/",
         "image": og_url,
         "sameAs": bundle["site"]["sameAs"],
@@ -213,6 +214,10 @@ def json_ld(bundle, lang: str, page_url: str, title: str, description: str, og_u
             "name": profile["worksFor"]["name"],
             "url": profile["worksFor"]["url"],
             "sameAs": profile["worksFor"]["sameAs"],
+            "description": text(
+                next(company["summary"] for company in bundle["experience"]["companies"] if company["id"] == "segware"),
+                lang,
+            ),
         },
         "address": {
             "@type": "PostalAddress",
@@ -793,7 +798,9 @@ def llms_txt(bundle) -> str:
     return "\n".join([
         f"# {profile['name']}",
         "",
-        f"> {text(profile['metaDescription'], 'en')}",
+        f"> {text(profile['headline'], 'en')}",
+        "",
+        f"> {text(profile['headline'], 'pt-BR')}",
         "",
         f"Canonical site: {host}/",
         "Languages: English (primary), Portuguese (Brazil) at /pt-br/",

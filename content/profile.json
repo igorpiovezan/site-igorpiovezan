@@ -22,26 +22,26 @@
     }
   },
   "headline": {
-    "en": "CTO at Segware. AI first, with AWS and MongoDB certifications and a technology-management background. Connects strategy, technology, people, product, and project management. Leads 100+ people. Six-time AWS re:Invent attendee.",
-    "pt-BR": "CTO na Segware. AI First, com certificações AWS e MongoDB e formação em gestão da tecnologia. Conecta estratégia, tecnologia, pessoas, produto e gestão de projetos. Lidera mais de 100 pessoas. Seis vezes no AWS re:Invent."
+    "en": "Igor Agenor Piovezan, CTO at Segware, where I lead 100+ engineers building AI-native cloud platforms that connect over 2 million IoT devices across security, smart home, and multimedia, helping more than 16 million people live safer, better lives.",
+    "pt-BR": "Igor Agenor Piovezan, CTO da Segware, onde lidero mais de 100 engenheiros na construção de plataformas em nuvem AI-native que conectam mais de 2 milhões de dispositivos IoT de segurança, casa inteligente e multimídia, ajudando mais de 16 milhões de pessoas a viverem de forma mais segura e com mais qualidade."
   },
   "metaDescription": {
-    "en": "Igor Agenor Piovezan is CTO at Segware. He leads 100+ people across technology, product, and FinOps, with AI in production for electronic security and smart living.",
-    "pt-BR": "Igor Agenor Piovezan é CTO da Segware. Lidera mais de 100 pessoas em tecnologia, produto e FinOps, com IA em produção para segurança eletrônica e moradia inteligente."
+    "en": "Igor Agenor Piovezan, CTO at Segware. I lead 100+ engineers building AI-native cloud platforms that connect 2 million+ IoT devices and help 16 million+ people.",
+    "pt-BR": "Igor Agenor Piovezan, CTO da Segware. Lidero mais de 100 engenheiros em plataformas AI-native que conectam mais de 2 milhões de dispositivos IoT e ajudam mais de 16 milhões de pessoas."
   },
   "about": {
     "en": [
-      "I'm the CTO of Segware, a company at the forefront of electronic security, video monitoring, multifamily systems for smart condos, the VoIP ecosystem, access control, remote concierge, condo convenience, and IoT integrations. With 15+ years in technology, including more than a decade of growth from full-stack developer to CTO, I bring a multidisciplinary background spanning software, cloud infrastructure, and hardware. That experience lets me lead technology end to end and turn it into reliable products that protect what matters most to people.",
-      "I lead 100+ tech professionals across the Technology, People, and Projects pillars, connecting C-level strategy with the teams who deliver it every day. My mindset is AI first: I prioritize embedding artificial intelligence into how we design products, processes, and decisions.",
-      "What drives me is generating value, at scale and sustainably. Our platforms serve more than 16 million users, processing real-time data from half a million alarm panels, hundreds of thousands of access control devices, and hundreds of thousands of video channels across cameras, DVRs, and NVRs. Predictive models cut burglaries and false alarms across billions of events. I treat cost as a first-class engineering metric, from per-customer, telemetry-based billing to vendor negotiation and margin. And I build high-performance teams and new leaders in a culture of autonomy, quality, and innovation.",
-      "I'm a hands-on CTO. When it truly matters, I dive in: designing architectures and planning the code with AI supporting every step, and staying with the team, reading, reviewing, writing, and discussing what's next. A CTO's role is to connect technology, product, people, and business around a clear vision, balancing speed today with sustainability tomorrow.",
+      "Igor Agenor Piovezan, CTO at Segware, where I lead 100+ engineers building AI-native cloud platforms that connect over 2 million IoT devices across security, smart home, and multimedia, helping more than 16 million people live safer, better lives.",
+      "I have spent more than 15 years in technology, and more than a decade at Segware, from full-stack developer to CTO. The work covers software, cloud infrastructure, and hardware, and it shows up in products people rely on every day.",
+      "I connect company strategy with the engineers who deliver it. The platforms are AI-native: intelligence sits in the product, the software lifecycle, and operating decisions. Predictive models have helped reduce burglaries and false alarms across billions of events. Governance, KPIs, and FinOps sit on one scorecard. Cost is an engineering metric, from telemetry-based billing to vendor terms and margin.",
+      "I stay close to the work when the decision needs it: architecture, code planned with AI at each step, and time with the team on what goes to production. The role is to hold technology, product, people, and the business on one plan.",
       "Background: MIT Professional Education (Technology Management), AWS and MongoDB certifications, and six AWS re:Invent conferences."
     ],
     "pt-BR": [
-      "Sou o CTO da Segware, empresa na fronteira da segurança eletrônica, do videomonitoramento, dos sistemas para condomínios inteligentes, do ecossistema de VoIP, do controle de acesso, da portaria remota, da conveniência condominial e das integrações de IoT. Com mais de 15 anos em tecnologia, e mais de uma década de crescimento de desenvolvedor full-stack a CTO, trago uma base multidisciplinar em software, infraestrutura de nuvem e hardware. Essa experiência me permite liderar a tecnologia de ponta a ponta e transformá-la em produtos confiáveis, que protegem o que mais importa para as pessoas.",
-      "Lidero mais de 100 profissionais de tecnologia nos pilares de Tecnologia, Pessoas e Projetos, conectando a estratégia do C-level aos times que a entregam todos os dias. Minha mentalidade é AI First: priorizo incorporar inteligência artificial na forma como desenhamos produtos, processos e decisões.",
-      "O que me move é gerar valor, em escala e de forma sustentável. Nossas plataformas atendem mais de 16 milhões de usuários e processam dados em tempo real de meio milhão de painéis de alarme, centenas de milhares de dispositivos de controle de acesso e centenas de milhares de canais de vídeo em câmeras, DVRs e NVRs. Modelos preditivos reduzem furtos e falsos alarmes ao longo de bilhões de eventos. Trato custo como métrica de engenharia de primeira classe, do faturamento por telemetria por cliente à negociação com fornecedores e ao ganho de margem. E formo times de alta performance e novas lideranças, com autonomia, qualidade e inovação.",
-      "Sou um CTO mão na massa. Quando o assunto exige, eu entro de corpo inteiro: desenho arquiteturas e planejo o código com IA em cada etapa, e sigo com o time, lendo, revisando, escrevendo e discutindo o que vem depois. O papel do CTO é conectar tecnologia, produto, pessoas e negócio em torno de uma visão clara, equilibrando a velocidade de hoje com a sustentabilidade de amanhã.",
+      "Igor Agenor Piovezan, CTO da Segware, onde lidero mais de 100 engenheiros na construção de plataformas em nuvem AI-native que conectam mais de 2 milhões de dispositivos IoT de segurança, casa inteligente e multimídia, ajudando mais de 16 milhões de pessoas a viverem de forma mais segura e com mais qualidade.",
+      "São mais de 15 anos em tecnologia, e mais de uma década na Segware, de desenvolvedor full-stack a CTO. O trabalho cobre software, infraestrutura de nuvem e hardware, e aparece em produtos que as pessoas usam todos os dias.",
+      "Conecto a estratégia da empresa aos engenheiros que a entregam. As plataformas são AI-native: a inteligência entra no produto, no ciclo de software e nas decisões de operação. Modelos preditivos ajudaram a reduzir furtos e falsos alarmes ao longo de bilhões de eventos. Governança, KPIs e FinOps ficam no mesmo painel. Custo é métrica de engenharia, do faturamento por telemetria aos termos com fornecedores e à margem.",
+      "Fico perto do trabalho quando a decisão pede: arquitetura, código planejado com IA em cada etapa, e tempo com o time sobre o que vai para produção. O papel é manter tecnologia, produto, pessoas e negócio no mesmo plano.",
       "Formação: MIT Professional Education (Technology Management), certificações AWS e MongoDB, e seis participações no AWS re:Invent."
     ]
   },
@@ -56,22 +56,22 @@
     {
       "value": "100+",
       "label": {
-        "en": "people led",
-        "pt-BR": "pessoas na liderança"
+        "en": "engineers",
+        "pt-BR": "engenheiros"
       }
     },
     {
       "value": "16M+",
       "label": {
-        "en": "users on the platforms",
-        "pt-BR": "usuários nas plataformas"
+        "en": "people",
+        "pt-BR": "pessoas"
       }
     },
     {
-      "value": "500k",
+      "value": "2M+",
       "label": {
-        "en": "alarm panels in real time",
-        "pt-BR": "painéis de alarme em tempo real"
+        "en": "IoT devices",
+        "pt-BR": "dispositivos IoT"
       }
     }
   ],

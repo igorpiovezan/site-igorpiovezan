@@ -10,8 +10,8 @@
         "pt-BR": "jan 2016 – atual · 10 anos e 11 meses"
       },
       "summary": {
-        "en": "Electronic security, video monitoring, smart condominiums, VoIP, access control, remote concierge, and IoT.",
-        "pt-BR": "Segurança eletrônica, videomonitoramento, condomínios inteligentes, VoIP, controle de acesso, portaria remota e IoT."
+        "en": "AI-native cloud platforms for security, smart home, and multimedia. They connect 2 million+ IoT devices and help 16 million+ people.",
+        "pt-BR": "Plataformas em nuvem AI-native para segurança, casa inteligente e multimídia. Conectam mais de 2 milhões de dispositivos IoT e ajudam mais de 16 milhões de pessoas."
       }
     },
     {
@@ -64,18 +64,18 @@
         "pt-BR": "São Paulo, Brasil"
       },
       "summary": {
-        "en": "Leads more than 100 people and the move to spec-driven, AI-embedded software development. Sets enterprise governance for the AI ecosystem and raises intermediate leaders into tribe coordinators, with domain ownership over strategy, people, and delivery, and with clear KPIs. Stays close to models, agents, and the path from pull request to production. FinOps sits on the same scorecard.",
-        "pt-BR": "Lidera mais de 100 pessoas e a adoção de desenvolvimento orientado a especificação, com IA no ciclo de software. Define a governança corporativa do ecossistema de IA e eleva lideranças intermediárias a coordenadores de tribo, com autonomia de domínio sobre estratégia, pessoas e entrega, e com KPIs claros. Segue perto dos modelos, dos agentes e do caminho do pull request à produção. FinOps entra no mesmo painel."
+        "en": "Leads 100+ engineers building AI-native cloud platforms that connect 2 million+ IoT devices across security, smart home, and multimedia, helping 16 million+ people live safer, better lives. Sets enterprise governance for the AI ecosystem and raises intermediate leaders into tribe coordinators, with domain ownership over strategy, people, and delivery, and with clear KPIs. Stays close to models, agents, and the path from pull request to production. FinOps sits on the same scorecard.",
+        "pt-BR": "Lidera mais de 100 engenheiros na construção de plataformas em nuvem AI-native que conectam mais de 2 milhões de dispositivos IoT de segurança, casa inteligente e multimídia, ajudando mais de 16 milhões de pessoas a viverem de forma mais segura e com mais qualidade. Define a governança corporativa do ecossistema de IA e eleva lideranças intermediárias a coordenadores de tribo, com autonomia de domínio sobre estratégia, pessoas e entrega, e com KPIs claros. Segue perto dos modelos, dos agentes e do caminho do pull request à produção. FinOps entra no mesmo painel."
       },
       "highlights": {
         "en": [
-          "AI-embedded SDLC for more than 100 software developers.",
+          "AI-embedded SDLC for 100+ engineers.",
           "Multi-model review on pull requests and CI.",
           "Agents connected to cloud, repositories, CI/CD, observability, ticketing, and internal systems.",
           "Amazon Nova Sonic for bidirectional audio and video in the same model context."
         ],
         "pt-BR": [
-          "SDLC com IA para mais de 100 desenvolvedores de software.",
+          "SDLC com IA para mais de 100 engenheiros.",
           "Revisão multimodelo em pull requests e na CI.",
           "Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados e sistemas internos.",
           "Amazon Nova Sonic para áudio e vídeo bidirecionais no mesmo contexto de modelo."
@@ -270,21 +270,21 @@
         "pt-BR": "Campinas, São Paulo, Brasil"
       },
       "summary": {
-        "en": "Led engineering initiatives with an operational number attached. The same period covers the alarm, access, video, and AI products described in Projects.",
-        "pt-BR": "Liderou iniciativas de engenharia com número operacional associado. O mesmo período cobre os produtos de alarme, acesso, vídeo e IA descritos em Projetos."
+        "en": "Led engineering for alarm, access, video, and AI products on the cloud platforms that connect 2 million+ IoT devices across security, smart home, and multimedia.",
+        "pt-BR": "Liderou a engenharia dos produtos de alarme, acesso, vídeo e IA nas plataformas em nuvem que conectam mais de 2 milhões de dispositivos IoT de segurança, casa inteligente e multimídia."
       },
       "highlights": {
         "en": [
-          "Alarm monitoring: real-time data from 500,000 panels and 10 million sensors for tens of thousands of around-the-clock users, with shorter response on critical events.",
-          "Access control: hardware integration and facial recognition for more than a million condominium residents.",
+          "Alarm monitoring: real-time data for around-the-clock monitoring centers, with shorter response on critical events.",
+          "Access control: hardware integration and facial recognition for condominium residents on the same platforms.",
           "AI: predictive models that helped reduce burglaries and false alarms across billions of events.",
-          "Cloud video monitoring: a scalable surveillance system with two-way audio, built for large camera fleets."
+          "Cloud video and multimedia: a scalable surveillance system with two-way audio, part of the 2 million+ IoT device fleet."
         ],
         "pt-BR": [
-          "Monitoramento de alarmes: dados em tempo real de 500 mil painéis e 10 milhões de sensores para dezenas de milhares de usuários 24 horas, com menor tempo de resposta em eventos críticos.",
-          "Controle de acesso: integração de hardware e reconhecimento facial para mais de um milhão de moradores de condomínios.",
+          "Monitoramento de alarmes: dados em tempo real para centrais 24 horas, com menor tempo de resposta em eventos críticos.",
+          "Controle de acesso: integração de hardware e reconhecimento facial para moradores de condomínios nas mesmas plataformas.",
           "IA: modelos preditivos que ajudaram a reduzir furtos e falsos alarmes ao longo de bilhões de eventos.",
-          "Videomonitoramento em nuvem: um sistema escalável, com áudio bidirecional, para grandes frotas de câmeras."
+          "Vídeo e multimídia em nuvem: um sistema escalável, com áudio bidirecional, parte da frota de mais de 2 milhões de dispositivos IoT."
         ]
       },
       "technologies": [
