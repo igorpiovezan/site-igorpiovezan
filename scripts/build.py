@@ -713,7 +713,10 @@ def render_footprint(bundle, lang: str) -> str:
         milestones.append(
             "<li>"
             f'<p class="when">{e(text(item["when"], lang))}</p>'
-            f'<h4>{e(text(item["title"], lang))}</h4>'
+            "<h4>"
+            f'{e(text(item["title"], lang))}'
+            f'<span class="age">{e(text(item.get("age"), lang))}</span>'
+            "</h4>"
             f'<p>{e(text(item["summary"], lang))}</p>'
             f'{links(item.get("links") or [])}'
             "</li>"
@@ -978,7 +981,9 @@ def llms_full(bundle) -> str:
     lines.append("Milestones")
     lines.append("")
     for item in bundle["footprint"]["milestones"]:
-        lines.append(f"- {text(item['when'], 'en')}: {text(item['summary'], 'en')}")
+        age = text(item.get("age"), "en")
+        prefix = f"{text(item['when'], 'en')}, {age}" if age else text(item["when"], "en")
+        lines.append(f"- {prefix}: {text(item['summary'], 'en')}")
         for link in item.get("links") or []:
             lines.append(f"  {text(link['label'], 'en')}: {link['url']}")
     lines.append("")
