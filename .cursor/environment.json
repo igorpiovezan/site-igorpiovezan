@@ -1,0 +1,17 @@
+{
+  "name": "Igor Piovezan site",
+  "install": "python3 scripts/build.py",
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 scripts/build.py && python3 -m http.server 8000 --bind 0.0.0.0 --directory dist",
+      "description": "Builds dist/ and serves the production static site at http://localhost:8000."
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 8000
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.DS_Store
+dist/
+.herenow/
+.env
+.env.*
+__pycache__/
+*.pyc

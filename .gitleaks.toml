@@ -1,0 +1,16 @@
+title = "site-igorpiovezan"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "email-address"
+description = "Email addresses do not belong in this public repository"
+regex = '''[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}'''
+keywords = ["@"]
+
+[[rules]]
+id = "phone-number"
+description = "Phone numbers do not belong in this public repository"
+regex = '''(?:\+\d{11,15}|\(\d{2}\)\s*\d{4,5}[\s.-]?\d{4})'''
+keywords = ["+", "("]

@@ -1,0 +1,27 @@
+{
+  "canonicalHost": "https://igorpiovezan.com",
+  "updated": "2026-11-03",
+  "ga4MeasurementId": "G-XNKKPQ0RHB",
+  "sameAs": [
+    "https://www.linkedin.com/in/igorpiovezan",
+    "https://github.com/igorpiovezan"
+  ],
+  "linkedin": "https://www.linkedin.com/in/igorpiovezan",
+  "github": "https://github.com/igorpiovezan",
+  "locales": {
+    "en": {
+      "html": "en",
+      "og": "en_US",
+      "home": "/",
+      "notes": "/notes/",
+      "privacy": "/privacy/"
+    },
+    "pt-BR": {
+      "html": "pt-BR",
+      "og": "pt_BR",
+      "home": "/pt-br/",
+      "notes": "/pt-br/notas/",
+      "privacy": "/pt-br/privacidade/"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "paragraphs": {
+    "en": [
+      "This is a public career profile. It does not ask for a name, email, or phone number. There is no contact form, account, checkout, or advertising.",
+      "Google Analytics 4 runs only on igorpiovezan.com and igorpiovezan.com.br, and only after a choice stored in this browser. Consent Mode v2 starts with analytics storage, ad storage, ad user data, and ad personalization denied. Accept sets those four signals to granted. Decline keeps them denied. The choice is stored under the localStorage key igor_consent and is not asked again in that browser.",
+      "The analytics tag is not loaded on any other hostname, including preview links. Preview builds are also marked noindex.",
+      "Links to LinkedIn and GitHub leave this site. Those services have their own policies.",
+      "The site does not sell personal data."
+    ],
+    "pt-BR": [
+      "Este é um perfil público de carreira. Ele não pede nome, e-mail nem telefone. Não há formulário de contato, conta, pagamento ou publicidade.",
+      "O Google Analytics 4 roda apenas em igorpiovezan.com e igorpiovezan.com.br, e só depois de uma escolha gravada neste navegador. O Consent Mode v2 começa com armazenamento de análise, armazenamento de anúncios, dados do usuário para anúncios e personalização de anúncios negados. Aceitar muda esses quatro sinais para concedido. Recusar mantém os quatro negados. A escolha fica na chave igor_consent do localStorage e não é pedida de novo nesse navegador.",
+      "A tag de análise não carrega em nenhum outro hostname, inclusive links de prévia. As builds de prévia também ficam com noindex.",
+      "Os links para LinkedIn e GitHub saem deste site. Esses serviços têm as próprias políticas.",
+      "O site não vende dados pessoais."
+    ]
+  }
+}
