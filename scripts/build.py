@@ -204,7 +204,7 @@ def json_ld(bundle, lang: str, page_url: str, title: str, description: str, og_u
         "givenName": profile["givenName"],
         "additionalName": profile["additionalName"],
         "familyName": profile["familyName"],
-        "jobTitle": text(profile["jobTitle"], lang),
+        "jobTitle": job_titles(profile, lang),
         "description": text(profile["headline"], lang),
         "url": host + "/",
         "image": og_url,
@@ -227,7 +227,7 @@ def json_ld(bundle, lang: str, page_url: str, title: str, description: str, og_u
         },
         "alumniOf": alumni,
         "hasCredential": credentials,
-        "knowsAbout": profile["featuredSkills"],
+        "knowsAbout": knows_about(profile, lang),
         "knowsLanguage": [text(item["name"], "en") for item in profile["languages"]],
     }
     graph = {
@@ -408,6 +408,32 @@ def chips(items) -> str:
     return f'<ul class="chips">{lis}</ul>'
 
 
+def job_titles(profile, lang: str):
+    titles = [text(profile["jobTitle"], lang)]
+    tagline_items = (profile.get("tagline") or {}).get(lang) or []
+    if tagline_items and tagline_items[0] not in titles:
+        titles.append(tagline_items[0])
+    return titles
+
+
+def knows_about(profile, lang: str) -> list:
+    topics = profile.get("knowsAbout")
+    if isinstance(topics, dict):
+        localized = topics.get(lang) or topics.get("en") or []
+        if localized:
+            return localized
+    return list(profile["featuredSkills"])
+
+
+def tagline_list(bundle, lang: str) -> str:
+    items = (bundle["profile"].get("tagline") or {}).get(lang) or []
+    if not items:
+        return ""
+    label = ui(bundle, lang, "taglineLabel")
+    lis = "".join(f"<li>{e(item)}</li>" for item in items)
+    return f'<ul class="tagline" aria-label="{e(label)}">{lis}</ul>'
+
+
 def stack_block(bundle, lang, items) -> str:
     if not items:
         return ""
@@ -469,6 +495,7 @@ def render_home(bundle, lang, assets) -> str:
         f'<p class="kicker">{e(text(profile["jobTitle"], lang))}, {e(profile["worksFor"]["name"])}</p>'
         f'<h1>{e(profile["name"])}</h1>'
         f'<p class="headline">{e(text(profile["headline"], lang))}</p>'
+        f'{tagline_list(bundle, lang)}'
         f'<p class="lede">{e(text(profile["location"]["label"], lang))}</p>'
         '<p class="hero-actions">'
         f'<a href="{e(bundle["site"]["linkedin"])}">LinkedIn</a>'
