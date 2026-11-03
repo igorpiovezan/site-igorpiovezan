@@ -1,0 +1,253 @@
+{
+  "name": "Igor Agenor Piovezan",
+  "givenName": "Igor",
+  "additionalName": "Agenor",
+  "familyName": "Piovezan",
+  "jobTitle": {
+    "en": "Chief Technology Officer",
+    "pt-BR": "Diretor de Tecnologia (CTO)"
+  },
+  "worksFor": {
+    "name": "Segware",
+    "url": "https://segware.com/",
+    "sameAs": "https://www.linkedin.com/company/1060419/"
+  },
+  "location": {
+    "locality": "São Paulo",
+    "region": "São Paulo",
+    "country": "BR",
+    "label": {
+      "en": "São Paulo, Brazil",
+      "pt-BR": "São Paulo, Brasil"
+    }
+  },
+  "headline": {
+    "en": "CTO at Segware. AI first, with AWS and MongoDB certifications and a technology-management background. Connects strategy, technology, people, product, and project management. Leads 100+ people. Six-time AWS re:Invent attendee.",
+    "pt-BR": "CTO na Segware. AI First, com certificações AWS e MongoDB e formação em gestão da tecnologia. Conecta estratégia, tecnologia, pessoas, produto e gestão de projetos. Lidera mais de 100 pessoas. Seis vezes no AWS re:Invent."
+  },
+  "metaDescription": {
+    "en": "Igor Agenor Piovezan is CTO at Segware. He leads 100+ people across technology, product, and FinOps, with AI in production for electronic security and smart living.",
+    "pt-BR": "Igor Agenor Piovezan é CTO da Segware. Lidera mais de 100 pessoas em tecnologia, produto e FinOps, com IA em produção para segurança eletrônica e moradia inteligente."
+  },
+  "about": {
+    "en": [
+      "I'm the CTO of Segware, a company at the forefront of electronic security, video monitoring, multifamily systems for smart condos, the VoIP ecosystem, access control, remote concierge, condo convenience, and IoT integrations. With 15+ years in technology, including more than a decade of growth from full-stack developer to CTO, I bring a multidisciplinary background spanning software, cloud infrastructure, and hardware. That experience lets me lead technology end to end and turn it into reliable products that protect what matters most to people.",
+      "I lead 100+ tech professionals across the Technology, People, and Projects pillars, connecting C-level strategy with the teams who deliver it every day. My mindset is AI first: I prioritize embedding artificial intelligence into how we design products, processes, and decisions.",
+      "What drives me is generating value, at scale and sustainably. Our platforms serve more than 16 million users, processing real-time data from half a million alarm panels, hundreds of thousands of access control devices, and hundreds of thousands of video channels across cameras, DVRs, and NVRs. Predictive models cut burglaries and false alarms across billions of events. I treat cost as a first-class engineering metric, from per-customer, telemetry-based billing to vendor negotiation and margin. And I build high-performance teams and new leaders in a culture of autonomy, quality, and innovation.",
+      "I'm a hands-on CTO. When it truly matters, I dive in: designing architectures and planning the code with AI supporting every step, and staying with the team, reading, reviewing, writing, and discussing what's next. A CTO's role is to connect technology, product, people, and business around a clear vision, balancing speed today with sustainability tomorrow.",
+      "Background: MIT Professional Education (Technology Management), AWS and MongoDB certifications, and six AWS re:Invent conferences."
+    ],
+    "pt-BR": [
+      "Sou o CTO da Segware, empresa na fronteira da segurança eletrônica, do videomonitoramento, dos sistemas para condomínios inteligentes, do ecossistema de VoIP, do controle de acesso, da portaria remota, da conveniência condominial e das integrações de IoT. Com mais de 15 anos em tecnologia, e mais de uma década de crescimento de desenvolvedor full-stack a CTO, trago uma base multidisciplinar em software, infraestrutura de nuvem e hardware. Essa experiência me permite liderar a tecnologia de ponta a ponta e transformá-la em produtos confiáveis, que protegem o que mais importa para as pessoas.",
+      "Lidero mais de 100 profissionais de tecnologia nos pilares de Tecnologia, Pessoas e Projetos, conectando a estratégia do C-level aos times que a entregam todos os dias. Minha mentalidade é AI First: priorizo incorporar inteligência artificial na forma como desenhamos produtos, processos e decisões.",
+      "O que me move é gerar valor, em escala e de forma sustentável. Nossas plataformas atendem mais de 16 milhões de usuários e processam dados em tempo real de meio milhão de painéis de alarme, centenas de milhares de dispositivos de controle de acesso e centenas de milhares de canais de vídeo em câmeras, DVRs e NVRs. Modelos preditivos reduzem furtos e falsos alarmes ao longo de bilhões de eventos. Trato custo como métrica de engenharia de primeira classe, do faturamento por telemetria por cliente à negociação com fornecedores e ao ganho de margem. E formo times de alta performance e novas lideranças, com autonomia, qualidade e inovação.",
+      "Sou um CTO mão na massa. Quando o assunto exige, eu entro de corpo inteiro: desenho arquiteturas e planejo o código com IA em cada etapa, e sigo com o time, lendo, revisando, escrevendo e discutindo o que vem depois. O papel do CTO é conectar tecnologia, produto, pessoas e negócio em torno de uma visão clara, equilibrando a velocidade de hoje com a sustentabilidade de amanhã.",
+      "Formação: MIT Professional Education (Technology Management), certificações AWS e MongoDB, e seis participações no AWS re:Invent."
+    ]
+  },
+  "impact": [
+    {
+      "value": "15+",
+      "label": {
+        "en": "years in technology",
+        "pt-BR": "anos em tecnologia"
+      }
+    },
+    {
+      "value": "100+",
+      "label": {
+        "en": "people led",
+        "pt-BR": "pessoas na liderança"
+      }
+    },
+    {
+      "value": "16M+",
+      "label": {
+        "en": "users on the platforms",
+        "pt-BR": "usuários nas plataformas"
+      }
+    },
+    {
+      "value": "500k",
+      "label": {
+        "en": "alarm panels in real time",
+        "pt-BR": "painéis de alarme em tempo real"
+      }
+    }
+  ],
+  "featuredSkills": [
+    "Artificial Intelligence (AI)",
+    "Technology Management",
+    "Financial Operations",
+    "Leadership",
+    "Amazon Web Services (AWS)"
+  ],
+  "skills": [
+    "Performance Tuning",
+    "Apache",
+    "Windows Server",
+    "Oracle Database",
+    "Microservices",
+    "Software Development",
+    "Cloud Computing",
+    "Object-Oriented Programming (OOP)",
+    "Internet Protocol Suite (TCP/IP)",
+    "Apache Spark Streaming",
+    "Platform as a Service (PAAS)",
+    "Technology Roadmapping",
+    "Go (Programming Language)",
+    "C (Programming Language)",
+    "Problem Solving",
+    "Communication",
+    "Customer Service",
+    "Software Architecture",
+    "Technical Understanding",
+    "Operational Excellence",
+    "Large Scale Systems",
+    "Large-scale Data Analysis",
+    "Software Development Life Cycle (SDLC)",
+    "Management",
+    "Team Leadership",
+    "Psychological Safety",
+    "Agile Methodologies",
+    "Team Management",
+    "Workload Prioritization",
+    "Artificial Intelligence (AI)",
+    "Technology Management",
+    "Financial Operations",
+    "Leadership",
+    "CTO",
+    "Amazon Web Services (AWS)",
+    "Java",
+    "JavaScript",
+    "Morale",
+    "Technical Vision",
+    "Spa",
+    "OVH",
+    "High Throughput",
+    "Scala",
+    "Financial Analysis",
+    "Microsoft Excel",
+    "Expo",
+    "C#",
+    "C++",
+    "Amazon DynamoDB",
+    "MapReduce",
+    "Spring Boot",
+    "Amazon Web Services",
+    "Puppet (Software)",
+    "Redux.js",
+    "Ansible",
+    "GraphQL",
+    "Big data",
+    "Hive",
+    "Jenkins",
+    "Grafana",
+    "MongoDB",
+    "Node.js",
+    "People Management",
+    "Product Management",
+    "Downstream",
+    "Upstream",
+    "DevOps",
+    "Continuous Integration and Continuous Delivery (CI/CD)",
+    "Spring Framework",
+    "React.js",
+    "React Native",
+    "Python (Programming Language)",
+    "PHP",
+    "SQL",
+    "MySQL",
+    "PostgreSQL",
+    "Microsoft SQL Server",
+    "Redis",
+    "Data Lakes",
+    "Apache Kafka",
+    "Apache Spark",
+    "Hadoop",
+    "Elasticsearch",
+    "Kubernetes",
+    "Docker Swarm",
+    "Rancher Kubernetes Management",
+    "Docker",
+    "Terraform",
+    "Prometheus.io",
+    "Firewalls",
+    "Computer Networking",
+    "Linux",
+    "Microsoft Azure",
+    "Google Cloud Platform (GCP)",
+    "AngularJS",
+    "Nginx",
+    "Overclocking",
+    "TDD"
+  ],
+  "languages": [
+    {
+      "name": {
+        "en": "Portuguese",
+        "pt-BR": "Português"
+      },
+      "level": {
+        "en": "Native or bilingual",
+        "pt-BR": "Nativo ou bilíngue"
+      }
+    },
+    {
+      "name": {
+        "en": "English",
+        "pt-BR": "Inglês"
+      },
+      "level": {
+        "en": "Full professional",
+        "pt-BR": "Proficiência profissional plena"
+      }
+    },
+    {
+      "name": {
+        "en": "Spanish",
+        "pt-BR": "Espanhol"
+      },
+      "level": {
+        "en": "Full professional",
+        "pt-BR": "Proficiência profissional plena"
+      }
+    },
+    {
+      "name": {
+        "en": "French",
+        "pt-BR": "Francês"
+      },
+      "level": {
+        "en": "Elementary",
+        "pt-BR": "Básico"
+      }
+    },
+    {
+      "name": {
+        "en": "Chinese",
+        "pt-BR": "Chinês"
+      },
+      "level": {
+        "en": "Elementary",
+        "pt-BR": "Básico"
+      }
+    }
+  ],
+  "recommendations": [
+    {
+      "name": "Andrey M. Patrício",
+      "title": "Software Development Coordinator",
+      "url": "https://www.linkedin.com/in/andreypatricio/",
+      "date": "2025-06-20",
+      "relationship": {
+        "en": "Worked with Igor on different teams",
+        "pt-BR": "Trabalhou com Igor em times diferentes"
+      },
+      "quote": {
+        "en": "Although Igor and I have never worked directly together, I can confidently vouch for his technical and complementary skills. Throughout our journey, we've often engaged in deep discussions covering a wide range of topics from tactical and operational aspects to strategic matters related to team management and software development. His interest in emerging technologies and his short learning curve have always stood out to me as key differentiators. Igor is an excellent communicator and defends his ideas with great skill, making him a valuable asset to any organization.",
+        "pt-BR": "Eu e o Igor nunca trabalhamos juntos, mas posso garantir todas as habilidades técnicas e complementares que ele possui. Por diversos momentos da nossa jornada, promovemos horas de debates sobre diversos temas que transitavam entre o tático, operacional e estratégico referentes a gestão de times e software. Seu interesse por tecnologias emergentes e curta curva de aprendizado sempre me chamaram a atenção como diferenciais. É um excelente comunicador e defende seus pontos com maestria, sendo peça fundamental em qualquer organização."
+      }
+    }
+  ]
+}

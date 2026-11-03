@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "file": "hero.webp",
+    "width": 1200,
+    "height": 675
+  },
+  "og": {
+    "file": "og.png",
+    "width": 1200,
+    "height": 630
+  }
+}

@@ -1,0 +1,827 @@
+{
+  "companies": [
+    {
+      "id": "segware",
+      "name": "Segware",
+      "url": "https://segware.com/",
+      "sameAs": "https://www.linkedin.com/company/1060419/",
+      "span": {
+        "en": "Jan 2016 – present · 10 yrs 11 mos",
+        "pt-BR": "jan 2016 – atual · 10 anos e 11 meses"
+      },
+      "summary": {
+        "en": "Electronic security, video monitoring, smart condominiums, VoIP, access control, remote concierge, and IoT.",
+        "pt-BR": "Segurança eletrônica, videomonitoramento, condomínios inteligentes, VoIP, controle de acesso, portaria remota e IoT."
+      }
+    },
+    {
+      "id": "ace",
+      "name": "ACE English Malta",
+      "url": "https://www.linkedin.com/school/2704438/",
+      "span": {
+        "en": "Mar 2017 – May 2017 · 3 mos",
+        "pt-BR": "mar 2017 – mai 2017 · 3 meses"
+      },
+      "summary": {
+        "en": "Formal English study in Malta, during the early years at Segware.",
+        "pt-BR": "Estudo formal de inglês em Malta, durante os primeiros anos na Segware."
+      }
+    },
+    {
+      "id": "dva",
+      "name": "DVA Mercedes-Benz",
+      "url": "https://www.linkedin.com/company/33247110/",
+      "span": {
+        "en": "Mar 2012 – Jan 2016 · 3 yrs 11 mos",
+        "pt-BR": "mar 2012 – jan 2016 · 3 anos e 11 meses"
+      },
+      "summary": {
+        "en": "Dealership group. Software, networks, support, and design for the operation.",
+        "pt-BR": "Grupo concessionário. Software, redes, suporte e design para a operação."
+      }
+    }
+  ],
+  "roles": [
+    {
+      "id": "cto",
+      "companyId": "segware",
+      "title": {
+        "en": "Chief Technology Officer",
+        "pt-BR": "Diretor de Tecnologia (CTO)"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "Remote",
+        "pt-BR": "Remoto"
+      },
+      "start": "2025-09",
+      "end": null,
+      "location": {
+        "en": "São Paulo, Brazil",
+        "pt-BR": "São Paulo, Brasil"
+      },
+      "summary": {
+        "en": "Leads more than 100 people and the move to spec-driven, AI-embedded software development. Sets enterprise governance for the AI ecosystem and raises intermediate leaders into tribe coordinators, with domain ownership over strategy, people, and delivery, and with clear KPIs. Stays close to models, agents, and the path from pull request to production. FinOps sits on the same scorecard.",
+        "pt-BR": "Lidera mais de 100 pessoas e a adoção de desenvolvimento orientado a especificação, com IA no ciclo de software. Define a governança corporativa do ecossistema de IA e eleva lideranças intermediárias a coordenadores de tribo, com autonomia de domínio sobre estratégia, pessoas e entrega, e com KPIs claros. Segue perto dos modelos, dos agentes e do caminho do pull request à produção. FinOps entra no mesmo painel."
+      },
+      "highlights": {
+        "en": [
+          "AI-embedded SDLC for more than 100 software developers.",
+          "Multi-model review on pull requests and CI.",
+          "Agents connected to cloud, repositories, CI/CD, observability, ticketing, and internal systems.",
+          "Amazon Nova Sonic for bidirectional audio and video in the same model context."
+        ],
+        "pt-BR": [
+          "SDLC com IA para mais de 100 desenvolvedores de software.",
+          "Revisão multimodelo em pull requests e na CI.",
+          "Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados e sistemas internos.",
+          "Amazon Nova Sonic para áudio e vídeo bidirecionais no mesmo contexto de modelo."
+        ]
+      },
+      "technologies": [
+        "Spec-driven development",
+        "Cursor",
+        "OpenAI (ChatGPT, Codex, API)",
+        "Anthropic (Claude, Claude Code, API)",
+        "xAI (Grok)",
+        "Kiro",
+        "Model Context Protocol",
+        "Amazon Nova Sonic",
+        "Multi-model code review",
+        "Agentic workflows",
+        "FinOps"
+      ]
+    },
+    {
+      "id": "dpo",
+      "companyId": "segware",
+      "title": {
+        "en": "Data Protection Officer",
+        "pt-BR": "Encarregado de dados (DPO)"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "Remote",
+        "pt-BR": "Remoto"
+      },
+      "start": "2020-08",
+      "end": null,
+      "location": {
+        "en": "Campinas, São Paulo, Brazil",
+        "pt-BR": "Campinas, São Paulo, Brasil"
+      },
+      "summary": {
+        "en": "Responsible for the privacy and security domains of the company: LGPD and GDPR, data mapping, disposal of personal data, privacy policy, and terms of use, plus the testing, detection, identity, and data-loss controls around them.",
+        "pt-BR": "Responsável pelos domínios de privacidade e segurança da empresa: LGPD e GDPR, mapeamento de dados, descarte de dados pessoais, política de privacidade e termos de uso, além dos controles de teste, detecção, identidade e perda de dados ao redor disso."
+      },
+      "highlights": {
+        "en": [],
+        "pt-BR": []
+      },
+      "technologies": [
+        "LGPD",
+        "GDPR",
+        "Data mapping",
+        "Personal data disposal",
+        "Privacy policy",
+        "Terms of use",
+        "SAST",
+        "DAST",
+        "SIEM",
+        "WAF",
+        "IDS/IPS",
+        "IAM",
+        "RBAC",
+        "EDR",
+        "XDR",
+        "MDR",
+        "DLP",
+        "Vulnerability assessment and penetration testing",
+        "SOAR"
+      ]
+    },
+    {
+      "id": "bem",
+      "companyId": "segware",
+      "title": {
+        "en": "Business Engineering Manager",
+        "pt-BR": "Gerente de engenharia de negócios"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "Hybrid",
+        "pt-BR": "Híbrido"
+      },
+      "start": "2022-01",
+      "end": "2025-09",
+      "location": {
+        "en": "Campinas, São Paulo, Brazil",
+        "pt-BR": "Campinas, São Paulo, Brasil"
+      },
+      "summary": {
+        "en": "Joined business areas and product engineering so the company could create and evolve products faster, for the current customer base and for new markets. The work mixed process, cost, quality, partnerships, and an AI-first practice.",
+        "pt-BR": "Uniu as áreas de negócio e a engenharia de produto para criar e evoluir produtos com mais velocidade, para a base atual e para novos mercados. O trabalho misturou processo, custo, qualidade, parcerias e uma prática AI First."
+      },
+      "highlights": {
+        "en": [
+          "Process optimization, productivity, and cost reduction with a quality and compliance bar.",
+          "Leadership development, portfolio management, and market expansion.",
+          "AI practice covering context, prompts, MCP, guardrails, ethics, and privacy."
+        ],
+        "pt-BR": [
+          "Otimização de processo, produtividade e redução de custo, com régua de qualidade e conformidade.",
+          "Desenvolvimento de lideranças, gestão de portfólio e expansão de mercado.",
+          "Prática de IA cobrindo contexto, prompts, MCP, guardrails, ética e privacidade."
+        ]
+      },
+      "technologies": [
+        "AI first",
+        "Context engineering",
+        "Prompt engineering",
+        "Model Context Protocol",
+        "Guardrails",
+        "AI ethics",
+        "Data privacy protocols",
+        "Bias mitigation",
+        "Knowledge engineering"
+      ]
+    },
+    {
+      "id": "tech-manager",
+      "companyId": "segware",
+      "title": {
+        "en": "Tech Manager",
+        "pt-BR": "Gerente de tecnologia"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "Remote",
+        "pt-BR": "Remoto"
+      },
+      "start": "2021-04",
+      "end": "2025-09",
+      "location": {
+        "en": "Campinas, São Paulo, Brazil",
+        "pt-BR": "Campinas, São Paulo, Brasil"
+      },
+      "summary": {
+        "en": "Head of the Technology, People, and Projects pillars. Connected strategy to day-to-day operations, led other leaders, and used financial analysis and budget management to buy efficiency. Built teams in a culture of innovation while keeping cloud software close to the problem.",
+        "pt-BR": "À frente dos pilares de Tecnologia, Pessoas e Projetos. Conectou a estratégia à operação do dia a dia, liderou outras lideranças e usou análise financeira e orçamento para ganhar eficiência. Formou times em uma cultura de inovação, com o software em nuvem perto do problema."
+      },
+      "highlights": {
+        "en": [
+          "OKRs, KPIs, roadmap, and backlog, reported against the plan.",
+          "Financial analysis aimed at lower operating cost.",
+          "Scrum, Kanban, and change management across the platform."
+        ],
+        "pt-BR": [
+          "OKRs, KPIs, roadmap e backlog, acompanhados contra o plano.",
+          "Análise financeira orientada à redução do custo operacional.",
+          "Scrum, Kanban e gestão de mudanças na plataforma."
+        ]
+      },
+      "technologies": [
+        "Rust",
+        "Apache Samza",
+        "WebAssembly",
+        "M3",
+        "Predictive analysis",
+        "Supervised learning",
+        "Scrum",
+        "Kanban",
+        "OKR",
+        "KPI",
+        "Solution architecture",
+        "IT governance",
+        "Change management"
+      ]
+    },
+    {
+      "id": "sem",
+      "companyId": "segware",
+      "title": {
+        "en": "Software Engineering Manager",
+        "pt-BR": "Gerente de engenharia de software"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "Hybrid",
+        "pt-BR": "Híbrido"
+      },
+      "start": "2021-01",
+      "end": "2025-09",
+      "location": {
+        "en": "Campinas, São Paulo, Brazil",
+        "pt-BR": "Campinas, São Paulo, Brasil"
+      },
+      "summary": {
+        "en": "Led engineering initiatives with an operational number attached. The same period covers the alarm, access, video, and AI products described in Projects.",
+        "pt-BR": "Liderou iniciativas de engenharia com número operacional associado. O mesmo período cobre os produtos de alarme, acesso, vídeo e IA descritos em Projetos."
+      },
+      "highlights": {
+        "en": [
+          "Alarm monitoring: real-time data from 500,000 panels and 10 million sensors for tens of thousands of around-the-clock users, with shorter response on critical events.",
+          "Access control: hardware integration and facial recognition for more than a million condominium residents.",
+          "AI: predictive models that helped reduce burglaries and false alarms across billions of events.",
+          "Cloud video monitoring: a scalable surveillance system with two-way audio, built for large camera fleets."
+        ],
+        "pt-BR": [
+          "Monitoramento de alarmes: dados em tempo real de 500 mil painéis e 10 milhões de sensores para dezenas de milhares de usuários 24 horas, com menor tempo de resposta em eventos críticos.",
+          "Controle de acesso: integração de hardware e reconhecimento facial para mais de um milhão de moradores de condomínios.",
+          "IA: modelos preditivos que ajudaram a reduzir furtos e falsos alarmes ao longo de bilhões de eventos.",
+          "Videomonitoramento em nuvem: um sistema escalável, com áudio bidirecional, para grandes frotas de câmeras."
+        ]
+      },
+      "technologies": [
+        "Artificial Intelligence (AI)"
+      ]
+    },
+    {
+      "id": "sre",
+      "companyId": "segware",
+      "title": {
+        "en": "Site Reliability Engineering Manager",
+        "pt-BR": "Gerente de engenharia de confiabilidade"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "Hybrid",
+        "pt-BR": "Híbrido"
+      },
+      "start": "2018-08",
+      "end": "2021-04",
+      "location": {
+        "en": "Florianópolis, Santa Catarina, Brazil",
+        "pt-BR": "Florianópolis, Santa Catarina, Brasil"
+      },
+      "summary": {
+        "en": "Treated reliability, security, and finance as the three pillars of the platform. Ran workloads across AWS, OVH, Google Cloud, Azure, Oracle Cloud, and IBM Cloud, with a deep day-to-day practice on AWS and the delivery and observability tools around it.",
+        "pt-BR": "Tratou confiabilidade, segurança e finanças como os três pilares da plataforma. Operou cargas na AWS, na OVH, no Google Cloud, no Azure, na Oracle Cloud e na IBM Cloud, com prática diária profunda na AWS e nas ferramentas de entrega e observabilidade ao redor."
+      },
+      "highlights": {
+        "en": [
+          "Quoted in MongoDB's Atlas Data Federation case study on querying hot and cold Segware event data with the same language."
+        ],
+        "pt-BR": [
+          "Citado no caso da MongoDB sobre Atlas Data Federation, consultando dados quentes e frios de eventos da Segware com a mesma linguagem."
+        ]
+      },
+      "technologies": [
+        "Docker Swarm",
+        "Microsoft SQL Server",
+        "Terraform",
+        "Ansible",
+        "Puppet",
+        "Jenkins",
+        "CI/CD",
+        "Hadoop",
+        "Spark",
+        "Hive",
+        "Grafana",
+        "Prometheus",
+        "InfluxDB",
+        "AWS",
+        "OVH",
+        "GCP",
+        "Azure",
+        "OCI",
+        "IBM Cloud",
+        "Athena",
+        "Glue",
+        "Lake Formation",
+        "EMR",
+        "Kinesis",
+        "QuickSight",
+        "OpenSearch",
+        "MSK",
+        "EventBridge",
+        "SNS",
+        "SQS",
+        "MQ",
+        "Well-Architected Tool",
+        "Chime",
+        "Savings Plans",
+        "Cost Explorer",
+        "Cost and Usage Report",
+        "Budgets",
+        "Compute Optimizer",
+        "EC2 Auto Scaling",
+        "Elastic Beanstalk",
+        "Lambda",
+        "EC2",
+        "EC2 Spot Instances",
+        "Lightsail",
+        "Fargate",
+        "EKS",
+        "ECR",
+        "Marketplace",
+        "ECS",
+        "DynamoDB",
+        "DocumentDB",
+        "RDS",
+        "MemoryDB for Redis",
+        "Aurora",
+        "ElastiCache",
+        "Keyspaces",
+        "Redshift",
+        "CodeDeploy",
+        "CLI",
+        "CodeBuild",
+        "CodeCommit",
+        "CodeArtifact",
+        "Amazon Corretto",
+        "CloudShell",
+        "SES",
+        "API Gateway",
+        "Device Farm",
+        "IoT",
+        "DevOps Guru",
+        "SageMaker",
+        "Inferentia",
+        "SageMaker Studio",
+        "PyTorch on AWS",
+        "Rekognition",
+        "Organizations",
+        "CloudWatch",
+        "Managed Grafana",
+        "CloudTrail",
+        "Config",
+        "Systems Manager",
+        "CloudFormation",
+        "Control Tower",
+        "Trusted Advisor",
+        "Kinesis Video Streams",
+        "DMS",
+        "DataSync",
+        "Global Accelerator",
+        "PrivateLink",
+        "Route 53",
+        "ELB",
+        "VPN",
+        "CloudFront",
+        "VPC",
+        "Detective",
+        "IAM",
+        "Certificate Manager",
+        "Artifact",
+        "Network Firewall",
+        "Shield",
+        "Cognito",
+        "Security Hub",
+        "WAF",
+        "KMS",
+        "GuardDuty",
+        "Inspector",
+        "Macie",
+        "S3 Glacier",
+        "EFS",
+        "EBS",
+        "S3",
+        "Backup"
+      ]
+    },
+    {
+      "id": "fullstack",
+      "companyId": "segware",
+      "title": {
+        "en": "Full Stack Developer",
+        "pt-BR": "Desenvolvedor full-stack"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "On-site",
+        "pt-BR": "Presencial"
+      },
+      "start": "2016-01",
+      "end": "2018-08",
+      "location": {
+        "en": "Florianópolis, Santa Catarina, Brazil",
+        "pt-BR": "Florianópolis, Santa Catarina, Brasil"
+      },
+      "summary": {
+        "en": "Built and operated software across the whole path of a project. The work covered distributed systems, big data, IoT, and SaaS: architecture, data stores, tests, and release.",
+        "pt-BR": "Construiu e operou software ao longo de todo o caminho do projeto. O trabalho cobriu sistemas distribuídos, big data, IoT e SaaS: arquitetura, bases de dados, testes e release."
+      },
+      "highlights": {
+        "en": [],
+        "pt-BR": []
+      },
+      "technologies": [
+        "Multithreading",
+        "Parallel computing",
+        "Memory management",
+        "Distributed state",
+        "Non-blocking asynchronous architectures",
+        "Reactive programming",
+        "Functional programming",
+        "Horizontal scalability",
+        "Big data",
+        "Columnar storage (Parquet, ORC)",
+        "Indexing",
+        "Data warehouse",
+        "Data analytics",
+        "Services and microservices",
+        "Monoliths",
+        "TDD",
+        "Unit, integration, and end-to-end tests",
+        "Load tests",
+        "Blue/green",
+        "Canary releases",
+        "Multi-region architecture",
+        "IoT",
+        "SaaS",
+        "Java",
+        "JavaScript",
+        "Node.js",
+        "Python",
+        "Shell",
+        "Scala",
+        "TypeScript",
+        "PHP",
+        "Ruby",
+        "C++",
+        "Go",
+        "Kotlin",
+        "C#",
+        "Nginx",
+        "HAProxy",
+        "Apache HTTP",
+        "Squid",
+        "Docker",
+        "Docker Compose",
+        "Docker Swarm",
+        "Kubernetes",
+        "HTTP",
+        "TCP",
+        "UDP",
+        "WebSocket",
+        "Grafana",
+        "Prometheus",
+        "React",
+        "Angular",
+        "Ionic",
+        "React Native",
+        "Spring Framework",
+        "Spring Boot",
+        "Spring Data",
+        "Spring Security",
+        "Spring Batch",
+        "Spring for Apache Kafka",
+        "Thymeleaf",
+        "Swagger",
+        "Express",
+        "GraphQL",
+        "Jest",
+        "Mocha",
+        "JUnit",
+        "Cypress",
+        "Apache Spark",
+        "Hadoop",
+        "Apache Hive",
+        "Apache Tomcat",
+        "WildFly",
+        "ffmpeg",
+        "H.264",
+        "H.265",
+        "VP9",
+        "AV1",
+        "HLS",
+        "WebRTC",
+        "Socket.io",
+        "Power BI",
+        "OWASP Top Ten",
+        "Sonar",
+        "MySQL",
+        "PostgreSQL",
+        "SQL Server",
+        "Oracle",
+        "SQLite",
+        "H2",
+        "Amazon Aurora",
+        "DynamoDB",
+        "MongoDB",
+        "DocumentDB",
+        "Elasticsearch",
+        "Redis",
+        "Memcached",
+        "Redshift",
+        "Amazon Athena",
+        "PrestoDB",
+        "Apache Cassandra",
+        "Datomic",
+        "Prometheus"
+      ]
+    },
+    {
+      "id": "malta",
+      "companyId": "ace",
+      "title": {
+        "en": "Student internship",
+        "pt-BR": "Estágio de estudos"
+      },
+      "employmentType": {
+        "en": "Part-time",
+        "pt-BR": "Meio período"
+      },
+      "arrangement": {
+        "en": "On-site",
+        "pt-BR": "Presencial"
+      },
+      "start": "2017-03",
+      "end": "2017-05",
+      "location": {
+        "en": "Malta",
+        "pt-BR": "Malta"
+      },
+      "summary": {
+        "en": "Formal English study in Malta, on the European continent, while already working as a developer at Segware.",
+        "pt-BR": "Estudo formal de inglês em Malta, no continente europeu, já como desenvolvedor na Segware."
+      },
+      "highlights": {
+        "en": [],
+        "pt-BR": []
+      },
+      "technologies": []
+    },
+    {
+      "id": "php",
+      "companyId": "dva",
+      "title": {
+        "en": "PHP Web Developer",
+        "pt-BR": "Desenvolvedor web PHP"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "On-site",
+        "pt-BR": "Presencial"
+      },
+      "start": "2014-01",
+      "end": "2016-01",
+      "location": {
+        "en": "São José, Santa Catarina, Brazil",
+        "pt-BR": "São José, Santa Catarina, Brasil"
+      },
+      "summary": {
+        "en": "Web development for the group: PHP and JavaScript frameworks, APIs, databases, and hybrid mobile apps, with tests and a DevOps footing.",
+        "pt-BR": "Desenvolvimento web para o grupo: frameworks PHP e JavaScript, APIs, bancos de dados e aplicativos móveis híbridos, com testes e uma base de DevOps."
+      },
+      "highlights": {
+        "en": [],
+        "pt-BR": []
+      },
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Sass",
+        "Compass",
+        "Less",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "AngularJS",
+        "Polymer",
+        "React",
+        "CoffeeScript",
+        "PHP",
+        "Java EE",
+        "Design patterns",
+        "Composer",
+        "Zend Framework 2",
+        "CakePHP",
+        "Symfony 2",
+        "Laravel",
+        "CodeIgniter",
+        "Apigility",
+        "REST",
+        "RPC",
+        "SOAP",
+        "Microservices",
+        "TDD",
+        "PHPUnit",
+        "WebSockets",
+        "NoSQL",
+        "Git",
+        "WordPress",
+        "OpenCart",
+        "Responsive design",
+        "Ionic",
+        "Apache Cordova",
+        "MySQL",
+        "SQL Server",
+        "Oracle",
+        "PL/SQL",
+        "HHVM",
+        "Scrum",
+        "DevOps",
+        "VMware",
+        "Hyper-V",
+        "Vagrant",
+        "Puppet",
+        "Docker",
+        "Bash"
+      ]
+    },
+    {
+      "id": "netadmin",
+      "companyId": "dva",
+      "title": {
+        "en": "Computer Network Administrator",
+        "pt-BR": "Administrador de redes"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "On-site",
+        "pt-BR": "Presencial"
+      },
+      "start": "2012-06",
+      "end": "2016-01",
+      "location": {
+        "en": "São José, Santa Catarina, Brazil",
+        "pt-BR": "São José, Santa Catarina, Brasil"
+      },
+      "summary": {
+        "en": "Windows and Linux infrastructure: web, database, directory, virtualization, voice, firewall, DNS, VPN, proxy, and mail, plus assembly and maintenance of the machines.",
+        "pt-BR": "Infraestrutura Windows e Linux: web, banco de dados, diretório, virtualização, voz, firewall, DNS, VPN, proxy e e-mail, além de montagem e manutenção das máquinas."
+      },
+      "highlights": {
+        "en": [],
+        "pt-BR": []
+      },
+      "technologies": [
+        "Apache",
+        "IIS",
+        "Nginx",
+        "HHVM",
+        "MySQL",
+        "SQL Server",
+        "Oracle",
+        "Active Directory",
+        "Samba",
+        "RDS",
+        "VMware",
+        "Hyper-V",
+        "SNMP",
+        "Spiceworks",
+        "Cacti",
+        "SMB",
+        "NFS",
+        "Asterisk",
+        "SNEP",
+        "Elastix",
+        "pfSense",
+        "iptables",
+        "Windows Server",
+        "BIND9",
+        "OpenVPN",
+        "Squid",
+        "Postfix",
+        "Roundcube",
+        "Bash"
+      ]
+    },
+    {
+      "id": "analyst",
+      "companyId": "dva",
+      "title": {
+        "en": "Information Technology Analyst",
+        "pt-BR": "Analista de tecnologia da informação"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "On-site",
+        "pt-BR": "Presencial"
+      },
+      "start": "2012-03",
+      "end": "2016-01",
+      "location": {
+        "en": "Florianópolis, Santa Catarina, Brazil",
+        "pt-BR": "Florianópolis, Santa Catarina, Brasil"
+      },
+      "summary": {
+        "en": "Split the time across software, infrastructure, employee support, and graphic design, including the data-center room and desktop and server installs.",
+        "pt-BR": "Dividiu o tempo entre software, infraestrutura, suporte aos colaboradores e design gráfico, incluindo a sala de CPD e a instalação de desktops e servidores."
+      },
+      "highlights": {
+        "en": [
+          "Took part for four years in Mercedes-Benz StarClass certification. The group was Gold again: 11 consecutive years for cars and 13 for trucks. IT supported every department on the checklist, and this was the first professional full-stack development role."
+        ],
+        "pt-BR": [
+          "Participou por quatro anos da certificação StarClass da Mercedes-Benz. O grupo voltou a ser Gold: 11 anos consecutivos em automóveis e 13 em caminhões. A TI apoiava todos os setores no checklist, e esse foi o primeiro trabalho profissional como desenvolvedor full-stack."
+        ]
+      },
+      "technologies": [
+        "Adobe Photoshop",
+        "CorelDRAW",
+        "Windows",
+        "Linux",
+        "PHP",
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    {
+      "id": "design",
+      "companyId": "dva",
+      "title": {
+        "en": "Graphic Designer",
+        "pt-BR": "Designer gráfico"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt-BR": "Tempo integral"
+      },
+      "arrangement": {
+        "en": "On-site",
+        "pt-BR": "Presencial"
+      },
+      "start": "2012-05",
+      "end": "2013-08",
+      "location": {
+        "en": "São José, Santa Catarina, Brazil",
+        "pt-BR": "São José, Santa Catarina, Brasil"
+      },
+      "summary": {
+        "en": "Vector artwork in CorelDRAW and image editing in Adobe Photoshop.",
+        "pt-BR": "Arte vetorial no CorelDRAW e edição de imagem no Adobe Photoshop."
+      },
+      "highlights": {
+        "en": [],
+        "pt-BR": []
+      },
+      "technologies": [
+        "CorelDRAW",
+        "Adobe Photoshop"
+      ]
+    }
+  ]
+}

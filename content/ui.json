@@ -1,0 +1,246 @@
+{
+  "skip": {
+    "en": "Skip to content",
+    "pt-BR": "Ir para o conteúdo"
+  },
+  "navAbout": {
+    "en": "About",
+    "pt-BR": "Sobre"
+  },
+  "navExperience": {
+    "en": "Experience",
+    "pt-BR": "Experiência"
+  },
+  "navWork": {
+    "en": "Work",
+    "pt-BR": "Trabalho"
+  },
+  "navSpeaking": {
+    "en": "Speaking",
+    "pt-BR": "Falando"
+  },
+  "navBackground": {
+    "en": "Background",
+    "pt-BR": "Formação"
+  },
+  "navNotes": {
+    "en": "Notes",
+    "pt-BR": "Notas"
+  },
+  "langName": {
+    "en": "English",
+    "pt-BR": "Português"
+  },
+  "switchTo": {
+    "en": "Português",
+    "pt-BR": "English"
+  },
+  "locationLabel": {
+    "en": "Based in",
+    "pt-BR": "Em"
+  },
+  "profiles": {
+    "en": "Profiles",
+    "pt-BR": "Perfis"
+  },
+  "linkedin": {
+    "en": "LinkedIn",
+    "pt-BR": "LinkedIn"
+  },
+  "github": {
+    "en": "GitHub",
+    "pt-BR": "GitHub"
+  },
+  "impactTitle": {
+    "en": "In production",
+    "pt-BR": "Em produção"
+  },
+  "aboutTitle": {
+    "en": "About",
+    "pt-BR": "Sobre"
+  },
+  "experienceTitle": {
+    "en": "Experience",
+    "pt-BR": "Experiência"
+  },
+  "present": {
+    "en": "Present",
+    "pt-BR": "Atual"
+  },
+  "technologies": {
+    "en": "Technologies and focus",
+    "pt-BR": "Tecnologias e foco"
+  },
+  "showStack": {
+    "en": "Show the stack",
+    "pt-BR": "Mostrar a stack"
+  },
+  "workTitle": {
+    "en": "Selected work",
+    "pt-BR": "Trabalho selecionado"
+  },
+  "speakingTitle": {
+    "en": "Speaking and writing",
+    "pt-BR": "Palestras e textos"
+  },
+  "honorsTitle": {
+    "en": "Honors",
+    "pt-BR": "Reconhecimentos"
+  },
+  "publicationsTitle": {
+    "en": "Publications",
+    "pt-BR": "Publicações"
+  },
+  "read": {
+    "en": "Read",
+    "pt-BR": "Ler"
+  },
+  "watch": {
+    "en": "Watch",
+    "pt-BR": "Assistir"
+  },
+  "educationTitle": {
+    "en": "Education",
+    "pt-BR": "Formação"
+  },
+  "certificationsTitle": {
+    "en": "Certifications",
+    "pt-BR": "Certificações"
+  },
+  "coursesTitle": {
+    "en": "Courses",
+    "pt-BR": "Cursos"
+  },
+  "issued": {
+    "en": "Issued",
+    "pt-BR": "Emitida"
+  },
+  "expires": {
+    "en": "Expires",
+    "pt-BR": "Expira"
+  },
+  "expired": {
+    "en": "Expired",
+    "pt-BR": "Expirada"
+  },
+  "showCredential": {
+    "en": "Show credential",
+    "pt-BR": "Ver credencial"
+  },
+  "skillsTitle": {
+    "en": "Skills",
+    "pt-BR": "Competências"
+  },
+  "featuredSkills": {
+    "en": "Featured",
+    "pt-BR": "Em destaque"
+  },
+  "allSkills": {
+    "en": "All skills, in LinkedIn order",
+    "pt-BR": "Todas as competências, na ordem do LinkedIn"
+  },
+  "languagesTitle": {
+    "en": "Languages",
+    "pt-BR": "Idiomas"
+  },
+  "recommendationsTitle": {
+    "en": "Recommendation",
+    "pt-BR": "Recomendação"
+  },
+  "notesTitle": {
+    "en": "Notes",
+    "pt-BR": "Notas"
+  },
+  "notesLead": {
+    "en": "Public posts from LinkedIn, newest first. Excerpts are short. The full text stays on LinkedIn.",
+    "pt-BR": "Posts públicos do LinkedIn, do mais recente ao mais antigo. Os trechos são curtos. O texto completo continua no LinkedIn."
+  },
+  "ownPosts": {
+    "en": "Posts",
+    "pt-BR": "Posts"
+  },
+  "reposts": {
+    "en": "Reposts",
+    "pt-BR": "Reposts"
+  },
+  "onLinkedin": {
+    "en": "On LinkedIn",
+    "pt-BR": "No LinkedIn"
+  },
+  "imagePost": {
+    "en": "Image post",
+    "pt-BR": "Post de imagem"
+  },
+  "repostOf": {
+    "en": "Repost of",
+    "pt-BR": "Repost de"
+  },
+  "featuredNotes": {
+    "en": "Recent notes",
+    "pt-BR": "Notas recentes"
+  },
+  "allNotes": {
+    "en": "All notes",
+    "pt-BR": "Todas as notas"
+  },
+  "privacy": {
+    "en": "Privacy",
+    "pt-BR": "Privacidade"
+  },
+  "footerNote": {
+    "en": "Public career profile. No contact form, phone, or email on this site.",
+    "pt-BR": "Perfil público de carreira. Este site não tem formulário, telefone nem e-mail."
+  },
+  "connect": {
+    "en": "For a conversation about technology leadership, AI, or security and smart living, use LinkedIn.",
+    "pt-BR": "Para conversar sobre liderança de tecnologia, IA ou segurança e moradia inteligente, use o LinkedIn."
+  },
+  "privacyTitle": {
+    "en": "Privacy",
+    "pt-BR": "Privacidade"
+  },
+  "privacyLead": {
+    "en": "This is a personal career site. It does not collect leads and it does not ask for an account.",
+    "pt-BR": "Este é um site pessoal de carreira. Ele não captura contatos e não pede conta."
+  },
+  "notesPageTitle": {
+    "en": "Notes",
+    "pt-BR": "Notas"
+  },
+  "homeLabel": {
+    "en": "Home",
+    "pt-BR": "Início"
+  },
+  "notFoundTitle": {
+    "en": "Page not found",
+    "pt-BR": "Página não encontrada"
+  },
+  "notFoundBody": {
+    "en": "That address is not on this site.",
+    "pt-BR": "Esse endereço não está neste site."
+  },
+  "consentTitle": {
+    "en": "Analytics cookies",
+    "pt-BR": "Cookies de análise"
+  },
+  "consentBody": {
+    "en": "Analytics run only on igorpiovezan.com, and only if you accept. Nothing is sent for advertising.",
+    "pt-BR": "A análise roda só em igorpiovezan.com, e só se você aceitar. Nada é enviado para publicidade."
+  },
+  "consentAccept": {
+    "en": "Accept",
+    "pt-BR": "Aceitar"
+  },
+  "consentDecline": {
+    "en": "Decline",
+    "pt-BR": "Recusar"
+  },
+  "associated": {
+    "en": "Associated with",
+    "pt-BR": "Associado a"
+  },
+  "quoteBy": {
+    "en": "Recommendation from",
+    "pt-BR": "Recomendação de"
+  }
+}
