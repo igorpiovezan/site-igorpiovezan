@@ -178,9 +178,13 @@
         "en": "IFSC, telecommunications",
         "pt-BR": "IFSC, telecomunicações"
       },
+      "age": {
+        "en": "at 13",
+        "pt-BR": "aos 13 anos"
+      },
       "summary": {
-        "en": "Studied at IFSC — Instituto Federal de Santa Catarina, a public federal institute: integrated telecommunications technician, 2010–2014.",
-        "pt-BR": "Estudou no IFSC — Instituto Federal de Santa Catarina, instituto público federal: técnico integrado em telecomunicações, 2010–2014."
+        "en": "Approved in the entrance exam. Studied at IFSC — Instituto Federal de Santa Catarina, a public federal institute, as an integrated telecommunications technician, 2010–2014.",
+        "pt-BR": "Aprovado no exame de ingresso. Estudou no IFSC — Instituto Federal de Santa Catarina, instituto público federal, no técnico integrado em telecomunicações, de 2010 a 2014."
       },
       "links": [
         {
@@ -201,9 +205,13 @@
         "en": "IFSC federal exam, Edital 42/2014",
         "pt-BR": "Concurso federal do IFSC, Edital 42/2014"
       },
+      "age": {
+        "en": "at 18",
+        "pt-BR": "aos 18 anos"
+      },
       "summary": {
-        "en": "Approved and ranked 8th in the IFSC federal civil-service exam (Edital 42/2014, IT Technician), 2014/2015; chose to stay in the private sector.",
-        "pt-BR": "Aprovado e classificado em 8º lugar no concurso público federal do IFSC (Edital 42/2014, Técnico em Tecnologia da Informação), em 2014/2015; optou por seguir no setor privado."
+        "en": "Approved and ranked 8th in the IFSC federal civil-service exam (Edital 42/2014, IT Technician), 2014/2015; chose to stay in the private sector. The contest had two stages: a 40-question objective theory exam covering general knowledge, legislation, and specific technical knowledge, then a practical exam open only to the top-ranked candidates.",
+        "pt-BR": "Aprovado e classificado em 8º lugar no concurso público federal do IFSC (Edital 42/2014, Técnico em Tecnologia da Informação), em 2014/2015; optou por seguir no setor privado. O concurso tinha duas etapas: uma prova teórica objetiva de 40 questões, com conhecimentos gerais, legislação e conhecimentos técnicos específicos, e depois uma prova prática aberta apenas aos candidatos mais bem classificados."
       },
       "links": [
         {
@@ -231,9 +239,13 @@
         "en": "USJ, systems analysis and development",
         "pt-BR": "USJ, análise e desenvolvimento de sistemas"
       },
+      "age": {
+        "en": "at 18",
+        "pt-BR": "aos 18 anos"
+      },
       "summary": {
-        "en": "Studied systems analysis and development at Centro Universitário Municipal de São José (USJ), a public municipal college, from 2015 to 2017.",
-        "pt-BR": "Estudou análise e desenvolvimento de sistemas no Centro Universitário Municipal de São José (USJ), centro universitário público municipal, de 2015 a 2017."
+        "en": "Approved in the entrance exam. Studied systems analysis and development at Centro Universitário Municipal de São José (USJ), a public municipal college, from 2015 to 2017.",
+        "pt-BR": "Aprovado no exame de ingresso. Estudou análise e desenvolvimento de sistemas no Centro Universitário Municipal de São José (USJ), centro universitário público municipal, de 2015 a 2017."
       },
       "links": [
         {
