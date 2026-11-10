@@ -23,6 +23,14 @@
     "en": "Footprint",
     "pt-BR": "Presença"
   },
+  "navTechnologies": {
+    "en": "Technologies",
+    "pt-BR": "Tecnologias"
+  },
+  "navWorld": {
+    "en": "Organizations",
+    "pt-BR": "Organizações"
+  },
   "navBackground": {
     "en": "Background",
     "pt-BR": "Formação"
@@ -62,6 +70,50 @@
   "impactTitle": {
     "en": "In production",
     "pt-BR": "Em produção"
+  },
+  "publicStills": {
+    "en": "Public stills",
+    "pt-BR": "Quadros públicos"
+  },
+  "portraitReserved": {
+    "en": "Portrait reserved",
+    "pt-BR": "Retrato reservado"
+  },
+  "portraitCaption": {
+    "en": "This frame is ready for a photograph of Igor. Until then it shows the public nameplate.",
+    "pt-BR": "Este quadro está pronto para uma fotografia de Igor. Até lá, mostra o cartão público com o nome."
+  },
+  "portraitReadyCaption": {
+    "en": "Igor Agenor Piovezan.",
+    "pt-BR": "Igor Agenor Piovezan."
+  },
+  "igorTitle": {
+    "en": "In public",
+    "pt-BR": "Em público"
+  },
+  "igorLead": {
+    "en": "Stills from public videos already linked on this site. A studio portrait is not published here yet.",
+    "pt-BR": "Quadros de vídeos públicos já ligados neste site. Um retrato de estúdio ainda não está publicado aqui."
+  },
+  "technologiesTitle": {
+    "en": "Technologies",
+    "pt-BR": "Tecnologias"
+  },
+  "technologiesLead": {
+    "en": "Five parts of the work already on this site. The roles below keep the full stack.",
+    "pt-BR": "Cinco partes do trabalho que já está neste site. Os cargos abaixo guardam a stack completa."
+  },
+  "worldTitle": {
+    "en": "Organizations",
+    "pt-BR": "Organizações"
+  },
+  "worldLead": {
+    "en": "Employers, schools, and the companies named in the public record. Context for the work, not endorsements or partner logos.",
+    "pt-BR": "Empregadores, escolas e as empresas citadas no registro público. Contexto do trabalho, não endosso nem logos de parceria."
+  },
+  "alsoOnRecord": {
+    "en": "Also on the record",
+    "pt-BR": "Também no registro"
   },
   "aboutTitle": {
     "en": "About",

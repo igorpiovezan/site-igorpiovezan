@@ -56,11 +56,18 @@ def main():
         format="ICO",
         sizes=[(16, 16), (32, 32), (48, 48)],
     )
+    meta_path = ASSETS / "media.json"
+    existing = {}
+    if meta_path.exists():
+        existing = json.loads(meta_path.read_text(encoding="utf-8"))
     meta = {
         "hero": {"file": "hero.webp", "width": 1200, "height": 675},
         "og": {"file": "og.png", "width": 1200, "height": 630},
     }
-    (ASSETS / "media.json").write_text(json.dumps(meta, indent=2) + "\n")
+    for key in ("portrait", "stills", "stillSource"):
+        if key in existing:
+            meta[key] = existing[key]
+    meta_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
     print("assets ready", hero.size, og.size)
 
 

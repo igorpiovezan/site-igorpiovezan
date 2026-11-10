@@ -8,5 +8,27 @@
     "file": "og.png",
     "width": 1200,
     "height": 630
-  }
+  },
+  "portrait": null,
+  "stillSource": "Public YouTube thumbnails for talks already linked on this site. Local optimized copies. Each still links back to its video.",
+  "stills": [
+    {
+      "id": "wlxcWPRgmYg",
+      "file": "stills/wlxcWPRgmYg.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "TYpIwKSLiRE",
+      "file": "stills/TYpIwKSLiRE.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "yrm7_OIMaY8",
+      "file": "stills/yrm7_OIMaY8.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ]
 }
