@@ -553,6 +553,33 @@ def validate_chapters(chapters: dict) -> None:
             require_locale(stage.get("line"), stage.get("id") or "stage")
 
 
+def logo_chip(assets, logo_id: str) -> str:
+    logo = (assets.get("logos") or {}).get(logo_id or "")
+    if not logo:
+        return ""
+    tone = " on-dark" if logo.get("chip") == "dark" else ""
+    return (
+        f'<span class="logo-chip{tone}">'
+        f'<img class="logo" src="{e(logo["src"])}" width="{logo["w"]}" height="{logo["h"]}" alt="" loading="lazy" decoding="async">'
+        "</span>"
+    )
+
+
+def badge_for(assets, url: str):
+    for badge in assets.get("badges") or []:
+        if badge.get("match") and badge["match"] in (url or ""):
+            return badge
+    return None
+
+
+def fmt_cert_date(value: str | None, lang: str) -> str:
+    if not value:
+        return ""
+    if len(value.split("-")) >= 3:
+        return fmt_day(value, lang)
+    return fmt_month(value, lang)
+
+
 def render_hero(bundle, lang, assets) -> str:
     profile = bundle["profile"]
     ready = bool(assets.get("portrait"))
@@ -625,17 +652,35 @@ def render_igor(bundle, lang, assets) -> str:
         f'<section id="igor"><div class="wrap">{h2(CHAPTER["igor"], ui(bundle, lang, "igorTitle"))}'
         f'<p class="lede">{e(ui(bundle, lang, "igorLead"))}</p>'
         f'<div class="film">{"".join(cards)}</div>'
+        f'<h3>{e(ui(bundle, lang, "photoTitle"))}</h3>'
+        f'<p class="lede">{e(ui(bundle, lang, "photoLead"))}</p>'
+        f'<div class="photo-grid">{"".join(render_photo(photo, lang) for photo in assets.get("photos") or [])}</div>'
         "</div></section>"
     )
 
 
-def render_technologies(bundle, lang) -> str:
+def render_photo(photo, lang: str) -> str:
+    return (
+        f'<a class="photo reveal" href="{e(photo["source"])}" rel="noopener noreferrer">'
+        '<span class="photo-frame">'
+        f'<img src="{e(photo["src"])}" width="{photo["w"]}" height="{photo["h"]}" alt="" loading="lazy" decoding="async"'
+        + (f' style="object-position: {e(photo["focus"])}"' if photo.get("focus") else "")
+        + ">"
+        "</span>"
+        f'<span class="photo-caption">{e(text(photo["caption"], lang))}</span>'
+        "</a>"
+    )
+
+
+def render_technologies(bundle, lang, assets) -> str:
     cards = []
     for index, item in enumerate(bundle["chapters"]["technologies"], start=1):
         wide = " tech-card-wide" if index == 1 else ""
+        mark = logo_chip(assets, item.get("logo") or "")
+        art = f'<div class="tech-art tech-mark">{mark}</div>' if mark else f'<div class="tech-art">{GLYPHS[item["id"]]}</div>'
         cards.append(
             f'<article class="tech-card reveal{wide}">'
-            f'<div class="tech-art">{GLYPHS[item["id"]]}</div>'
+            f"{art}"
             f'<p class="index">{index:02d}</p>'
             f'<h3>{e(text(item["name"], lang))}</h3>'
             f'<p>{e(text(item["line"], lang))}</p>'
@@ -650,7 +695,7 @@ def render_technologies(bundle, lang) -> str:
     )
 
 
-def render_world(bundle, lang) -> str:
+def render_world(bundle, lang, assets) -> str:
     primary = []
     secondary = []
     number = 0
@@ -659,6 +704,7 @@ def render_world(bundle, lang) -> str:
         item = resolve_stage(bundle, stage, lang)
         plate = (
             '<article class="plate reveal">'
+            f'{logo_chip(assets, stage.get("logo") or "")}'
             f'<p class="plate-index" aria-hidden="true">{number:02d}</p>'
             f'<h3><a href="{e(item["url"])}" rel="noopener noreferrer">{e(item["name"])}</a></h3>'
             f'<p>{e(item["line"])}</p>'
@@ -699,7 +745,12 @@ def render_home(bundle, lang, assets) -> str:
                 f'<br>{e(text(role["location"], lang))} · {e(text(role["arrangement"], lang))}</p>'
                 "<div>"
                 f'<h4>{e(text(role["title"], lang))}</h4>'
-                f'<p>{e(text(role["summary"], lang))}</p>'
+                f'<p>{e(text(role["summary"], lang))}'
+                + "".join(
+                    f' <a href="{e(link["url"])}" rel="noopener noreferrer">{e(text(link["label"], lang))}</a>'
+                    for link in (role.get("links") or [])
+                )
+                + "</p>"
                 f"{highlight_html}"
                 f'{stack_block(bundle, lang, role.get("technologies") or [])}'
                 "</div></article>"
@@ -794,12 +845,12 @@ def render_home(bundle, lang, assets) -> str:
             "</article>"
         )
     certs = []
-    updated = bundle["site"]["updated"][:7]
+    updated = bundle["site"]["updated"]
     for cert in creds["certifications"]:
-        bits = [f'{e(ui(bundle, lang, "issued"))} {e(fmt_month(cert.get("issued"), lang))}']
+        bits = [f'{e(ui(bundle, lang, "issued"))} {e(fmt_cert_date(cert.get("issued"), lang))}']
         if cert.get("expires"):
             key = "expired" if cert["expires"] < updated else "expires"
-            bits.append(f'{e(ui(bundle, lang, key))} {e(fmt_month(cert["expires"], lang))}')
+            bits.append(f'{e(ui(bundle, lang, key))} {e(fmt_cert_date(cert["expires"], lang))}')
         link = ""
         if cert.get("url"):
             link = f' <a href="{e(cert["url"])}">{e(ui(bundle, lang, "showCredential"))}</a>'
@@ -873,8 +924,8 @@ def render_home(bundle, lang, assets) -> str:
         hero
         + about
         + render_igor(bundle, lang, assets)
-        + render_technologies(bundle, lang)
-        + render_world(bundle, lang)
+        + render_technologies(bundle, lang, assets)
+        + render_world(bundle, lang, assets)
         + experience_html
         + work
         + speaking
@@ -943,14 +994,23 @@ def render_footprint(bundle, lang: str, assets) -> str:
             f'{(" · " + e(when)) if when else ""}</span>'
             "</span></a>"
             f'<p>{e(text(item["summary"], lang))}</p>'
+            f'{links(item.get("links") or [])}'
             "</article>"
         )
     credentials = []
     for item in data["credentials"]:
-        label = seal_label(text(item["title"], lang), item["issuer"])
+        badge = badge_for(assets, item["url"])
+        if badge:
+            mark = (
+                f'<img class="badge-art" src="{e(badge["src"])}" width="{badge["w"]}" height="{badge["h"]}" '
+                'alt="" loading="lazy" decoding="async">'
+            )
+        else:
+            label = seal_label(text(item["title"], lang), item["issuer"])
+            mark = f'<p class="seal-mark" aria-hidden="true">{e(label)}</p>'
         credentials.append(
             '<article class="seal">'
-            f'<p class="seal-mark" aria-hidden="true">{e(label)}</p>'
+            f"{mark}"
             f'<h4>{outbound(item["url"], text(item["title"], lang))}</h4>'
             f'<p class="muted">{e(item["issuer"])}</p>'
             f'<p>{e(text(item["summary"], lang))}</p>'
@@ -1343,6 +1403,9 @@ def build(env: str, out: Path) -> None:
         "motion": write_hashed(SRC / "motion.js", assets_dir),
         "stills": {},
         "portrait": "",
+        "photos": [],
+        "logos": {},
+        "badges": [],
     }
     for still in media.get("stills") or []:
         assets["stills"][still["id"]] = {
@@ -1356,6 +1419,30 @@ def build(env: str, out: Path) -> None:
         assets["portrait_w"] = portrait["width"]
         assets["portrait_h"] = portrait["height"]
         assets["portrait_alt"] = portrait.get("alt") or {}
+    for photo in media.get("photos") or []:
+        assets["photos"].append({
+            "src": write_hashed(ASSETS / photo["file"], assets_dir),
+            "w": photo["width"],
+            "h": photo["height"],
+            "source": photo["source"],
+            "caption": photo["caption"],
+            "alt": photo.get("alt") or {},
+            "focus": photo.get("focus") or "",
+        })
+    for logo in media.get("logos") or []:
+        assets["logos"][logo["id"]] = {
+            "src": write_hashed(ASSETS / logo["file"], assets_dir),
+            "w": logo["width"],
+            "h": logo["height"],
+            "chip": logo.get("chip") or "light",
+        }
+    for badge in media.get("badges") or []:
+        assets["badges"].append({
+            "src": write_hashed(ASSETS / badge["file"], assets_dir),
+            "w": badge["width"],
+            "h": badge["height"],
+            "match": badge.get("match") or "",
+        })
     shutil.copyfile(ASSETS / "favicon.ico", out / "favicon.ico")
     shutil.copyfile(ASSETS / "apple-touch-icon.png", out / "apple-touch-icon.png")
     bundle["_assets"] = assets

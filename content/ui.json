@@ -84,24 +84,32 @@
     "pt-BR": "Este quadro está pronto para uma fotografia de Igor. Até lá, mostra o cartão público com o nome."
   },
   "portraitReadyCaption": {
-    "en": "Igor Agenor Piovezan.",
-    "pt-BR": "Igor Agenor Piovezan."
+    "en": "Photograph from the MongoDB case study, 2020. The page names him Igor Agenor Piovezan.",
+    "pt-BR": "Fotografia do caso da MongoDB, 2020. A página o identifica como Igor Agenor Piovezan."
+  },
+  "photoTitle": {
+    "en": "Photographs",
+    "pt-BR": "Fotografias"
+  },
+  "photoLead": {
+    "en": "Public photographs. Each one links to the page it came from.",
+    "pt-BR": "Fotografias públicas. Cada uma aponta para a página de origem."
   },
   "igorTitle": {
     "en": "In public",
     "pt-BR": "Em público"
   },
   "igorLead": {
-    "en": "Stills from public videos already linked on this site. A studio portrait is not published here yet.",
-    "pt-BR": "Quadros de vídeos públicos já ligados neste site. Um retrato de estúdio ainda não está publicado aqui."
+    "en": "The hero photograph is the MongoDB case study. These are the public talk stills, then the other public photographs.",
+    "pt-BR": "A fotografia do topo é o caso da MongoDB. Aqui estão os quadros das palestras públicas e, em seguida, as outras fotografias públicas."
   },
   "technologiesTitle": {
     "en": "Technologies",
     "pt-BR": "Tecnologias"
   },
   "technologiesLead": {
-    "en": "Five parts of the work already on this site. The roles below keep the full stack.",
-    "pt-BR": "Cinco partes do trabalho que já está neste site. Os cargos abaixo guardam a stack completa."
+    "en": "Five parts of the work already on this site. Marks are the public brands named there, not endorsements. The roles below keep the full stack.",
+    "pt-BR": "Cinco partes do trabalho que já está neste site. Os logotipos são as marcas públicas já citadas no texto, não um endosso. Os cargos abaixo guardam a stack completa."
   },
   "worldTitle": {
     "en": "Organizations",

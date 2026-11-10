@@ -144,6 +144,15 @@
         "DLP",
         "Vulnerability assessment and penetration testing",
         "SOAR"
+      ],
+      "links": [
+        {
+          "url": "https://segware.com/politica-de-privacidade-scond/",
+          "label": {
+            "en": "Segware privacy policy, which names the DPO",
+            "pt-BR": "Política de privacidade da Segware, que nomeia o encarregado"
+          }
+        }
       ]
     },
     {

@@ -104,17 +104,19 @@ def check_prod(out: Path) -> None:
                 if marker not in html:
                     fail(f"{name} missing {marker}")
             media = json.loads((ROOT / "assets" / "media.json").read_text(encoding="utf-8"))
+            disclaimer = (
+                "not endorsements or partner logos"
+                if name == "index.html"
+                else "não endosso nem logos de parceria"
+            )
+            if disclaimer not in html:
+                fail(f"{name} must keep the organizations disclaimer")
             if not media.get("portrait"):
                 expected = "Portrait reserved" if name == "index.html" else "Retrato reservado"
                 if expected not in html:
                     fail(f"{name} must keep the portrait slot caption ({expected})")
-                disclaimer = (
-                    "not endorsements or partner logos"
-                    if name == "index.html"
-                    else "não endosso nem logos de parceria"
-                )
-                if disclaimer not in html:
-                    fail(f"{name} must keep the organizations disclaimer")
+            elif "Portrait reserved" in html or "Retrato reservado" in html:
+                fail(f"{name} still shows the empty portrait slot")
         if "linkedin.com/in/igorpiovezan" not in html or "github.com/igorpiovezan" not in html:
             fail(f"{name} Person sameAs links missing")
         if name == "404.html":

@@ -9,26 +9,367 @@
     "width": 1200,
     "height": 630
   },
-  "portrait": null,
-  "stillSource": "Public YouTube thumbnails for talks already linked on this site. Local optimized copies. Each still links back to its video.",
+  "portrait": {
+    "file": "photos/hero-mongodb.webp",
+    "width": 1586,
+    "height": 1116,
+    "source": "https://images.contentstack.io/v3/assets/blt7151619cb9560896/blt22cfd0a681c3f444/695ed912807c7bcd85d8e6f5/agenor-piovezan-1jgr959wus.png",
+    "page": "https://www.mongodb.com/blog/post/atlas-data-federation-segware-tames-growing-demands-security-companies-affordably",
+    "alt": {
+      "en": "Igor Agenor Piovezan, photographed for the MongoDB Atlas Data Federation case study.",
+      "pt-BR": "Igor Agenor Piovezan, fotografado para o caso Atlas Data Federation da MongoDB."
+    }
+  },
+  "stillSource": "Public YouTube thumbnails for talks already linked on this site.",
   "stills": [
     {
       "id": "wlxcWPRgmYg",
       "file": "stills/wlxcWPRgmYg.webp",
       "width": 1280,
-      "height": 720
+      "height": 720,
+      "source": "https://i.ytimg.com/vi/wlxcWPRgmYg/maxresdefault.jpg"
     },
     {
       "id": "TYpIwKSLiRE",
       "file": "stills/TYpIwKSLiRE.webp",
       "width": 1280,
-      "height": 720
+      "height": 720,
+      "source": "https://i.ytimg.com/vi/TYpIwKSLiRE/maxresdefault.jpg"
     },
     {
       "id": "yrm7_OIMaY8",
       "file": "stills/yrm7_OIMaY8.webp",
       "width": 1280,
-      "height": 720
+      "height": 720,
+      "source": "https://i.ytimg.com/vi/yrm7_OIMaY8/maxresdefault.jpg"
     }
-  ]
+  ],
+  "photos": [
+    {
+      "file": "photos/linkedin_2026-10-08_7514003325734920192_img00.webp",
+      "width": 1086,
+      "height": 1448,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7514003325734920192/",
+      "caption": {
+        "en": "AWS Summit São Paulo 2026, Palco 11.",
+        "pt-BR": "AWS Summit São Paulo 2026, Palco 11."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan beside the Palco 11 board at AWS Summit São Paulo 2026.",
+        "pt-BR": "Igor Agenor Piovezan ao lado do painel do Palco 11 no AWS Summit São Paulo 2026."
+      }
+    },
+    {
+      "file": "photos/linkedin_2026-09-18_7506691148569268224_img00.webp",
+      "width": 720,
+      "height": 1280,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7506691148569268224/",
+      "caption": {
+        "en": "Segware, live on 25 years of electronic security, 2026.",
+        "pt-BR": "Segware, live dos 25 anos de segurança eletrônica, 2026."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan in the Segware video on 25 years of electronic security.",
+        "pt-BR": "Igor Agenor Piovezan no vídeo da Segware sobre 25 anos de segurança eletrônica."
+      }
+    },
+    {
+      "file": "photos/linkedin_2026-09-14_7505067806095290368_img01.webp",
+      "focus": "18% center",
+      "width": 800,
+      "height": 600,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7505067806095290368/",
+      "caption": {
+        "en": "AWS Summit São Paulo 2026, on stage.",
+        "pt-BR": "AWS Summit São Paulo 2026, no palco."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan on stage at AWS Summit São Paulo 2026, with the co-speaker.",
+        "pt-BR": "Igor Agenor Piovezan no palco do AWS Summit São Paulo 2026, com o outro palestrante."
+      }
+    },
+    {
+      "file": "photos/revistasecurity_exposec-2026_segware-booth.webp",
+      "width": 342,
+      "height": 657,
+      "source": "https://revistasecurity.com.br/segware-celebra-25-anos-com-inovacao-em-portaria-remota-e-analitico-de-video-guiados-por-ia/",
+      "caption": {
+        "en": "Exposec 2026, Segware booth. Portal Security Brasil misprints the name as Higor Piovezan.",
+        "pt-BR": "Exposec 2026, estande da Segware. O Portal Security Brasil grafa o nome como Higor Piovezan."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at the Segware booth, Exposec 2026.",
+        "pt-BR": "Igor Agenor Piovezan no estande da Segware, Exposec 2026."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-12-01_7401055259302727680_img00.webp",
+      "width": 864,
+      "height": 1536,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7401055259302727680/",
+      "caption": {
+        "en": "AWS re:Invent 2025, Las Vegas.",
+        "pt-BR": "AWS re:Invent 2025, Las Vegas."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at AWS re:Invent 2025.",
+        "pt-BR": "Igor Agenor Piovezan no AWS re:Invent 2025."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-10-22_7386740789047021568_img00.webp",
+      "width": 1044,
+      "height": 1044,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7386740789047021568/",
+      "caption": {
+        "en": "AWS SaaS Forum, 2025.",
+        "pt-BR": "AWS SaaS Forum, 2025."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at the AWS SaaS Forum in 2025.",
+        "pt-BR": "Igor Agenor Piovezan no AWS SaaS Forum em 2025."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-04-30_7323466181502226432_img00.webp",
+      "width": 800,
+      "height": 851,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7323466181502226432/",
+      "caption": {
+        "en": "ISC West 2025, Las Vegas.",
+        "pt-BR": "ISC West 2025, Las Vegas."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at ISC West 2025.",
+        "pt-BR": "Igor Agenor Piovezan na ISC West 2025."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-03-29_7311692351503052800_img01.webp",
+      "width": 864,
+      "height": 1536,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7311692351503052800/",
+      "caption": {
+        "en": "RealCloud, from the 2025 note on the second half of 2024.",
+        "pt-BR": "RealCloud, da nota de 2025 sobre o segundo semestre de 2024."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan in front of a RealCloud sign.",
+        "pt-BR": "Igor Agenor Piovezan diante de um letreiro da RealCloud."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-03-29_7311692351503052800_img02.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7311692351503052800/",
+      "caption": {
+        "en": "SEG Summit, from the same 2025 note.",
+        "pt-BR": "SEG Summit, da mesma nota de 2025."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at SEG Summit.",
+        "pt-BR": "Igor Agenor Piovezan no SEG Summit."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-03-27_7311088786182959104_img01.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7311088786182959104/",
+      "caption": {
+        "en": "TDC Summit, artificial intelligence, 2025.",
+        "pt-BR": "TDC Summit, inteligência artificial, 2025."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at TDC Summit on artificial intelligence.",
+        "pt-BR": "Igor Agenor Piovezan no TDC Summit de inteligência artificial."
+      }
+    },
+    {
+      "file": "photos/linkedin_2024-10-09_7249759808864604160_img00.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7249759808864604160/",
+      "caption": {
+        "en": "AWS SaaS Forum Brasil 2024.",
+        "pt-BR": "AWS SaaS Forum Brasil 2024."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at AWS SaaS Forum Brasil 2024.",
+        "pt-BR": "Igor Agenor Piovezan no AWS SaaS Forum Brasil 2024."
+      }
+    },
+    {
+      "file": "photos/linkedin_2024-09-28_7245866717376040960_img00.webp",
+      "width": 404,
+      "height": 720,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7245866717376040960/",
+      "caption": {
+        "en": "NetSeg, 2024.",
+        "pt-BR": "NetSeg, 2024."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at a NetSeg microphone in 2024.",
+        "pt-BR": "Igor Agenor Piovezan em um microfone da NetSeg em 2024."
+      }
+    },
+    {
+      "file": "photos/linkedin_2023-11-27_7134804721659260928_img00.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7134804721659260928/",
+      "caption": {
+        "en": "AWS re:Invent 2023, badge pickup.",
+        "pt-BR": "AWS re:Invent 2023, retirada do crachá."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan holding his AWS re:Invent 2023 badge.",
+        "pt-BR": "Igor Agenor Piovezan com o crachá do AWS re:Invent 2023."
+      }
+    },
+    {
+      "file": "photos/linkedin_2019-12-03_6607540272005951488_img00.webp",
+      "width": 800,
+      "height": 1422,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:6607540272005951488/",
+      "caption": {
+        "en": "AWS re:Invent 2019, Las Vegas.",
+        "pt-BR": "AWS re:Invent 2019, Las Vegas."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at AWS re:Invent 2019.",
+        "pt-BR": "Igor Agenor Piovezan no AWS re:Invent 2019."
+      }
+    },
+    {
+      "file": "photos/superme_avatar_large.webp",
+      "width": 800,
+      "height": 800,
+      "source": "https://www.superme.ai/igorpiovezan",
+      "caption": {
+        "en": "Public SuperMe profile photograph.",
+        "pt-BR": "Fotografia pública do perfil no SuperMe."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan, public SuperMe profile photograph.",
+        "pt-BR": "Igor Agenor Piovezan, fotografia pública do perfil no SuperMe."
+      }
+    },
+    {
+      "file": "photos/superme_og-card.webp",
+      "width": 1100,
+      "height": 578,
+      "source": "https://www.superme.ai/igorpiovezan",
+      "caption": {
+        "en": "SuperMe profile card.",
+        "pt-BR": "Cartão do perfil no SuperMe."
+      },
+      "alt": {
+        "en": "SuperMe profile card for Igor Agenor Piovezan.",
+        "pt-BR": "Cartão do perfil no SuperMe de Igor Agenor Piovezan."
+      }
+    }
+  ],
+  "logos": [
+    {
+      "id": "segware",
+      "file": "logos/segware.png",
+      "width": 709,
+      "height": 160,
+      "source": "https://segware.com/wp-content/uploads/2024/06/logo_segware_branco-1024x231.webp",
+      "chip": "dark"
+    },
+    {
+      "id": "aws",
+      "file": "logos/aws.png",
+      "width": 431,
+      "height": 280,
+      "source": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
+      "chip": "light"
+    },
+    {
+      "id": "bedrock",
+      "file": "logos/bedrock.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/Bedrock.png",
+      "chip": "light"
+    },
+    {
+      "id": "mongodb",
+      "file": "logos/mongodb.png",
+      "width": 128,
+      "height": 256,
+      "source": "https://www.mongodb.com/assets/images/global/leaf.png",
+      "chip": "light"
+    },
+    {
+      "id": "realcloud",
+      "file": "logos/realcloud.png",
+      "width": 476,
+      "height": 280,
+      "source": "https://static.wixstatic.com/media/0850fb_90c24e4bf0f74456be27b16cc125c143~mv2.png",
+      "chip": "light"
+    },
+    {
+      "id": "mercedes",
+      "file": "logos/mercedes.png",
+      "width": 240,
+      "height": 240,
+      "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Logo.svg",
+      "chip": "dark"
+    },
+    {
+      "id": "mit",
+      "file": "logos/mit.png",
+      "width": 315,
+      "height": 66,
+      "source": "https://api.accredible.com/v1/frontend/credential_opengraph_seo_image/84339697",
+      "chip": "light"
+    },
+    {
+      "id": "ifsc",
+      "file": "logos/ifsc.svg",
+      "width": 356,
+      "height": 100,
+      "source": "https://commons.wikimedia.org/wiki/File:Instituto_Federal_de_Santa_Catarina_-_Marca_Horizontal_2015.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ace",
+      "file": "logos/ace.png",
+      "width": 430,
+      "height": 150,
+      "source": "https://www.aceenglishmalta.com/wp-content/uploads/2018/09/ace-logo-1x-white.webp",
+      "chip": "dark"
+    }
+  ],
+  "badges": [
+    {
+      "id": "aws-database",
+      "file": "badges/aws-database.webp",
+      "width": 480,
+      "height": 480,
+      "source": "https://images.credly.com/images/885d38e4-55c0-4c35-b4ed-694e2b26be6c/image.png",
+      "match": "2e9b834e-0d50-4543-af3a-1e5b232c81af"
+    },
+    {
+      "id": "mongodb-dba",
+      "file": "badges/mongodb-dba.webp",
+      "width": 480,
+      "height": 480,
+      "source": "https://images.credly.com/images/395e38b5-2a2e-49aa-9416-df8f5619399d/image.png",
+      "match": "51674310-5aaf-4d09-be08-756d43b29b7c"
+    },
+    {
+      "id": "mit",
+      "file": "badges/mit-certificate.webp",
+      "width": 891,
+      "height": 629,
+      "source": "https://api.accredible.com/v1/frontend/credential_opengraph_seo_image/84339697",
+      "match": "credential.net/9a542380"
+    }
+  ],
+  "logoNote": "Marks are career context for organizations and technologies already named on the site. They are not endorsements, partnerships, or a sponsor wall. Dale Carnegie has no logo here because an official file could not be fetched."
 }

@@ -1,6 +1,19 @@
 {
   "press": [
     {
+      "outlet": "Portal Security Brasil",
+      "date": "2026-06-02",
+      "url": "https://revistasecurity.com.br/segware-celebra-25-anos-com-inovacao-em-portaria-remota-e-analitico-de-video-guiados-por-ia/",
+      "title": {
+        "en": "Segware at Exposec 2026, on remote concierge and video analytics",
+        "pt-BR": "Segware na Exposec 2026, sobre portaria remota e analítico de vídeo"
+      },
+      "summary": {
+        "en": "Portal Security Brasil quotes the CTO on Segware Access Concierge and video analytics. The article misprints his name as Higor Piovezan. The booth photograph is in the public gallery.",
+        "pt-BR": "O Portal Security Brasil cita o CTO sobre o Segware Access Concierge e o analítico de vídeo. A matéria grafa o nome como Higor Piovezan. A fotografia do estande está na galeria pública."
+      }
+    },
+    {
       "outlet": "TI Inside",
       "date": "2025-07-31",
       "url": "https://tiinside.com.br/31/07/2025/segware-reduz-tempo-de-resposta-em-50-com-ia-generativa/",
@@ -80,7 +93,7 @@
     },
     {
       "outlet": "MongoDB",
-      "date": "2020",
+      "date": "2020-06-16",
       "url": "https://www.mongodb.com/blog/post/atlas-data-federation-segware-tames-growing-demands-security-companies-affordably",
       "title": {
         "en": "Atlas Data Federation at Segware",
@@ -103,18 +116,34 @@
       "summary": {
         "en": "Igor Agenor Piovezan, CTO at Segware, on generative AI for alarm monitoring centers, with Silvio Pereira and Leandro Marinho.",
         "pt-BR": "Igor Agenor Piovezan, CTO da Segware, sobre IA generativa em centrais de monitoramento, com Silvio Pereira e Leandro Marinho."
-      }
+      },
+      "links": [
+        {
+          "url": "https://www.realcloud.ai/post/podcast-real-cloud-talks-ep-05-segware-o-futuro-da-seguran%C3%A7a-com-genai",
+          "label": {
+            "en": "RealCloud post",
+            "pt-BR": "Post da RealCloud"
+          }
+        },
+        {
+          "url": "https://open.spotify.com/episode/1XiBrnKsGErwulcyObUFAg",
+          "label": {
+            "en": "Spotify",
+            "pt-BR": "Spotify"
+          }
+        }
+      ]
     },
     {
-      "date": "2025",
+      "date": "2026-07-21",
       "url": "https://www.youtube.com/watch?v=TYpIwKSLiRE",
       "title": {
         "en": "25 years of electronic security: AI, automation, and monitoring centers",
         "pt-BR": "25 anos de segurança eletrônica: IA, automações e centrais"
       },
       "summary": {
-        "en": "Segware company video on 25 years of electronic security, AI, automation, and monitoring centers.",
-        "pt-BR": "Vídeo da Segware sobre 25 anos de segurança eletrônica, IA, automações e centrais de monitoramento."
+        "en": "Segware company video on 25 years of electronic security, AI, automation, and monitoring centers. YouTube lists the publish date as 21 July 2026. The video description names him Diretor de Produto.",
+        "pt-BR": "Vídeo da Segware sobre 25 anos de segurança eletrônica, IA, automações e centrais de monitoramento. O YouTube registra a publicação em 21 de julho de 2026. A descrição do vídeo o cita como diretor de produto."
       }
     },
     {
@@ -133,14 +162,14 @@
   "credentials": [
     {
       "issuer": "Credly",
-      "url": "https://www.credly.com/badges/fa6e47ec-b1df-42da-8736-344ea4649612",
+      "url": "https://www.credly.com/badges/2e9b834e-0d50-4543-af3a-1e5b232c81af",
       "title": {
         "en": "AWS Certified Database – Specialty",
         "pt-BR": "AWS Certified Database – Specialty"
       },
       "summary": {
-        "en": "Public badge, issued November 2023.",
-        "pt-BR": "Badge público, emitido em novembro de 2023."
+        "en": "Public badge, issued 11 November 2023, expires 11 November 2026.",
+        "pt-BR": "Badge público, emitido em 11 de novembro de 2023, expira em 11 de novembro de 2026."
       }
     },
     {
@@ -148,11 +177,11 @@
       "url": "https://www.credential.net/9a542380-c45f-4ab4-8151-e451e2fa5443",
       "title": {
         "en": "Technology Management: Roadmap & Development",
-        "pt-BR": "Technology Management: Roadmap & Development"
+        "pt-BR": "Gestão da Tecnologia: Roadmap & Development"
       },
       "summary": {
-        "en": "Public certificate, issued October 2023.",
-        "pt-BR": "Certificado público, emitido em outubro de 2023."
+        "en": "Public certificate, issued 14 October 2023. No expiry is shown.",
+        "pt-BR": "Certificado público, emitido em 14 de outubro de 2023. Não há data de expiração."
       }
     },
     {
@@ -163,8 +192,8 @@
         "pt-BR": "MongoDB Certified DBA Associate"
       },
       "summary": {
-        "en": "Public badge for C100DBA, issued March 2021.",
-        "pt-BR": "Badge público do C100DBA, emitido em março de 2021."
+        "en": "Public badge for C100DBA, issued 22 March 2021. No expiry is shown.",
+        "pt-BR": "Badge público do C100DBA, emitido em 22 de março de 2021. Não há data de expiração."
       }
     }
   ],

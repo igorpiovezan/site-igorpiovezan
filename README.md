@@ -67,25 +67,11 @@ Production canonical host is `https://igorpiovezan.com`. Point the here.now prim
 
 Binary files under `/assets/` are content-hashed because here.now caches that path for an hour.
 
-## Portrait and stills
+## Portrait, photographs, and marks
 
-There is no photograph of Igor in the repository. The hero frame shows the public nameplate and says the frame is reserved. Talk stills are optimized copies of public YouTube thumbnails for videos already linked on the site. They are context for those videos, not a portrait session.
+The hero portrait is the public MongoDB case-study photograph, captioned on that page as Igor Agenor Piovezan. The other public photographs are in the gallery under In public. Talk stills are optimized copies of the YouTube thumbnails for videos already linked on the site.
 
-To drop in a photograph Igor supplies, add the file and point `portrait` at it in `assets/media.json`:
-
-```json
-"portrait": {
-  "file": "portrait.webp",
-  "width": 1200,
-  "height": 1500,
-  "alt": {
-    "en": "Photograph of Igor Agenor Piovezan.",
-    "pt-BR": "Fotografia de Igor Agenor Piovezan."
-  }
-}
-```
-
-Use a picture you have rights to. Do not generate a face. While `portrait` is null, `scripts/check_site.py` expects the reserved caption. Organization names in the visual chapter are context, not endorsements or partner logos.
+Logos and badge artwork are career context, not endorsements or partner lockups. Every file’s source URL is in `assets/media.json`. Dale Carnegie stays typographic: an official mark could not be fetched. Do not generate a face. If `portrait` is set, `scripts/check_site.py` rejects the old “portrait reserved” caption.
 
 `content/chapters.json` is the visual layer. Its lines restate facts already in the career files. Do not add a claim there that the biography does not already make.
 

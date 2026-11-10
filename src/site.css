@@ -545,6 +545,80 @@ summary {
 
 .tech-art svg { display: block; width: 100%; height: auto; }
 
+.tech-art.tech-mark {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.logo-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  max-width: 100%;
+  padding: 0.4rem 0.55rem;
+  background: #fff;
+  border-radius: 0.35rem;
+}
+
+.logo-chip.on-dark { background: #10211e; }
+
+.logo {
+  display: block;
+  height: 2.35rem;
+  width: auto;
+  max-width: 11rem;
+  object-fit: contain;
+}
+
+.plate .logo-chip { align-self: flex-start; }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.photo {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.photo-frame {
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #10211e;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.photo-caption {
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.badge-art {
+  display: block;
+  width: 7.25rem;
+  height: auto;
+  margin: 0 0 0.75rem;
+  background: #fff;
+}
+
+.portrait.is-photo .portrait-img { object-position: center 22%; }
+
 .plate-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -858,6 +932,7 @@ summary {
   .work-grid,
   .seal-row,
   .tech-grid { grid-template-columns: 1fr; }
+  .photo-grid { grid-template-columns: 1fr 1fr; }
   .tech-card-wide { grid-column: auto; }
   .video-facade.has-still { flex-direction: column; }
   .video-facade.has-still .still-media { width: 100%; }
