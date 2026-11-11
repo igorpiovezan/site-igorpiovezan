@@ -84,24 +84,24 @@
     "pt-BR": "Este quadro está pronto para uma fotografia de Igor. Até lá, mostra o cartão público com o nome."
   },
   "portraitReadyCaption": {
-    "en": "Igor Agenor Piovezan. Portrait provided on 10 November 2026.",
-    "pt-BR": "Igor Agenor Piovezan. Retrato enviado em 10 de novembro de 2026."
+    "en": "Photo taken for speaker display at AWS Summit São Paulo.",
+    "pt-BR": "Foto tirada para exibição do speaker no AWS Summit São Paulo."
   },
   "photoTitle": {
     "en": "Photographs",
     "pt-BR": "Fotografias"
   },
   "photoLead": {
-    "en": "The first is the portrait Igor provided. The others are public photographs, and each of those links to the page it came from.",
-    "pt-BR": "A primeira é o retrato que Igor enviou. As outras são fotografias públicas, e cada uma aponta para a página de origem."
+    "en": "The first was taken for speaker display at AWS Summit São Paulo. The others are public photographs, and each of those links to the page it came from.",
+    "pt-BR": "A primeira foi tirada para exibição do speaker no AWS Summit São Paulo. As outras são fotografias públicas, e cada uma aponta para a página de origem."
   },
   "igorTitle": {
     "en": "In public",
     "pt-BR": "Em público"
   },
   "igorLead": {
-    "en": "The portrait at the top is the one Igor provided. Below are public talk stills, then the other photographs, including the MongoDB case study.",
-    "pt-BR": "O retrato do topo é o que Igor enviou. Abaixo, os quadros das palestras públicas e as outras fotografias, inclusive o caso da MongoDB."
+    "en": "The portrait at the top was taken for speaker display at AWS Summit São Paulo. Below are public talk stills, then the other photographs, including the MongoDB case study.",
+    "pt-BR": "O retrato do topo foi tirado para exibição do speaker no AWS Summit São Paulo. Abaixo, os quadros das palestras públicas e as outras fotografias, inclusive o caso da MongoDB."
   },
   "technologiesTitle": {
     "en": "Technologies",
