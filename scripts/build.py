@@ -664,8 +664,6 @@ def render_hero(bundle, lang, assets) -> str:
         f'<a href="{e(bundle["site"]["linkedin"])}">LinkedIn</a>'
         f'<a href="{e(bundle["site"]["github"])}">GitHub</a>'
         f'<a href="#igor">{e(ui(bundle, lang, "publicStills"))}</a>'
-        '<button type="button" class="replay">'
-        f'{e(ui(bundle, lang, "replayEntrance"))}</button>'
         "</p></div>"
         f'<figure class="{frame}">'
         '<div class="portrait-frame">'
@@ -678,6 +676,8 @@ def render_hero(bundle, lang, assets) -> str:
         '<div class="wrap hero-context">'
         f'<p class="mark-note">{e(ui(bundle, lang, "markNote"))}</p>'
         f'{mark_row(assets, HERO_MARKS, "hero-marks")}'
+        '<button type="button" class="replay">'
+        f'{e(ui(bundle, lang, "replayEntrance"))}</button>'
         "</div></section>"
     )
 

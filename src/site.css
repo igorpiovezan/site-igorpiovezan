@@ -700,18 +700,27 @@ summary {
 
 .replay {
   display: none;
+  margin: 0.85rem 0 0;
+  padding: 0.2rem 0.15rem;
   min-height: 44px;
   align-items: center;
-  padding: 0.35rem 0.8rem;
-  border: 1px solid rgba(226, 181, 106, 0.75);
+  border: 0;
   background: transparent;
-  color: #e2b56a;
+  color: rgba(221, 212, 196, 0.48);
   font: inherit;
-  font-size: 0.92rem;
-  letter-spacing: 0.02em;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
 }
 
 html.has-motion .replay { display: inline-flex; }
+
+.replay:hover { color: rgba(246, 241, 231, 0.82); }
+
+.replay:focus-visible {
+  color: #f6f1e7;
+  outline: 3px solid #0b57d0;
+  outline-offset: 3px;
+}
 
 .plate .logo-chip { align-self: flex-start; }
 
