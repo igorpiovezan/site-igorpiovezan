@@ -553,16 +553,29 @@ def validate_chapters(chapters: dict) -> None:
             require_locale(stage.get("line"), stage.get("id") or "stage")
 
 
-def logo_chip(assets, logo_id: str) -> str:
+def logo_chip(assets, logo_id: str, labeled: bool = False) -> str:
     logo = (assets.get("logos") or {}).get(logo_id or "")
     if not logo:
         return ""
     tone = " on-dark" if logo.get("chip") == "dark" else ""
+    alt = "" if labeled else (logo.get("name") or "")
+    name = f'<span class="mark-name">{e(logo["name"])}</span>' if labeled and logo.get("name") else ""
     return (
         f'<span class="logo-chip{tone}">'
-        f'<img class="logo" src="{e(logo["src"])}" width="{logo["w"]}" height="{logo["h"]}" alt="" loading="lazy" decoding="async">'
-        "</span>"
+        f'<img class="logo" src="{e(logo["src"])}" width="{logo["w"]}" height="{logo["h"]}" alt="{e(alt)}" loading="lazy" decoding="async">'
+        f"{name}</span>"
     )
+
+
+def mark_row(assets, ids, class_name: str) -> str:
+    chips = [logo_chip(assets, logo_id, labeled=True) for logo_id in ids or []]
+    chips = [chip for chip in chips if chip]
+    if not chips:
+        return ""
+    return f'<div class="{class_name}">{"".join(chips)}</div>'
+
+
+HERO_MARKS = ("aws", "mongodb", "docker", "kubernetes", "python", "terraform", "grafana", "rust")
 
 
 def badge_for(assets, url: str):
@@ -618,6 +631,8 @@ def render_hero(bundle, lang, assets) -> str:
         f'<a href="{e(bundle["site"]["linkedin"])}">LinkedIn</a>'
         f'<a href="{e(bundle["site"]["github"])}">GitHub</a>'
         f'<a href="#igor">{e(ui(bundle, lang, "publicStills"))}</a>'
+        '<button type="button" class="replay">'
+        f'{e(ui(bundle, lang, "replayEntrance"))}</button>'
         "</p></div>"
         f'<figure class="{frame}">'
         '<div class="portrait-frame">'
@@ -626,6 +641,10 @@ def render_hero(bundle, lang, assets) -> str:
         f"<figcaption>{kicker}{e(caption)}</figcaption>"
         "</figure>"
         f'<ul class="proof" aria-label="{e(ui(bundle, lang, "impactTitle"))}">{stats}</ul>'
+        "</div>"
+        '<div class="wrap hero-context">'
+        f'<p class="mark-note">{e(ui(bundle, lang, "markNote"))}</p>'
+        f'{mark_row(assets, HERO_MARKS, "hero-marks")}'
         "</div></section>"
     )
 
@@ -685,20 +704,30 @@ def render_technologies(bundle, lang, assets) -> str:
     cards = []
     for index, item in enumerate(bundle["chapters"]["technologies"], start=1):
         wide = " tech-card-wide" if index == 1 else ""
-        mark = logo_chip(assets, item.get("logo") or "")
-        art = f'<div class="tech-art tech-mark">{mark}</div>' if mark else f'<div class="tech-art">{GLYPHS[item["id"]]}</div>'
+        marks = item.get("marks") or []
+        if marks:
+            art = ""
+            extra = mark_row(assets, marks, "tech-marks")
+            wide += " has-marks"
+        else:
+            mark = logo_chip(assets, item.get("logo") or "")
+            art = f'<div class="tech-art tech-mark">{mark}</div>' if mark else f'<div class="tech-art">{GLYPHS[item["id"]]}</div>'
+            extra = ""
         cards.append(
             f'<article class="tech-card reveal{wide}">'
             f"{art}"
             f'<p class="index">{index:02d}</p>'
             f'<h3>{e(text(item["name"], lang))}</h3>'
             f'<p>{e(text(item["line"], lang))}</p>'
+            f"{extra}"
             "</article>"
         )
+    field = mark_row(assets, bundle["chapters"].get("field") or [], "mark-field")
     return (
         f'<section class="band" id="technologies"><div class="wrap">'
         f'{h2(CHAPTER["technologies"], ui(bundle, lang, "technologiesTitle"))}'
         f'<p class="lede reveal">{e(ui(bundle, lang, "technologiesLead"))}</p>'
+        f"{field}"
         f'<div class="tech-grid">{"".join(cards)}</div>'
         "</div></section>"
     )
@@ -1444,6 +1473,7 @@ def build(env: str, out: Path) -> None:
             "w": logo["width"],
             "h": logo["height"],
             "chip": logo.get("chip") or "light",
+            "name": logo.get("name") or "",
         }
     for badge in media.get("badges") or []:
         assets["badges"].append({

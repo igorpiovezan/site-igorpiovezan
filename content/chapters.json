@@ -22,7 +22,12 @@
         "en": "AI-native platforms for 100+ engineers. Agents connected to cloud, repositories, CI/CD, observability, ticketing, and internal systems. Multi-model review on pull requests.",
         "pt-BR": "Plataformas AI-native para mais de 100 engenheiros. Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados e sistemas internos. Revisão multimodelo em pull requests."
       },
-      "logo": "bedrock"
+      "logo": "bedrock",
+      "marks": [
+        "anthropic",
+        "cursor",
+        "bedrock"
+      ]
     },
     {
       "id": "cloud",
@@ -33,7 +38,17 @@
       "line": {
         "en": "More than 15 years in technology, from full-stack developer to CTO. FinOps on the same scorecard. Cost is an engineering metric.",
         "pt-BR": "Mais de 15 anos em tecnologia, de desenvolvedor full-stack a CTO. FinOps no mesmo painel. Custo é métrica de engenharia."
-      }
+      },
+      "marks": [
+        "docker",
+        "kubernetes",
+        "terraform",
+        "grafana",
+        "prometheus",
+        "googlecloud",
+        "azure",
+        "nginx"
+      ]
     },
     {
       "id": "iot",
@@ -56,7 +71,14 @@
         "en": "MongoDB Certified DBA. Atlas Data Federation for event data at scale. Predictive models trained on billions of events.",
         "pt-BR": "MongoDB Certified DBA. Atlas Data Federation para eventos em escala. Modelos preditivos treinados em bilhões de eventos."
       },
-      "logo": "mongodb"
+      "logo": "mongodb",
+      "marks": [
+        "mongodb",
+        "mysql",
+        "postgresql",
+        "redis",
+        "apachespark"
+      ]
     }
   ],
   "stages": [
@@ -147,5 +169,35 @@
         "pt-BR": "Entrevista com Igor Piovezan, da Segware, na ISC Brasil 2024."
       }
     }
+  ],
+  "field": [
+    "aws",
+    "mongodb",
+    "docker",
+    "kubernetes",
+    "terraform",
+    "ansible",
+    "jenkins",
+    "grafana",
+    "prometheus",
+    "googlecloud",
+    "azure",
+    "python",
+    "go",
+    "rust",
+    "typescript",
+    "nodedotjs",
+    "react",
+    "php",
+    "linux",
+    "nginx",
+    "apache",
+    "mysql",
+    "postgresql",
+    "redis",
+    "git",
+    "apachespark",
+    "anthropic",
+    "cursor"
   ]
 }

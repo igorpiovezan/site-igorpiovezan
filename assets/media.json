@@ -308,7 +308,8 @@
       "width": 709,
       "height": 160,
       "source": "https://segware.com/wp-content/uploads/2024/06/logo_segware_branco-1024x231.webp",
-      "chip": "dark"
+      "chip": "dark",
+      "name": "Segware"
     },
     {
       "id": "aws",
@@ -316,7 +317,8 @@
       "width": 431,
       "height": 280,
       "source": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
-      "chip": "light"
+      "chip": "light",
+      "name": "AWS"
     },
     {
       "id": "bedrock",
@@ -324,7 +326,8 @@
       "width": 64,
       "height": 64,
       "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/Bedrock.png",
-      "chip": "light"
+      "chip": "light",
+      "name": "Amazon Bedrock"
     },
     {
       "id": "mongodb",
@@ -332,7 +335,8 @@
       "width": 128,
       "height": 256,
       "source": "https://www.mongodb.com/assets/images/global/leaf.png",
-      "chip": "light"
+      "chip": "light",
+      "name": "MongoDB"
     },
     {
       "id": "realcloud",
@@ -340,7 +344,8 @@
       "width": 476,
       "height": 280,
       "source": "https://static.wixstatic.com/media/0850fb_90c24e4bf0f74456be27b16cc125c143~mv2.png",
-      "chip": "light"
+      "chip": "light",
+      "name": "RealCloud"
     },
     {
       "id": "mercedes",
@@ -348,7 +353,8 @@
       "width": 240,
       "height": 240,
       "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Logo.svg",
-      "chip": "dark"
+      "chip": "dark",
+      "name": "Mercedes-Benz"
     },
     {
       "id": "mit",
@@ -356,7 +362,8 @@
       "width": 315,
       "height": 66,
       "source": "https://api.accredible.com/v1/frontend/credential_opengraph_seo_image/84339697",
-      "chip": "light"
+      "chip": "light",
+      "name": "MIT"
     },
     {
       "id": "ifsc",
@@ -364,7 +371,8 @@
       "width": 356,
       "height": 100,
       "source": "https://commons.wikimedia.org/wiki/File:Instituto_Federal_de_Santa_Catarina_-_Marca_Horizontal_2015.svg",
-      "chip": "light"
+      "chip": "light",
+      "name": "IFSC"
     },
     {
       "id": "ace",
@@ -372,7 +380,242 @@
       "width": 430,
       "height": 150,
       "source": "https://www.aceenglishmalta.com/wp-content/uploads/2018/09/ace-logo-1x-white.webp",
-      "chip": "dark"
+      "chip": "dark",
+      "name": "ACE English"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "file": "logos/marks/docker.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/docker.svg",
+      "chip": "light"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "file": "logos/marks/kubernetes.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/kubernetes.svg",
+      "chip": "light"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "file": "logos/marks/terraform.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/terraform.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "file": "logos/marks/ansible.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/ansible.svg",
+      "chip": "light"
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "file": "logos/marks/jenkins.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/jenkins.svg",
+      "chip": "light"
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "file": "logos/marks/grafana.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/grafana.svg",
+      "chip": "light"
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "file": "logos/marks/prometheus.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/prometheus.svg",
+      "chip": "light"
+    },
+    {
+      "id": "googlecloud",
+      "name": "Google Cloud",
+      "file": "logos/marks/googlecloud.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/googlecloud.svg",
+      "chip": "light"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "file": "logos/marks/python.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/python.svg",
+      "chip": "light"
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "file": "logos/marks/go.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/go.svg",
+      "chip": "light"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "file": "logos/marks/rust.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/rust.svg",
+      "chip": "light"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "file": "logos/marks/typescript.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/typescript.svg",
+      "chip": "light"
+    },
+    {
+      "id": "nodedotjs",
+      "name": "Node.js",
+      "file": "logos/marks/nodedotjs.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/nodedotjs.svg",
+      "chip": "light"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "file": "logos/marks/react.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/react.svg",
+      "chip": "light"
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "file": "logos/marks/php.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/php.svg",
+      "chip": "light"
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "file": "logos/marks/linux.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/linux.svg",
+      "chip": "light"
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "file": "logos/marks/nginx.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/nginx.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apache",
+      "name": "Apache",
+      "file": "logos/marks/apache.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apache.svg",
+      "chip": "light"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "file": "logos/marks/mysql.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/mysql.svg",
+      "chip": "light"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "file": "logos/marks/postgresql.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/postgresql.svg",
+      "chip": "light"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "file": "logos/marks/redis.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/redis.svg",
+      "chip": "light"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "file": "logos/marks/git.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/git.svg",
+      "chip": "light"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "file": "logos/marks/anthropic.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/anthropic.svg",
+      "chip": "light"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "file": "logos/marks/cursor.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/cursor.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachespark",
+      "name": "Apache Spark",
+      "file": "logos/marks/apachespark.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachespark.svg",
+      "chip": "light"
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "file": "logos/marks/azure.svg",
+      "width": 96,
+      "height": 96,
+      "source": "https://commons.wikimedia.org/wiki/File:Microsoft_Azure.svg",
+      "chip": "light"
     }
   ],
   "badges": [
@@ -401,5 +644,5 @@
       "match": "credential.net/9a542380"
     }
   ],
-  "logoNote": "Marks are career context for organizations and technologies already named on the site. They are not endorsements, partnerships, or a sponsor wall. Dale Carnegie has no logo here because an official file could not be fetched."
+  "logoNote": "Marks are career context for organizations and technologies already named on the site. They are not endorsements, partnerships, or a sponsor wall. Dale Carnegie has no logo here because an official file could not be fetched. Technology marks are the public brand shapes for tools named in the experience record: Simple Icons 16.37.0 (CC0) and the Azure mark from Wikimedia Commons (public domain)."
 }
