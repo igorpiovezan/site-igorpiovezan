@@ -1912,6 +1912,96 @@
       "height": 24,
       "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/zend.svg",
       "chip": "light"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "file": "logos/marks/openai.svg",
+      "width": 1180,
+      "height": 320,
+      "source": "https://commons.wikimedia.org/wiki/File:OpenAI_Logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "file": "logos/marks/oracle.svg",
+      "width": 231,
+      "height": 30,
+      "source": "https://commons.wikimedia.org/wiki/File:Oracle_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ibm",
+      "name": "IBM",
+      "file": "logos/marks/ibm.svg",
+      "width": 1075,
+      "height": 401,
+      "source": "https://commons.wikimedia.org/wiki/File:IBM_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "file": "logos/marks/windows.svg",
+      "width": 4875,
+      "height": 4875,
+      "source": "https://commons.wikimedia.org/wiki/File:Windows_logo_-_2021.svg",
+      "chip": "light"
+    },
+    {
+      "id": "excel",
+      "name": "Microsoft Excel",
+      "file": "logos/marks/excel.svg",
+      "width": 165,
+      "height": 156,
+      "source": "https://commons.wikimedia.org/wiki/File:Microsoft_Excel_2013-2019_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "photoshop",
+      "name": "Adobe Photoshop",
+      "file": "logos/marks/photoshop.svg",
+      "width": 240,
+      "height": 234,
+      "source": "https://commons.wikimedia.org/wiki/File:Adobe_Photoshop_CC_icon.svg",
+      "chip": "light"
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "file": "logos/marks/redux.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/redux.svg",
+      "chip": "light"
+    },
+    {
+      "id": "expo",
+      "name": "Expo",
+      "file": "logos/marks/expo.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/expo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "file": "logos/marks/c.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/c.svg",
+      "chip": "light"
+    },
+    {
+      "id": "rancher",
+      "name": "Rancher",
+      "file": "logos/marks/rancher.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/rancher.svg",
+      "chip": "light"
     }
   ],
   "badges": [

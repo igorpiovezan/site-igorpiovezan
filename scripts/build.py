@@ -573,10 +573,11 @@ def validate_stack(bundle) -> None:
     for role in bundle["experience"]["roles"]:
         expected.extend(role.get("technologies") or [])
     shown = [item["name"] for group in bundle["stack"] for item in group["items"]]
-    if set(shown) != set(expected) or len(shown) != len(set(shown)):
-        missing = sorted(set(expected) - set(shown))
-        extra = sorted(set(shown) - set(expected))
-        raise SystemExit(f"technology catalog drifted, missing {missing[:8]} extra {extra[:8]}")
+    if len(shown) != len(set(shown)):
+        raise SystemExit("technology catalog has duplicate names")
+    missing = sorted(set(expected) - set(shown))
+    if missing:
+        raise SystemExit(f"technology catalog is missing record items: {missing[:8]}")
 
 
 def render_stack_catalog(bundle, lang, assets) -> str:

@@ -64,6 +64,10 @@
       {
         "name": "Bash",
         "logo": "gnubash"
+      },
+      {
+        "name": "C",
+        "logo": "c"
       }
     ]
   },
@@ -244,6 +248,14 @@
       {
         "name": "Apache Cordova",
         "logo": "apachecordova"
+      },
+      {
+        "name": "Redux.js",
+        "logo": "redux"
+      },
+      {
+        "name": "Expo",
+        "logo": "expo"
       }
     ]
   },
@@ -392,7 +404,8 @@
         "name": "SQL Server"
       },
       {
-        "name": "Oracle"
+        "name": "Oracle",
+        "logo": "oracle"
       },
       {
         "name": "SQLite",
@@ -442,6 +455,17 @@
       },
       {
         "name": "SQL"
+      },
+      {
+        "name": "MapReduce",
+        "logo": "apachehadoop"
+      },
+      {
+        "name": "Data Lakes"
+      },
+      {
+        "name": "Spark Streaming",
+        "logo": "apachespark"
       }
     ]
   },
@@ -716,7 +740,8 @@
         "name": "OCI"
       },
       {
-        "name": "IBM Cloud"
+        "name": "IBM Cloud",
+        "logo": "ibm"
       },
       {
         "name": "Managed Grafana",
@@ -804,7 +829,8 @@
         "name": "Elastix"
       },
       {
-        "name": "Windows Server"
+        "name": "Windows Server",
+        "logo": "windows"
       },
       {
         "name": "BIND9"
@@ -816,11 +842,35 @@
         "name": "Roundcube"
       },
       {
-        "name": "Windows"
+        "name": "Windows",
+        "logo": "windows"
       },
       {
         "name": "Linux",
         "logo": "linux"
+      },
+      {
+        "name": "Rancher",
+        "logo": "rancher"
+      },
+      {
+        "name": "Containers"
+      },
+      {
+        "name": "Cloud Computing"
+      },
+      {
+        "name": "Multi-Cloud"
+      },
+      {
+        "name": "PaaS"
+      },
+      {
+        "name": "Microsoft Excel",
+        "logo": "excel"
+      },
+      {
+        "name": "Networking"
       }
     ]
   },
@@ -953,6 +1003,39 @@
       {
         "name": "OpenVPN",
         "logo": "openvpn"
+      },
+      {
+        "name": "Information Security"
+      },
+      {
+        "name": "Cybersecurity"
+      },
+      {
+        "name": "Cloud Security"
+      },
+      {
+        "name": "Application Security"
+      },
+      {
+        "name": "Security Architecture"
+      },
+      {
+        "name": "Data Protection"
+      },
+      {
+        "name": "Compliance"
+      },
+      {
+        "name": "Identity and Access Management"
+      },
+      {
+        "name": "Electronic Security"
+      },
+      {
+        "name": "Access Control"
+      },
+      {
+        "name": "Firewalls"
       }
     ]
   },
@@ -971,7 +1054,8 @@
         "logo": "cursor"
       },
       {
-        "name": "OpenAI (ChatGPT, Codex, API)"
+        "name": "OpenAI (ChatGPT, Codex, API)",
+        "logo": "openai"
       },
       {
         "name": "Anthropic (Claude, Claude Code, API)",
@@ -1044,6 +1128,30 @@
       {
         "name": "Rekognition",
         "logo": "aws-rekognition"
+      },
+      {
+        "name": "Machine Learning"
+      },
+      {
+        "name": "Deep Learning"
+      },
+      {
+        "name": "Large Language Models"
+      },
+      {
+        "name": "MLOps"
+      },
+      {
+        "name": "Computer Vision"
+      },
+      {
+        "name": "Natural Language Processing"
+      },
+      {
+        "name": "Agentic AI"
+      },
+      {
+        "name": "Multi-Agent Systems"
       }
     ]
   },
@@ -1198,11 +1306,180 @@
         "name": "Responsive design"
       },
       {
-        "name": "Adobe Photoshop"
+        "name": "Adobe Photoshop",
+        "logo": "photoshop"
       },
       {
         "name": "CorelDRAW",
         "logo": "coreldraw"
+      },
+      {
+        "name": "Technology Management"
+      },
+      {
+        "name": "Engineering Management"
+      },
+      {
+        "name": "Technical Leadership"
+      },
+      {
+        "name": "Engineering Leadership"
+      },
+      {
+        "name": "Strategic Planning"
+      },
+      {
+        "name": "Product Management"
+      },
+      {
+        "name": "Project Management"
+      },
+      {
+        "name": "People Management"
+      },
+      {
+        "name": "Team Building"
+      },
+      {
+        "name": "Mentoring"
+      },
+      {
+        "name": "Talent Development"
+      },
+      {
+        "name": "Stakeholder Management"
+      },
+      {
+        "name": "Executive Communication"
+      },
+      {
+        "name": "Decision Making"
+      },
+      {
+        "name": "Critical Thinking"
+      },
+      {
+        "name": "Problem Solving"
+      },
+      {
+        "name": "Negotiation"
+      },
+      {
+        "name": "Roadmapping"
+      },
+      {
+        "name": "Financial Operations"
+      },
+      {
+        "name": "Cost Optimization"
+      },
+      {
+        "name": "Cloud Financial Management"
+      },
+      {
+        "name": "Budget Management"
+      },
+      {
+        "name": "Vendor Management"
+      },
+      {
+        "name": "Contract Negotiation"
+      },
+      {
+        "name": "Leadership"
+      },
+      {
+        "name": "Technical Vision"
+      },
+      {
+        "name": "Financial Analysis"
+      },
+      {
+        "name": "High Throughput"
+      },
+      {
+        "name": "SDLC"
+      },
+      {
+        "name": "Software Architecture"
+      },
+      {
+        "name": "System Architecture"
+      },
+      {
+        "name": "Enterprise Architecture"
+      },
+      {
+        "name": "Cloud Architecture"
+      },
+      {
+        "name": "System Design"
+      },
+      {
+        "name": "Distributed Systems"
+      },
+      {
+        "name": "Event-Driven Architecture"
+      },
+      {
+        "name": "Platform Engineering"
+      },
+      {
+        "name": "Site Reliability Engineering"
+      },
+      {
+        "name": "SRE"
+      },
+      {
+        "name": "Infrastructure as Code"
+      },
+      {
+        "name": "Observability"
+      },
+      {
+        "name": "Monitoring"
+      },
+      {
+        "name": "Incident Response"
+      },
+      {
+        "name": "High Availability"
+      },
+      {
+        "name": "Software Development"
+      },
+      {
+        "name": "Full-Stack Development"
+      },
+      {
+        "name": "Backend Development"
+      },
+      {
+        "name": "API Design"
+      },
+      {
+        "name": "Automation"
+      },
+      {
+        "name": "Video Streaming"
+      },
+      {
+        "name": "VoIP"
+      },
+      {
+        "name": "PropTech"
+      },
+      {
+        "name": "Smart Buildings"
+      },
+      {
+        "name": "Telecommunications"
+      },
+      {
+        "name": "Computer Networks"
+      },
+      {
+        "name": "Overclocking"
       }
     ]
   }
