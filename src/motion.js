@@ -182,8 +182,11 @@
       host = next;
       face = host.classList.contains("portrait-frame");
       quiet = host.matches(".portrait-frame, .photo-frame, .still-media") ? 1 : 0;
-      canvas.classList.toggle("is-over", host.matches(".photo-frame, .still-media, .portrait-frame"));
+      var media = host.matches(".photo-frame, .still-media, .portrait-frame");
+      var light = host.matches(".logo-chip:not(.on-dark), .chips li, .tagline li, .plate, .press-card, .cover, .school, .cert, .honor, .note, .talk, .quote, .seal, .role, .company, .timeline li, summary");
+      canvas.classList.toggle("is-over", media);
       canvas.classList.toggle("is-face", face);
+      canvas.classList.toggle("is-light", !media && light);
       host.appendChild(canvas);
       var box = host.getBoundingClientRect();
       var enter = local(box, clientX, clientY);
@@ -513,10 +516,31 @@
     var ry = 0;
     var hot = false;
     var glass = createGlass();
-    var surfaces = ".tech-card, .plate, .work-card, .press-card, .cover, .photo-frame, .still-media, .portrait-frame";
-    var hotSelector = ".tech-card, .plate, .work-card, .press-card, .cover, .photo, .still, a, button, .portrait, .logo-chip, summary";
+    var items = ".logo-chip, .chips li, .tagline li, .proof li, .tech-card, .plate, .work-card, .press-card, .cover, .honor, .school, .cert, .seal, .note, .talk, .role, .company, .timeline li, .quote, .photo-frame, .still-media, .portrait-frame, .replay, button, .hero-actions a, summary";
     var running = false;
     var lastNow = 0;
+    var pulled = null;
+
+    function setPull(el, x, y) {
+      if (pulled && pulled !== el) {
+        pulled.style.removeProperty("--pull-x");
+        pulled.style.removeProperty("--pull-y");
+        pulled.classList.remove("is-pulled");
+        pulled = null;
+      }
+      if (!el || el.classList.contains("portrait-frame")) return;
+      var box = el.getBoundingClientRect();
+      if (!box.width || !box.height) return;
+      var dx = x - (box.left + box.width / 2);
+      var dy = y - (box.top + box.height / 2);
+      var dist = Math.hypot(dx, dy) || 1;
+      var limit = Math.min(6, Math.max(box.width, box.height) * 0.06);
+      var force = Math.min(limit, dist * 0.12);
+      el.style.setProperty("--pull-x", (dx / dist * force).toFixed(2) + "px");
+      el.style.setProperty("--pull-y", (dy / dist * force).toFixed(2) + "px");
+      el.classList.add("is-pulled");
+      pulled = el;
+    }
 
     document.addEventListener("pointermove", function (event) {
       if (event.pointerType === "touch") return;
@@ -524,14 +548,14 @@
       ty = event.clientY;
       cursor.classList.add("is-on");
       root.classList.add("cursor-on");
-      var target = event.target && event.target.closest ? event.target.closest(hotSelector) : null;
-      var nextHot = !!target;
+      var surface = event.target && event.target.closest ? event.target.closest(items) : null;
+      var nextHot = !!surface;
       if (nextHot !== hot) {
         hot = nextHot;
         root.classList.toggle("is-hot", hot);
       }
-      var surface = event.target && event.target.closest ? event.target.closest(surfaces) : null;
       glass.place(surface, event.clientX, event.clientY);
+      setPull(surface, event.clientX, event.clientY);
       kick();
       if (!host) return;
       var heroBox = host.getBoundingClientRect();
@@ -555,28 +579,13 @@
           frame.style.setProperty("--tilt-y", (px * 4).toFixed(2) + "deg");
         }
       }
-      var links = host.querySelectorAll(".hero-actions a");
-      for (var n = 0; n < links.length; n++) {
-        var link = links[n];
-        var linkBox = link.getBoundingClientRect();
-        var dx = event.clientX - (linkBox.left + linkBox.width / 2);
-        var dy = event.clientY - (linkBox.top + linkBox.height / 2);
-        var dist = Math.hypot(dx, dy);
-        if (!dist || dist > 96) {
-          link.style.removeProperty("--pull-x");
-          link.style.removeProperty("--pull-y");
-          continue;
-        }
-        var force = (1 - dist / 96) * 9;
-        link.style.setProperty("--pull-x", (dx / dist * force).toFixed(2) + "px");
-        link.style.setProperty("--pull-y", (dy / dist * force).toFixed(2) + "px");
-      }
     });
 
     document.documentElement.addEventListener("mouseleave", function () {
       cursor.classList.remove("is-on");
       root.classList.remove("cursor-on");
       glass.leave();
+      setPull(null, 0, 0);
       kick();
     });
 
