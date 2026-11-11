@@ -484,7 +484,7 @@ GLYPHS = {
 
 
 def h2(number: str, label: str) -> str:
-    return f'<h2><span class="chap-no" aria-hidden="true">{e(number)}</span>{e(label)}</h2>'
+    return f'<h2 class="reveal"><span class="chap-no" aria-hidden="true">{e(number)}</span>{e(label)}</h2>'
 
 
 def youtube_id(url: str) -> str:

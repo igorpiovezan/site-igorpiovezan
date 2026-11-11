@@ -267,6 +267,7 @@ h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.4rem); }
 }
 
 .portrait-frame {
+  position: relative;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -942,43 +943,184 @@ figure.photo { margin: 0; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  @keyframes rise {
-    from { opacity: 0; transform: translateY(12px); }
+  @keyframes brow {
+    from { opacity: 0; letter-spacing: 0.42em; }
+    to { opacity: 1; letter-spacing: 0.14em; }
+  }
+
+  @keyframes line-in {
+    from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translateY(10px); }
+    to { opacity: 1; clip-path: inset(0); transform: none; }
+  }
+
+  @keyframes settle {
+    from { opacity: 0; transform: translateY(18px); }
     to { opacity: 1; transform: none; }
   }
 
-  .hero-copy > * {
-    animation: rise 0.8s var(--ease) both;
+  @keyframes veil {
+    from { transform: scaleY(1); }
+    to { transform: scaleY(0); }
   }
 
-  .hero-copy > *:nth-child(1) { animation-delay: 0.05s; }
-  .hero-copy > *:nth-child(2) { animation-delay: 0.12s; }
-  .hero-copy > *:nth-child(3) { animation-delay: 0.18s; }
-  .hero-copy > *:nth-child(4) { animation-delay: 0.24s; }
-  .hero-copy > *:nth-child(5) { animation-delay: 0.3s; }
+  @keyframes sheen {
+    from { transform: translateX(-130%); }
+    to { transform: translateX(130%); }
+  }
 
-  .proof {
-    animation: rise 0.8s var(--ease) 0.34s both;
+  @keyframes frame-in {
+    from { border-color: transparent; }
+    to { border-color: rgba(226, 181, 106, 0.72); }
+  }
+
+  @keyframes drift {
+    from { transform: translateY(0); }
+    to { transform: translateY(16px); }
+  }
+
+  @keyframes grow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+
+  .hero .kicker {
+    animation: brow 0.9s var(--ease) both;
+  }
+
+  .hero .name-line {
+    animation: line-in 0.9s var(--ease) both;
+  }
+
+  .hero .name-line:first-child { animation-delay: 0.16s; }
+  .hero .name-line:last-child { animation-delay: 0.34s; }
+
+  .hero .headline {
+    animation: settle 1s var(--ease) 0.52s both;
+  }
+
+  .hero .lede {
+    animation: settle 0.8s var(--ease) 0.78s both;
+  }
+
+  .hero-actions {
+    animation: settle 0.7s var(--ease) 0.9s both;
+  }
+
+  .hero-actions a {
+    transition: color 0.35s var(--ease);
+  }
+
+  .hero-actions a:hover,
+  .hero-actions a:focus-visible { color: #e2b56a; }
+
+  .proof strong,
+  .proof span {
+    animation: settle 0.65s var(--ease) both;
+  }
+
+  .proof li:nth-child(1) strong,
+  .proof li:nth-child(1) span { animation-delay: 1.02s; }
+  .proof li:nth-child(2) strong,
+  .proof li:nth-child(2) span { animation-delay: 1.12s; }
+  .proof li:nth-child(3) strong,
+  .proof li:nth-child(3) span { animation-delay: 1.22s; }
+  .proof li:nth-child(4) strong,
+  .proof li:nth-child(4) span { animation-delay: 1.32s; }
+
+  .portrait.is-photo {
+    animation: frame-in 1.15s var(--ease) 0.2s both;
+  }
+
+  .portrait.is-photo .portrait-frame::before,
+  .portrait.is-photo .portrait-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .portrait.is-photo .portrait-frame::before {
+    z-index: 1;
+    background: #0e1c19;
+    transform-origin: center bottom;
+    animation: veil 1.05s var(--ease) 0.22s both;
+  }
+
+  .portrait.is-photo .portrait-frame::after {
+    z-index: 2;
+    background: linear-gradient(115deg, transparent 38%, rgba(226, 181, 106, 0.22) 50%, transparent 62%);
+    animation: sheen 1.15s var(--ease) 0.85s both;
+  }
+
+  @media (min-width: 900px) {
+    @supports (animation-timeline: scroll(root)) {
+      .portrait.is-photo .portrait-frame {
+        animation: drift auto linear;
+        animation-timeline: scroll(root);
+        animation-range: 0 42vh;
+      }
+    }
   }
 
   html.reveal-ready .reveal {
     opacity: 1;
     transform: none;
-    transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+    transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    transition-delay: var(--reveal-delay, 0ms);
   }
 
   html.reveal-ready .reveal:not(.is-in) {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(22px);
   }
 
+  html.reveal-ready .photo:not(.is-in) .photo-frame img,
+  html.reveal-ready .still:not(.is-in) .still-media img {
+    transform: scale(1.06);
+  }
+
+  .photo-frame img,
   .still-media img {
-    transition: transform 600ms var(--ease);
+    transition: transform 1s var(--ease);
   }
 
-  .still:hover img,
-  .still:focus-visible img {
-    transform: scale(1.03);
+  .photo:hover .photo-frame img,
+  .photo:focus-visible .photo-frame img,
+  .still:hover .still-media img,
+  .still:focus-visible .still-media img {
+    transform: scale(1.045);
+  }
+
+  .photo-frame,
+  .still-media,
+  .plate,
+  .tech-card,
+  .work-card,
+  .press-card,
+  .cover,
+  .logo-chip {
+    transition: border-color 0.45s var(--ease), background-color 0.45s var(--ease), transform 0.45s var(--ease);
+  }
+
+  .plate:hover,
+  .plate:focus-within,
+  .tech-card:hover,
+  .work-card:hover,
+  .press-card:hover,
+  .cover:hover {
+    border-color: rgba(226, 181, 106, 0.8);
+  }
+
+  .logo-chip:hover { transform: scale(1.04); }
+
+  html.reveal-ready .plate:not(.is-in) .logo,
+  html.reveal-ready .tech-card:not(.is-in) .logo {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  .logo {
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
   }
 
   @supports (animation-timeline: scroll(root)) {
@@ -986,11 +1128,6 @@ figure.photo { margin: 0; }
       animation: grow linear both;
       animation-timeline: scroll(root);
     }
-  }
-
-  @keyframes grow {
-    from { transform: scaleX(0); }
-    to { transform: scaleX(1); }
   }
 }
 
