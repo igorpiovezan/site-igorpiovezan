@@ -487,6 +487,7 @@ summary {
 }
 
 .band {
+  position: relative;
   background: #10211e;
   color: var(--cream);
 }
@@ -1548,6 +1549,52 @@ figure.photo { margin: 0; }
 
   html.has-pointer .photo:hover .photo-frame::after,
   html.has-pointer .still:hover .still-media::after { opacity: 1; }
+
+  .hero:has(.depth),
+  .band:has(.depth) { isolation: isolate; }
+
+  .depth {
+    position: absolute;
+    z-index: -1;
+    left: 46%;
+    top: 42%;
+    width: min(68vmin, 40rem);
+    height: min(68vmin, 40rem);
+    pointer-events: none;
+    perspective: 1600px;
+    transform: translate(-50%, -48%);
+  }
+
+  .band .depth {
+    left: 62%;
+    top: 46%;
+  }
+
+  .depth-cube {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    animation: tumble 76s linear infinite;
+  }
+
+  .depth-cube span {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(226, 181, 106, 0.2);
+    background: linear-gradient(155deg, rgba(226, 181, 106, 0.05), transparent 58%);
+  }
+
+  .depth-cube span:nth-child(1) { transform: translateZ(calc(min(68vmin, 40rem) / 2)); }
+  .depth-cube span:nth-child(2) { transform: rotateY(180deg) translateZ(calc(min(68vmin, 40rem) / 2)); }
+  .depth-cube span:nth-child(3) { transform: rotateY(90deg) translateZ(calc(min(68vmin, 40rem) / 2)); }
+  .depth-cube span:nth-child(4) { transform: rotateY(-90deg) translateZ(calc(min(68vmin, 40rem) / 2)); }
+  .depth-cube span:nth-child(5) { transform: rotateX(90deg) translateZ(calc(min(68vmin, 40rem) / 2)); }
+  .depth-cube span:nth-child(6) { transform: rotateX(-90deg) translateZ(calc(min(68vmin, 40rem) / 2)); }
+
+  @keyframes tumble {
+    from { transform: rotateX(-20deg) rotateY(16deg); }
+    to { transform: rotateX(340deg) rotateY(376deg); }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1556,10 +1603,11 @@ figure.photo { margin: 0; }
     transition: none !important;
     scroll-behavior: auto !important;
   }
+  .depth { display: none !important; }
 }
 
 @media print {
-  .site-header, .consent, .skip, .progress, .play, .hero::before, .cursor, .star, .replay { display: none !important; }
+  .site-header, .consent, .skip, .progress, .play, .hero::before, .cursor, .star, .replay, .depth { display: none !important; }
   body { background: #fff; color: #000; }
   .tagline li, .age {
     background: #fff;

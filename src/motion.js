@@ -19,6 +19,7 @@
     setupSky(hero);
     setupReplay(hero);
   }
+  setupDepth();
   if (fine) setupPointer(hero);
 
   function setupReveal() {
@@ -60,6 +61,26 @@
     }
 
     document.documentElement.classList.add("reveal-ready");
+  }
+
+  function setupDepth() {
+    var hosts = document.querySelectorAll(".hero, .band");
+    var cubes = [];
+    for (var i = 0; i < hosts.length; i++) {
+      var depth = document.createElement("div");
+      depth.className = "depth";
+      depth.setAttribute("aria-hidden", "true");
+      var cube = document.createElement("div");
+      cube.className = "depth-cube";
+      for (var face = 0; face < 6; face++) cube.appendChild(document.createElement("span"));
+      depth.appendChild(cube);
+      hosts[i].appendChild(depth);
+      cubes.push(cube);
+    }
+    document.addEventListener("visibilitychange", function () {
+      var state = document.hidden ? "paused" : "running";
+      for (var c = 0; c < cubes.length; c++) cubes[c].style.animationPlayState = state;
+    });
   }
 
   function spawnStar(host) {
