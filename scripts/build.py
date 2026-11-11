@@ -650,10 +650,10 @@ def render_igor(bundle, lang, assets) -> str:
         )
     return (
         f'<section id="igor"><div class="wrap">{h2(CHAPTER["igor"], ui(bundle, lang, "igorTitle"))}'
-        f'<p class="lede">{e(ui(bundle, lang, "igorLead"))}</p>'
+        f'<p class="lede reveal">{e(ui(bundle, lang, "igorLead"))}</p>'
         f'<div class="film">{"".join(cards)}</div>'
         f'<h3>{e(ui(bundle, lang, "photoTitle"))}</h3>'
-        f'<p class="lede">{e(ui(bundle, lang, "photoLead"))}</p>'
+        f'<p class="lede reveal">{e(ui(bundle, lang, "photoLead"))}</p>'
         f'<div class="photo-grid">{"".join(render_photo(photo, lang) for photo in assets.get("photos") or [])}</div>'
         "</div></section>"
     )
@@ -698,7 +698,7 @@ def render_technologies(bundle, lang, assets) -> str:
     return (
         f'<section class="band" id="technologies"><div class="wrap">'
         f'{h2(CHAPTER["technologies"], ui(bundle, lang, "technologiesTitle"))}'
-        f'<p class="lede">{e(ui(bundle, lang, "technologiesLead"))}</p>'
+        f'<p class="lede reveal">{e(ui(bundle, lang, "technologiesLead"))}</p>'
         f'<div class="tech-grid">{"".join(cards)}</div>'
         "</div></section>"
     )
@@ -725,7 +725,7 @@ def render_world(bundle, lang, assets) -> str:
             secondary.append(plate)
     return (
         f'<section id="world"><div class="wrap">{h2(CHAPTER["world"], ui(bundle, lang, "worldTitle"))}'
-        f'<p class="lede">{e(ui(bundle, lang, "worldLead"))}</p>'
+        f'<p class="lede reveal">{e(ui(bundle, lang, "worldLead"))}</p>'
         f'<div class="plate-grid">{"".join(primary)}</div>'
         f'<h3>{e(ui(bundle, lang, "alsoOnRecord"))}</h3>'
         f'<div class="plate-grid plate-grid-secondary">{"".join(secondary)}</div>'
@@ -795,7 +795,7 @@ def render_home(bundle, lang, assets) -> str:
         f'<section class="band" id="work"><div class="wrap">{h2(CHAPTER["work"], ui(bundle, lang, "workTitle"))}'
         f'<h3>{e(text(project["name"], lang))}</h3>'
         f'<p class="muted">{e(fmt_range(project["start"], project["end"], lang, ui(bundle, lang, "present")))} · {e(project["associated"])}</p>'
-        f'<p class="lede">{e(text(project["summary"], lang))}</p>'
+        f'<p class="lede reveal">{e(text(project["summary"], lang))}</p>'
         f'<div class="work-grid">{"".join(work_cards)}</div>'
         "</div></section>"
     )
@@ -1048,7 +1048,7 @@ def render_footprint(bundle, lang: str, assets) -> str:
         )
     return (
         f'<section id="footprint"><div class="wrap">{h2(CHAPTER["footprint"], ui(bundle, lang, "navFootprint"))}'
-        f'<p class="lede">{e(ui(bundle, lang, "footprintLead"))}</p>'
+        f'<p class="lede reveal">{e(ui(bundle, lang, "footprintLead"))}</p>'
         f'<h3 id="press">{e(ui(bundle, lang, "pressTitle"))}</h3>'
         + f'<div class="card-grid">{"".join(press)}</div>'
         + f'<h3 id="talks">{e(ui(bundle, lang, "talksTitle"))}</h3>'

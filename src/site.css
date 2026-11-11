@@ -142,10 +142,26 @@ main h3 {
 .lang { display: flex; gap: 0.6rem; align-items: center; }
 
 .hero {
+  position: relative;
+  overflow: clip;
   background: var(--forest);
   color: var(--cream);
   padding: 2.4rem 0 2.8rem;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 46rem;
+  height: 46rem;
+  right: -14rem;
+  top: -24rem;
+  background: radial-gradient(circle, rgba(226, 181, 106, 0.16), transparent 68%);
+  pointer-events: none;
+}
+
+.hero .wrap { position: relative; z-index: 1; }
 
 .hero-layout {
   display: grid;
@@ -321,6 +337,7 @@ h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.4rem); }
 }
 
 .proof li {
+  position: relative;
   margin: 0;
   padding: 0.95rem 0.85rem 1rem;
   background: var(--forest);
@@ -632,6 +649,7 @@ figure.photo { margin: 0; }
 .plate-grid + h3 { margin-top: 2.4rem; }
 
 .plate {
+  position: relative;
   min-height: 15.5rem;
   padding: 1.15rem 1.15rem 1.25rem;
   display: flex;
@@ -675,6 +693,7 @@ figure.photo { margin: 0; }
 .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 .work-card {
+  position: relative;
   padding: 1.15rem 1.15rem 1.25rem;
   border: 1px solid rgba(226, 181, 106, 0.38);
   background: rgba(246, 241, 231, 0.03);
@@ -691,6 +710,7 @@ figure.photo { margin: 0; }
 
 .press-card,
 .cover {
+  position: relative;
   margin: 0;
   padding: 1.15rem 1.15rem 1.25rem;
   background: var(--card);
@@ -975,7 +995,7 @@ figure.photo { margin: 0; }
 
   @keyframes drift {
     from { transform: translateY(0); }
-    to { transform: translateY(16px); }
+    to { transform: translateY(-18px); }
   }
 
   @keyframes grow {
@@ -983,8 +1003,49 @@ figure.photo { margin: 0; }
     to { transform: scaleX(1); }
   }
 
+  @keyframes figure {
+    from { opacity: 0; clip-path: inset(100% 0 0 0); transform: translateY(14px); }
+    to { opacity: 1; clip-path: inset(0); transform: none; }
+  }
+
+  @keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes atmosphere {
+    from { opacity: 0; transform: translate3d(18px, 16px, 0); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @keyframes halo {
+    0% { box-shadow: 0 0 0 0 rgba(226, 181, 106, 0); }
+    42% { box-shadow: 0 0 36px 0 rgba(226, 181, 106, 0.28); }
+    100% { box-shadow: 0 22px 40px -28px rgba(0, 0, 0, 0.55); }
+  }
+
+  @keyframes pass {
+    from { transform: translateY(12px); }
+    to { transform: translateY(-12px); }
+  }
+
+  .hero::before {
+    animation: atmosphere 1.6s var(--ease) 0.05s both;
+  }
+
   .hero .kicker {
     animation: brow 0.9s var(--ease) both;
+  }
+
+  .hero .kicker::after {
+    content: "";
+    display: block;
+    width: 2.75rem;
+    height: 1px;
+    margin-top: 0.65rem;
+    background: #e2b56a;
+    transform-origin: 0 50%;
+    animation: grow 0.75s var(--ease) 0.42s both;
   }
 
   .hero .name-line {
@@ -1002,21 +1063,23 @@ figure.photo { margin: 0; }
     animation: settle 0.8s var(--ease) 0.78s both;
   }
 
-  .hero-actions {
-    animation: settle 0.7s var(--ease) 0.9s both;
-  }
-
   .hero-actions a {
+    animation: settle 0.65s var(--ease) both;
     transition: color 0.35s var(--ease);
   }
+
+  .hero-actions a:nth-child(1) { animation-delay: 0.9s; }
+  .hero-actions a:nth-child(2) { animation-delay: 1.02s; }
+  .hero-actions a:nth-child(3) { animation-delay: 1.14s; }
 
   .hero-actions a:hover,
   .hero-actions a:focus-visible { color: #e2b56a; }
 
-  .proof strong,
-  .proof span {
-    animation: settle 0.65s var(--ease) both;
-  }
+  .proof { animation: appear 0.45s var(--ease) 0.96s both; }
+
+  .proof strong { animation: figure 0.85s var(--ease) both; }
+
+  .proof span { animation: settle 0.65s var(--ease) both; }
 
   .proof li:nth-child(1) strong,
   .proof li:nth-child(1) span { animation-delay: 1.02s; }
@@ -1027,8 +1090,25 @@ figure.photo { margin: 0; }
   .proof li:nth-child(4) strong,
   .proof li:nth-child(4) span { animation-delay: 1.32s; }
 
+  .proof li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e2b56a;
+    transform-origin: 0 50%;
+    animation: grow 0.7s var(--ease) both;
+  }
+
+  .proof li:nth-child(1)::after { animation-delay: 1.02s; }
+  .proof li:nth-child(2)::after { animation-delay: 1.12s; }
+  .proof li:nth-child(3)::after { animation-delay: 1.22s; }
+  .proof li:nth-child(4)::after { animation-delay: 1.32s; }
+
   .portrait.is-photo {
-    animation: frame-in 1.15s var(--ease) 0.2s both;
+    animation: frame-in 1.15s var(--ease) 0.2s both, halo 1.8s var(--ease) 0.85s both;
   }
 
   .portrait.is-photo .portrait-frame::before,
@@ -1060,6 +1140,15 @@ figure.photo { margin: 0; }
         animation-range: 0 42vh;
       }
     }
+
+    @supports (animation-timeline: view()) {
+      .photo-frame,
+      .still-media {
+        animation: pass linear both;
+        animation-timeline: view();
+        animation-range: cover 12% cover 88%;
+      }
+    }
   }
 
   html.reveal-ready .reveal {
@@ -1069,10 +1158,36 @@ figure.photo { margin: 0; }
     transition-delay: var(--reveal-delay, 0ms);
   }
 
+  html.reveal-ready .reveal.is-in:hover,
+  html.reveal-ready .reveal.is-in:focus-within {
+    transition-delay: 0ms;
+    transition-duration: 0.45s;
+  }
+
   html.reveal-ready .reveal:not(.is-in) {
     opacity: 0;
-    transform: translateY(22px);
+    transform: translateY(28px);
   }
+
+  h2.reveal::after {
+    content: "";
+    display: block;
+    width: 3.4rem;
+    height: 1px;
+    margin-top: 0.75rem;
+    background: var(--brass);
+    transform-origin: 0 50%;
+    transform: scaleX(1);
+  }
+
+  .band h2.reveal::after { background: #e2b56a; }
+
+  html.reveal-ready h2.reveal::after {
+    transition: transform 0.9s var(--ease);
+    transition-delay: calc(var(--reveal-delay, 0ms) + 120ms);
+  }
+
+  html.reveal-ready h2.reveal:not(.is-in)::after { transform: scaleX(0); }
 
   html.reveal-ready .photo:not(.is-in) .photo-frame img,
   html.reveal-ready .still:not(.is-in) .still-media img {
@@ -1091,8 +1206,6 @@ figure.photo { margin: 0; }
     transform: scale(1.045);
   }
 
-  .photo-frame,
-  .still-media,
   .plate,
   .tech-card,
   .work-card,
@@ -1102,16 +1215,64 @@ figure.photo { margin: 0; }
     transition: border-color 0.45s var(--ease), background-color 0.45s var(--ease), transform 0.45s var(--ease);
   }
 
+  .tech-card,
+  .plate,
+  .work-card,
+  .press-card,
+  .cover { z-index: 0; }
+
+  .tech-card::before,
+  .plate::before,
+  .work-card::before,
+  .press-card::before,
+  .cover::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: radial-gradient(28rem 12rem at 0% 0%, rgba(226, 181, 106, 0.18), transparent 62%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.55s var(--ease);
+  }
+
   .plate:hover,
   .plate:focus-within,
   .tech-card:hover,
+  .tech-card:focus-within,
   .work-card:hover,
+  .work-card:focus-within,
   .press-card:hover,
-  .cover:hover {
+  .press-card:focus-within,
+  .cover:hover,
+  .cover:focus-within {
     border-color: rgba(226, 181, 106, 0.8);
+    transform: translateY(-3px);
   }
 
-  .logo-chip:hover { transform: scale(1.04); }
+  .plate:hover::before,
+  .plate:focus-within::before,
+  .tech-card:hover::before,
+  .tech-card:focus-within::before,
+  .work-card:hover::before,
+  .work-card:focus-within::before,
+  .press-card:hover::before,
+  .press-card:focus-within::before,
+  .cover:hover::before,
+  .cover:focus-within::before { opacity: 1; }
+
+  .tech-art {
+    transition: opacity 0.6s var(--ease), transform 0.7s var(--ease);
+  }
+
+  .tech-card:hover .tech-art,
+  .tech-card:focus-within .tech-art {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+
+  .logo-chip:hover,
+  .logo-chip:focus-within { transform: scale(1.04); }
 
   html.reveal-ready .plate:not(.is-in) .logo,
   html.reveal-ready .tech-card:not(.is-in) .logo {
@@ -1140,7 +1301,7 @@ figure.photo { margin: 0; }
 }
 
 @media print {
-  .site-header, .consent, .skip, .progress, .play { display: none !important; }
+  .site-header, .consent, .skip, .progress, .play, .hero::before { display: none !important; }
   body { background: #fff; color: #000; }
   .tagline li, .age {
     background: #fff;
