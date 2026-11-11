@@ -617,7 +617,9 @@ summary {
   background: #fff;
 }
 
-.portrait.is-photo .portrait-img { object-position: center 22%; }
+.portrait.is-photo .portrait-img { object-position: center center; }
+
+figure.photo { margin: 0; }
 
 .plate-grid {
   display: grid;

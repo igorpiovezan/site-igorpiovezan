@@ -660,15 +660,24 @@ def render_igor(bundle, lang, assets) -> str:
 
 
 def render_photo(photo, lang: str) -> str:
+    focus = f' style="object-position: {e(photo["focus"])}"' if photo.get("focus") else ""
+    source = photo.get("source") or ""
+    linked = source.startswith("http://") or source.startswith("https://")
+    alt = "" if linked else text(photo.get("alt") or {}, lang)
+    image = (
+        f'<img src="{e(photo["src"])}" width="{photo["w"]}" height="{photo["h"]}" alt="{e(alt)}" '
+        f'loading="lazy" decoding="async"{focus}>'
+    )
+    frame = f'<span class="photo-frame">{image}</span>'
+    caption = e(text(photo["caption"], lang))
+    if linked:
+        return (
+            f'<a class="photo reveal" href="{e(source)}" rel="noopener noreferrer">'
+            f"{frame}<span class=\"photo-caption\">{caption}</span></a>"
+        )
     return (
-        f'<a class="photo reveal" href="{e(photo["source"])}" rel="noopener noreferrer">'
-        '<span class="photo-frame">'
-        f'<img src="{e(photo["src"])}" width="{photo["w"]}" height="{photo["h"]}" alt="" loading="lazy" decoding="async"'
-        + (f' style="object-position: {e(photo["focus"])}"' if photo.get("focus") else "")
-        + ">"
-        "</span>"
-        f'<span class="photo-caption">{e(text(photo["caption"], lang))}</span>'
-        "</a>"
+        f'<figure class="photo reveal">{frame}'
+        f'<figcaption class="photo-caption">{caption}</figcaption></figure>'
     )
 
 

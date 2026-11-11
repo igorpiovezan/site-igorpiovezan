@@ -84,24 +84,24 @@
     "pt-BR": "Este quadro está pronto para uma fotografia de Igor. Até lá, mostra o cartão público com o nome."
   },
   "portraitReadyCaption": {
-    "en": "Photograph from the MongoDB case study, 2020. The page names him Igor Agenor Piovezan.",
-    "pt-BR": "Fotografia do caso da MongoDB, 2020. A página o identifica como Igor Agenor Piovezan."
+    "en": "Igor Agenor Piovezan. Portrait provided on 10 November 2026.",
+    "pt-BR": "Igor Agenor Piovezan. Retrato enviado em 10 de novembro de 2026."
   },
   "photoTitle": {
     "en": "Photographs",
     "pt-BR": "Fotografias"
   },
   "photoLead": {
-    "en": "Public photographs. Each one links to the page it came from.",
-    "pt-BR": "Fotografias públicas. Cada uma aponta para a página de origem."
+    "en": "The first is the portrait Igor provided. The others are public photographs, and each of those links to the page it came from.",
+    "pt-BR": "A primeira é o retrato que Igor enviou. As outras são fotografias públicas, e cada uma aponta para a página de origem."
   },
   "igorTitle": {
     "en": "In public",
     "pt-BR": "Em público"
   },
   "igorLead": {
-    "en": "The hero photograph is the MongoDB case study. These are the public talk stills, then the other public photographs.",
-    "pt-BR": "A fotografia do topo é o caso da MongoDB. Aqui estão os quadros das palestras públicas e, em seguida, as outras fotografias públicas."
+    "en": "The portrait at the top is the one Igor provided. Below are public talk stills, then the other photographs, including the MongoDB case study.",
+    "pt-BR": "O retrato do topo é o que Igor enviou. Abaixo, os quadros das palestras públicas e as outras fotografias, inclusive o caso da MongoDB."
   },
   "technologiesTitle": {
     "en": "Technologies",

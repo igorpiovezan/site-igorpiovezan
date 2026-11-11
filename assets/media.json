@@ -10,14 +10,14 @@
     "height": 630
   },
   "portrait": {
-    "file": "photos/hero-mongodb.webp",
-    "width": 1586,
-    "height": 1116,
-    "source": "https://images.contentstack.io/v3/assets/blt7151619cb9560896/blt22cfd0a681c3f444/695ed912807c7bcd85d8e6f5/agenor-piovezan-1jgr959wus.png",
-    "page": "https://www.mongodb.com/blog/post/atlas-data-federation-segware-tames-growing-demands-security-companies-affordably",
+    "file": "photos/igor-1.webp",
+    "width": 1221,
+    "height": 1296,
+    "original": "photos/igor-1.png",
+    "source": "Provided by Igor Agenor Piovezan on 2026-11-10. Original filename igor-1.png (Pictures folder, dated 28 Aug 2026).",
     "alt": {
-      "en": "Igor Agenor Piovezan, photographed for the MongoDB Atlas Data Federation case study.",
-      "pt-BR": "Igor Agenor Piovezan, fotografado para o caso Atlas Data Federation da MongoDB."
+      "en": "Igor Agenor Piovezan.",
+      "pt-BR": "Igor Agenor Piovezan."
     }
   },
   "stillSource": "Public YouTube thumbnails for talks already linked on this site.",
@@ -45,6 +45,36 @@
     }
   ],
   "photos": [
+    {
+      "file": "photos/igor-1.webp",
+      "width": 1221,
+      "height": 1296,
+      "source": "Provided by Igor Agenor Piovezan on 2026-11-10. Original filename igor-1.png (Pictures folder, dated 28 Aug 2026).",
+      "focus": "center center",
+      "caption": {
+        "en": "Igor Agenor Piovezan. Portrait provided on 10 November 2026.",
+        "pt-BR": "Igor Agenor Piovezan. Retrato enviado em 10 de novembro de 2026."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan.",
+        "pt-BR": "Igor Agenor Piovezan."
+      }
+    },
+    {
+      "file": "photos/hero-mongodb.webp",
+      "width": 1586,
+      "height": 1116,
+      "source": "https://www.mongodb.com/blog/post/atlas-data-federation-segware-tames-growing-demands-security-companies-affordably",
+      "focus": "center center",
+      "caption": {
+        "en": "Igor Agenor Piovezan. Photograph from the MongoDB case study, 2020.",
+        "pt-BR": "Igor Agenor Piovezan. Fotografia do caso da MongoDB, 2020."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan, photographed for the MongoDB Atlas Data Federation case study.",
+        "pt-BR": "Igor Agenor Piovezan, fotografado para o caso Atlas Data Federation da MongoDB."
+      }
+    },
     {
       "file": "photos/linkedin_2026-10-08_7514003325734920192_img00.webp",
       "width": 1086,
