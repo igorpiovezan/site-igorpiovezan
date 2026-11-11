@@ -6,7 +6,7 @@
   var fine = false;
   try {
     reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    fine = window.matchMedia("(any-pointer: fine)").matches || window.matchMedia("(any-hover: hover)").matches;
   } catch (err) {
     reduce = false;
     fine = false;
@@ -66,8 +66,11 @@
     var star = document.createElement("span");
     star.className = "star";
     star.setAttribute("aria-hidden", "true");
-    star.style.top = (6 + Math.random() * 22) + "%";
-    star.style.setProperty("--star-angle", (-14 - Math.random() * 16) + "deg");
+    star.style.top = (4 + Math.random() * 18) + "%";
+    star.style.setProperty("--star-angle", (-12 - Math.random() * 14) + "deg");
+    star.style.setProperty("--star-from", (2 + Math.random() * 8) + "vh");
+    star.style.setProperty("--star-mid", (10 + Math.random() * 8) + "vh");
+    star.style.setProperty("--star-to", (-4 + Math.random() * 8) + "vh");
     host.appendChild(star);
     star.addEventListener("animationend", function () {
       if (star.parentNode) star.parentNode.removeChild(star);
@@ -75,9 +78,9 @@
   }
 
   function setupSky(host) {
-    window.setTimeout(function () { spawnStar(host); }, 1150);
+    window.setTimeout(function () { spawnStar(host); }, 1100);
     function later() {
-      var wait = 14000 + Math.random() * 10000;
+      var wait = 8000 + Math.random() * 8000;
       window.setTimeout(function () {
         spawnStar(host);
         later();
@@ -129,10 +132,11 @@
     var hotSelector = cards + ", a, button, .portrait, .logo-chip, summary";
 
     document.addEventListener("pointermove", function (event) {
-      if (event.pointerType && event.pointerType !== "mouse") return;
+      if (event.pointerType === "touch") return;
       tx = event.clientX;
       ty = event.clientY;
       cursor.classList.add("is-on");
+      root.classList.add("cursor-on");
       var target = event.target && event.target.closest ? event.target.closest(hotSelector) : null;
       var nextHot = !!target;
       if (nextHot !== hot) {
@@ -189,6 +193,7 @@
 
     document.documentElement.addEventListener("mouseleave", function () {
       cursor.classList.remove("is-on");
+      root.classList.remove("cursor-on");
     });
 
     function frame() {
