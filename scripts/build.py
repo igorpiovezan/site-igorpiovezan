@@ -553,18 +553,50 @@ def validate_chapters(chapters: dict) -> None:
             require_locale(stage.get("line"), stage.get("id") or "stage")
 
 
-def logo_chip(assets, logo_id: str, labeled: bool = False) -> str:
+def logo_chip(assets, logo_id: str, labeled: bool = False, label: str = "") -> str:
     logo = (assets.get("logos") or {}).get(logo_id or "")
     if not logo:
         return ""
     tone = " on-dark" if logo.get("chip") == "dark" else ""
-    alt = "" if labeled else (logo.get("name") or "")
-    name = f'<span class="mark-name">{e(logo["name"])}</span>' if labeled and logo.get("name") else ""
+    visible = label or logo.get("name") or ""
+    alt = "" if labeled else visible
+    name = f'<span class="mark-name">{e(visible)}</span>' if labeled and visible else ""
     return (
         f'<span class="logo-chip{tone}">'
         f'<img class="logo" src="{e(logo["src"])}" width="{logo["w"]}" height="{logo["h"]}" alt="{e(alt)}" loading="lazy" decoding="async">'
         f"{name}</span>"
     )
+
+
+def validate_stack(bundle) -> None:
+    expected = []
+    for role in bundle["experience"]["roles"]:
+        expected.extend(role.get("technologies") or [])
+    shown = [item["name"] for group in bundle["stack"] for item in group["items"]]
+    if set(shown) != set(expected) or len(shown) != len(set(shown)):
+        missing = sorted(set(expected) - set(shown))
+        extra = sorted(set(shown) - set(expected))
+        raise SystemExit(f"technology catalog drifted, missing {missing[:8]} extra {extra[:8]}")
+
+
+def render_stack_catalog(bundle, lang, assets) -> str:
+    groups = []
+    for group in bundle["stack"]:
+        logos = []
+        texts = []
+        for item in group["items"]:
+            logo_id = item.get("logo") or ""
+            chip = logo_chip(assets, logo_id, labeled=True, label=item["name"]) if logo_id else ""
+            if chip:
+                logos.append(chip)
+            else:
+                texts.append(f"<li>{e(item['name'])}</li>")
+        logo_html = f'<div class="stack-logos">{"".join(logos)}</div>' if logos else ""
+        text_html = f'<ul class="chips stack-rest">{"".join(texts)}</ul>' if texts else ""
+        groups.append(
+            f'<div class="stack-group"><h3>{e(text(group["title"], lang))}</h3>{logo_html}{text_html}</div>'
+        )
+    return "".join(groups)
 
 
 def mark_row(assets, ids, class_name: str) -> str:
@@ -656,12 +688,14 @@ def render_igor(bundle, lang, assets) -> str:
         if not still:
             continue
         when = footprint_when(item.get("date") or "", lang)
+        brand = logo_chip(assets, "netseg") if "yrm7_OIMaY8" in (item.get("url") or "") else ""
         cards.append(
             f'<a class="still reveal" href="{e(item["url"])}" rel="noopener noreferrer">'
             '<span class="still-media">'
             f'{still_img(still)}'
             '<span class="play" aria-hidden="true"></span>'
             "</span><span class=\"still-copy\">"
+            f"{brand}"
             f"<strong>{e(text(item['title'], lang))}</strong>"
             f'<span class="muted">{e(ui(bundle, lang, "watchYouTube"))}'
             f'{(" · " + e(when)) if when else ""}</span>'
@@ -727,8 +761,8 @@ def render_technologies(bundle, lang, assets) -> str:
         f'<section class="band" id="technologies"><div class="wrap">'
         f'{h2(CHAPTER["technologies"], ui(bundle, lang, "technologiesTitle"))}'
         f'<p class="lede reveal">{e(ui(bundle, lang, "technologiesLead"))}</p>'
-        f"{field}"
         f'<div class="tech-grid">{"".join(cards)}</div>'
+        f"{render_stack_catalog(bundle, lang, assets)}"
         "</div></section>"
     )
 
@@ -837,10 +871,12 @@ def render_home(bundle, lang, assets) -> str:
             link = f' <a href="{e(honor["url"])}">{e(label)}</a>'
         still = still_by_url(assets, honor.get("url") or "")
         thumb = f'{still_img(still, lazy=True)}'.replace("<img ", '<img class="thumb" ', 1) if still else ""
+        brand = logo_chip(assets, "netseg") if honor.get("issuer") == "NetSeg" else ""
         row = " media-row" if still else ""
         honors.append(
             f'<article class="honor{row}">'
             f"{thumb}<div>"
+            f"{brand}"
             f'<h4>{e(text(honor["title"], lang))}</h4>'
             f'<p class="muted">{e(honor["issuer"])}{(" · " + e(when)) if when else ""}</p>'
             f'<p>{e(text(honor["summary"], lang))}{link}</p>'
@@ -867,6 +903,13 @@ def render_home(bundle, lang, assets) -> str:
         + f'<div class="card-grid">{"".join(pubs)}</div>'
         + "</div></section>"
     )
+    school_logos = {
+        "MIT Professional Education": "mit",
+        "Dale Carnegie Training": "dale",
+        "Centro Universitário Municipal de São José": "usj",
+        "IFSC — Instituto Federal de Santa Catarina": "ifsc",
+        "ACE English Malta": "ace",
+    }
     schools = []
     for school in creds["education"]:
         extra = ""
@@ -874,8 +917,10 @@ def render_home(bundle, lang, assets) -> str:
             extra += f' <a href="{e(school["credentialUrl"])}">{e(ui(bundle, lang, "showCredential"))}</a>'
         for item in school.get("links") or []:
             extra += f' <a href="{e(item["url"])}">{e(item["label"])}</a>'
+        mark = logo_chip(assets, school_logos.get(school["school"], ""))
         schools.append(
             '<article class="school">'
+            f"{mark}"
             f'<h4>{e(school["school"])}</h4>'
             f'<p>{e(text(school["degree"], lang))}</p>'
             f'<p class="muted">{e(fmt_range(school["start"], school["end"], lang, ui(bundle, lang, "present")))}</p>'
@@ -1419,8 +1464,10 @@ def build(env: str, out: Path) -> None:
         "posts": load_json("posts.json"),
         "privacy": load_json("privacy.json"),
         "chapters": load_json("chapters.json"),
+        "stack": load_json("stack.json"),
     }
     validate_chapters(bundle["chapters"])
+    validate_stack(bundle)
     measurement_id = bundle["site"]["ga4MeasurementId"]
     if out.exists():
         shutil.rmtree(out)

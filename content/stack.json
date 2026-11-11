@@ -1,0 +1,1209 @@
+[
+  {
+    "id": "languages",
+    "title": {
+      "en": "Languages",
+      "pt-BR": "Linguagens"
+    },
+    "items": [
+      {
+        "name": "Rust",
+        "logo": "rust"
+      },
+      {
+        "name": "WebAssembly"
+      },
+      {
+        "name": "Java",
+        "logo": "openjdk"
+      },
+      {
+        "name": "Python",
+        "logo": "python"
+      },
+      {
+        "name": "Shell",
+        "logo": "gnubash"
+      },
+      {
+        "name": "Scala",
+        "logo": "scala"
+      },
+      {
+        "name": "TypeScript",
+        "logo": "typescript"
+      },
+      {
+        "name": "PHP",
+        "logo": "php"
+      },
+      {
+        "name": "Ruby",
+        "logo": "ruby"
+      },
+      {
+        "name": "C++",
+        "logo": "cplusplus"
+      },
+      {
+        "name": "Go",
+        "logo": "go"
+      },
+      {
+        "name": "Kotlin",
+        "logo": "kotlin"
+      },
+      {
+        "name": "C#",
+        "logo": "dotnet"
+      },
+      {
+        "name": "Java EE",
+        "logo": "openjdk"
+      },
+      {
+        "name": "Bash",
+        "logo": "gnubash"
+      }
+    ]
+  },
+  {
+    "id": "web",
+    "title": {
+      "en": "Web and application platforms",
+      "pt-BR": "Web e plataformas de aplicação"
+    },
+    "items": [
+      {
+        "name": "JavaScript",
+        "logo": "javascript"
+      },
+      {
+        "name": "Nginx",
+        "logo": "nginx"
+      },
+      {
+        "name": "Apache HTTP",
+        "logo": "apache"
+      },
+      {
+        "name": "HTTP"
+      },
+      {
+        "name": "WebSocket"
+      },
+      {
+        "name": "React",
+        "logo": "react"
+      },
+      {
+        "name": "Angular",
+        "logo": "angular"
+      },
+      {
+        "name": "Ionic",
+        "logo": "ionic"
+      },
+      {
+        "name": "React Native",
+        "logo": "react"
+      },
+      {
+        "name": "Spring Framework",
+        "logo": "spring"
+      },
+      {
+        "name": "Spring Boot",
+        "logo": "springboot"
+      },
+      {
+        "name": "Spring Data",
+        "logo": "spring"
+      },
+      {
+        "name": "Spring Security",
+        "logo": "spring"
+      },
+      {
+        "name": "Spring Batch",
+        "logo": "spring"
+      },
+      {
+        "name": "Spring for Apache Kafka",
+        "logo": "apachekafka"
+      },
+      {
+        "name": "Thymeleaf"
+      },
+      {
+        "name": "Swagger",
+        "logo": "swagger"
+      },
+      {
+        "name": "Express",
+        "logo": "express"
+      },
+      {
+        "name": "GraphQL",
+        "logo": "graphql"
+      },
+      {
+        "name": "Apache Tomcat",
+        "logo": "apachetomcat"
+      },
+      {
+        "name": "WildFly"
+      },
+      {
+        "name": "WebRTC"
+      },
+      {
+        "name": "Socket.io",
+        "logo": "socketdotio"
+      },
+      {
+        "name": "HTML",
+        "logo": "html5"
+      },
+      {
+        "name": "CSS",
+        "logo": "css"
+      },
+      {
+        "name": "Sass",
+        "logo": "sass"
+      },
+      {
+        "name": "Compass"
+      },
+      {
+        "name": "Less",
+        "logo": "less"
+      },
+      {
+        "name": "jQuery",
+        "logo": "jquery"
+      },
+      {
+        "name": "Bootstrap",
+        "logo": "bootstrap"
+      },
+      {
+        "name": "AngularJS"
+      },
+      {
+        "name": "Polymer"
+      },
+      {
+        "name": "CoffeeScript",
+        "logo": "coffeescript"
+      },
+      {
+        "name": "Composer",
+        "logo": "composer"
+      },
+      {
+        "name": "Zend Framework 2",
+        "logo": "zend"
+      },
+      {
+        "name": "CakePHP",
+        "logo": "cakephp"
+      },
+      {
+        "name": "Symfony 2",
+        "logo": "symfony"
+      },
+      {
+        "name": "Laravel",
+        "logo": "laravel"
+      },
+      {
+        "name": "CodeIgniter",
+        "logo": "codeigniter"
+      },
+      {
+        "name": "Apigility"
+      },
+      {
+        "name": "REST"
+      },
+      {
+        "name": "RPC"
+      },
+      {
+        "name": "SOAP"
+      },
+      {
+        "name": "WebSockets"
+      },
+      {
+        "name": "WordPress",
+        "logo": "wordpress"
+      },
+      {
+        "name": "Apache Cordova",
+        "logo": "apachecordova"
+      }
+    ]
+  },
+  {
+    "id": "data",
+    "title": {
+      "en": "Data",
+      "pt-BR": "Dados"
+    },
+    "items": [
+      {
+        "name": "Apache Samza"
+      },
+      {
+        "name": "M3"
+      },
+      {
+        "name": "Microsoft SQL Server"
+      },
+      {
+        "name": "Hadoop",
+        "logo": "apachehadoop"
+      },
+      {
+        "name": "Spark",
+        "logo": "apachespark"
+      },
+      {
+        "name": "Hive",
+        "logo": "apachehive"
+      },
+      {
+        "name": "InfluxDB",
+        "logo": "influxdb"
+      },
+      {
+        "name": "Athena",
+        "logo": "aws-athena"
+      },
+      {
+        "name": "Glue",
+        "logo": "aws-glue"
+      },
+      {
+        "name": "Lake Formation",
+        "logo": "aws-lakeformation"
+      },
+      {
+        "name": "EMR",
+        "logo": "aws-emr"
+      },
+      {
+        "name": "Kinesis",
+        "logo": "aws-kinesis"
+      },
+      {
+        "name": "QuickSight"
+      },
+      {
+        "name": "OpenSearch",
+        "logo": "aws-opensearch"
+      },
+      {
+        "name": "MSK",
+        "logo": "aws-msk"
+      },
+      {
+        "name": "MQ",
+        "logo": "aws-mq"
+      },
+      {
+        "name": "DynamoDB",
+        "logo": "aws-dynamodb"
+      },
+      {
+        "name": "DocumentDB",
+        "logo": "aws-documentdb"
+      },
+      {
+        "name": "RDS",
+        "logo": "aws-rds"
+      },
+      {
+        "name": "Aurora",
+        "logo": "aws-aurora"
+      },
+      {
+        "name": "ElastiCache",
+        "logo": "aws-elasticache"
+      },
+      {
+        "name": "Keyspaces",
+        "logo": "aws-keyspaces"
+      },
+      {
+        "name": "Redshift",
+        "logo": "aws-redshift"
+      },
+      {
+        "name": "Kinesis Video Streams",
+        "logo": "aws-kinesis-video"
+      },
+      {
+        "name": "S3 Glacier",
+        "logo": "aws-glacier"
+      },
+      {
+        "name": "S3",
+        "logo": "aws-s3"
+      },
+      {
+        "name": "Big data"
+      },
+      {
+        "name": "Columnar storage (Parquet, ORC)"
+      },
+      {
+        "name": "Indexing"
+      },
+      {
+        "name": "Data warehouse"
+      },
+      {
+        "name": "Data analytics"
+      },
+      {
+        "name": "Apache Spark",
+        "logo": "apachespark"
+      },
+      {
+        "name": "Apache Hive",
+        "logo": "apachehive"
+      },
+      {
+        "name": "Power BI"
+      },
+      {
+        "name": "MySQL",
+        "logo": "mysql"
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": "postgresql"
+      },
+      {
+        "name": "SQL Server"
+      },
+      {
+        "name": "Oracle"
+      },
+      {
+        "name": "SQLite",
+        "logo": "sqlite"
+      },
+      {
+        "name": "H2"
+      },
+      {
+        "name": "Amazon Aurora",
+        "logo": "aws-aurora"
+      },
+      {
+        "name": "MongoDB",
+        "logo": "mongodb"
+      },
+      {
+        "name": "Elasticsearch",
+        "logo": "elasticsearch"
+      },
+      {
+        "name": "Redis",
+        "logo": "redis"
+      },
+      {
+        "name": "Memcached"
+      },
+      {
+        "name": "Amazon Athena",
+        "logo": "aws-athena"
+      },
+      {
+        "name": "PrestoDB"
+      },
+      {
+        "name": "Apache Cassandra",
+        "logo": "apachecassandra"
+      },
+      {
+        "name": "Datomic"
+      },
+      {
+        "name": "NoSQL"
+      },
+      {
+        "name": "PL/SQL"
+      },
+      {
+        "name": "SQL"
+      }
+    ]
+  },
+  {
+    "id": "aws",
+    "title": {
+      "en": "Amazon Web Services",
+      "pt-BR": "Amazon Web Services"
+    },
+    "items": [
+      {
+        "name": "EventBridge",
+        "logo": "aws-eventbridge"
+      },
+      {
+        "name": "SNS",
+        "logo": "aws-sns"
+      },
+      {
+        "name": "SQS",
+        "logo": "aws-sqs"
+      },
+      {
+        "name": "Well-Architected Tool",
+        "logo": "aws-well-architected"
+      },
+      {
+        "name": "Chime",
+        "logo": "aws-chime"
+      },
+      {
+        "name": "Savings Plans",
+        "logo": "aws-savings"
+      },
+      {
+        "name": "Cost Explorer",
+        "logo": "aws-cost-explorer"
+      },
+      {
+        "name": "Cost and Usage Report",
+        "logo": "aws-cur"
+      },
+      {
+        "name": "Budgets",
+        "logo": "aws-budgets"
+      },
+      {
+        "name": "Compute Optimizer",
+        "logo": "aws-compute-optimizer"
+      },
+      {
+        "name": "EC2 Auto Scaling",
+        "logo": "aws-autoscaling"
+      },
+      {
+        "name": "Elastic Beanstalk",
+        "logo": "aws-beanstalk"
+      },
+      {
+        "name": "Lambda",
+        "logo": "aws-lambda"
+      },
+      {
+        "name": "EC2",
+        "logo": "aws-ec2"
+      },
+      {
+        "name": "EC2 Spot Instances",
+        "logo": "aws-spot"
+      },
+      {
+        "name": "Lightsail",
+        "logo": "aws-lightsail"
+      },
+      {
+        "name": "Fargate",
+        "logo": "aws-fargate"
+      },
+      {
+        "name": "EKS",
+        "logo": "aws-eks"
+      },
+      {
+        "name": "ECR",
+        "logo": "aws-ecr"
+      },
+      {
+        "name": "Marketplace",
+        "logo": "aws-marketplace"
+      },
+      {
+        "name": "ECS",
+        "logo": "aws-ecs"
+      },
+      {
+        "name": "MemoryDB for Redis",
+        "logo": "aws-memorydb"
+      },
+      {
+        "name": "CodeDeploy",
+        "logo": "aws-codedeploy"
+      },
+      {
+        "name": "CLI",
+        "logo": "aws-cli"
+      },
+      {
+        "name": "CodeBuild",
+        "logo": "aws-codebuild"
+      },
+      {
+        "name": "CodeCommit",
+        "logo": "aws-codecommit"
+      },
+      {
+        "name": "CodeArtifact",
+        "logo": "aws-codeartifact"
+      },
+      {
+        "name": "Amazon Corretto",
+        "logo": "aws-corretto"
+      },
+      {
+        "name": "CloudShell",
+        "logo": "aws-cloudshell"
+      },
+      {
+        "name": "SES",
+        "logo": "aws-ses"
+      },
+      {
+        "name": "API Gateway",
+        "logo": "aws-apigateway"
+      },
+      {
+        "name": "Device Farm",
+        "logo": "aws-device-farm"
+      },
+      {
+        "name": "IoT",
+        "logo": "aws-iot"
+      },
+      {
+        "name": "DevOps Guru",
+        "logo": "aws-devops-guru"
+      },
+      {
+        "name": "Organizations",
+        "logo": "aws-organizations"
+      },
+      {
+        "name": "CloudWatch",
+        "logo": "aws-cloudwatch"
+      },
+      {
+        "name": "CloudTrail",
+        "logo": "aws-cloudtrail"
+      },
+      {
+        "name": "Config",
+        "logo": "aws-config"
+      },
+      {
+        "name": "Systems Manager",
+        "logo": "aws-systems-manager"
+      },
+      {
+        "name": "CloudFormation",
+        "logo": "aws-cloudformation"
+      },
+      {
+        "name": "Control Tower",
+        "logo": "aws-control-tower"
+      },
+      {
+        "name": "Trusted Advisor",
+        "logo": "aws-trusted-advisor"
+      },
+      {
+        "name": "DMS",
+        "logo": "aws-dms"
+      },
+      {
+        "name": "DataSync",
+        "logo": "aws-datasync"
+      },
+      {
+        "name": "Global Accelerator",
+        "logo": "aws-global-accelerator"
+      },
+      {
+        "name": "PrivateLink",
+        "logo": "aws-privatelink"
+      },
+      {
+        "name": "Route 53",
+        "logo": "aws-route53"
+      },
+      {
+        "name": "ELB",
+        "logo": "aws-elb"
+      },
+      {
+        "name": "CloudFront",
+        "logo": "aws-cloudfront"
+      },
+      {
+        "name": "VPC",
+        "logo": "aws-vpc"
+      },
+      {
+        "name": "EFS",
+        "logo": "aws-efs"
+      },
+      {
+        "name": "EBS",
+        "logo": "aws-ebs"
+      }
+    ]
+  },
+  {
+    "id": "platforms",
+    "title": {
+      "en": "Platforms, delivery, and infrastructure",
+      "pt-BR": "Plataformas, entrega e infraestrutura"
+    },
+    "items": [
+      {
+        "name": "Docker Swarm",
+        "logo": "docker"
+      },
+      {
+        "name": "Terraform",
+        "logo": "terraform"
+      },
+      {
+        "name": "Ansible",
+        "logo": "ansible"
+      },
+      {
+        "name": "Puppet",
+        "logo": "puppet"
+      },
+      {
+        "name": "Jenkins",
+        "logo": "jenkins"
+      },
+      {
+        "name": "CI/CD"
+      },
+      {
+        "name": "Grafana",
+        "logo": "grafana"
+      },
+      {
+        "name": "Prometheus",
+        "logo": "prometheus"
+      },
+      {
+        "name": "OVH",
+        "logo": "ovh"
+      },
+      {
+        "name": "GCP",
+        "logo": "googlecloud"
+      },
+      {
+        "name": "Azure",
+        "logo": "azure"
+      },
+      {
+        "name": "OCI"
+      },
+      {
+        "name": "IBM Cloud"
+      },
+      {
+        "name": "Managed Grafana",
+        "logo": "grafana"
+      },
+      {
+        "name": "Blue/green"
+      },
+      {
+        "name": "Canary releases"
+      },
+      {
+        "name": "HAProxy",
+        "logo": "haproxy"
+      },
+      {
+        "name": "Squid"
+      },
+      {
+        "name": "Docker",
+        "logo": "docker"
+      },
+      {
+        "name": "Docker Compose",
+        "logo": "docker"
+      },
+      {
+        "name": "Kubernetes",
+        "logo": "kubernetes"
+      },
+      {
+        "name": "ffmpeg",
+        "logo": "ffmpeg"
+      },
+      {
+        "name": "HHVM"
+      },
+      {
+        "name": "DevOps"
+      },
+      {
+        "name": "VMware",
+        "logo": "vmware"
+      },
+      {
+        "name": "Hyper-V"
+      },
+      {
+        "name": "Vagrant",
+        "logo": "vagrant"
+      },
+      {
+        "name": "Apache",
+        "logo": "apache"
+      },
+      {
+        "name": "IIS"
+      },
+      {
+        "name": "Samba"
+      },
+      {
+        "name": "SNMP"
+      },
+      {
+        "name": "Spiceworks"
+      },
+      {
+        "name": "Cacti"
+      },
+      {
+        "name": "SMB"
+      },
+      {
+        "name": "NFS"
+      },
+      {
+        "name": "Asterisk",
+        "logo": "asterisk"
+      },
+      {
+        "name": "SNEP"
+      },
+      {
+        "name": "Elastix"
+      },
+      {
+        "name": "Windows Server"
+      },
+      {
+        "name": "BIND9"
+      },
+      {
+        "name": "Postfix"
+      },
+      {
+        "name": "Roundcube"
+      },
+      {
+        "name": "Windows"
+      },
+      {
+        "name": "Linux",
+        "logo": "linux"
+      }
+    ]
+  },
+  {
+    "id": "security",
+    "title": {
+      "en": "Security and privacy",
+      "pt-BR": "Segurança e privacidade"
+    },
+    "items": [
+      {
+        "name": "LGPD"
+      },
+      {
+        "name": "GDPR"
+      },
+      {
+        "name": "Data mapping"
+      },
+      {
+        "name": "Personal data disposal"
+      },
+      {
+        "name": "Privacy policy"
+      },
+      {
+        "name": "Terms of use"
+      },
+      {
+        "name": "SAST"
+      },
+      {
+        "name": "DAST"
+      },
+      {
+        "name": "SIEM"
+      },
+      {
+        "name": "WAF",
+        "logo": "aws-waf"
+      },
+      {
+        "name": "IDS/IPS"
+      },
+      {
+        "name": "IAM",
+        "logo": "aws-iam"
+      },
+      {
+        "name": "RBAC"
+      },
+      {
+        "name": "EDR"
+      },
+      {
+        "name": "XDR"
+      },
+      {
+        "name": "MDR"
+      },
+      {
+        "name": "DLP"
+      },
+      {
+        "name": "Vulnerability assessment and penetration testing"
+      },
+      {
+        "name": "SOAR"
+      },
+      {
+        "name": "Data privacy protocols"
+      },
+      {
+        "name": "Detective",
+        "logo": "aws-detective"
+      },
+      {
+        "name": "Certificate Manager",
+        "logo": "aws-acm"
+      },
+      {
+        "name": "Artifact",
+        "logo": "aws-artifact"
+      },
+      {
+        "name": "Network Firewall",
+        "logo": "aws-network-firewall"
+      },
+      {
+        "name": "Shield",
+        "logo": "aws-shield"
+      },
+      {
+        "name": "Cognito",
+        "logo": "aws-cognito"
+      },
+      {
+        "name": "Security Hub",
+        "logo": "aws-security-hub"
+      },
+      {
+        "name": "KMS",
+        "logo": "aws-kms"
+      },
+      {
+        "name": "GuardDuty",
+        "logo": "aws-guardduty"
+      },
+      {
+        "name": "Inspector",
+        "logo": "aws-inspector"
+      },
+      {
+        "name": "Macie",
+        "logo": "aws-macie"
+      },
+      {
+        "name": "OWASP Top Ten"
+      },
+      {
+        "name": "Active Directory"
+      },
+      {
+        "name": "pfSense",
+        "logo": "pfsense"
+      },
+      {
+        "name": "iptables"
+      },
+      {
+        "name": "OpenVPN",
+        "logo": "openvpn"
+      }
+    ]
+  },
+  {
+    "id": "ai",
+    "title": {
+      "en": "Artificial intelligence",
+      "pt-BR": "Inteligência artificial"
+    },
+    "items": [
+      {
+        "name": "Spec-driven development"
+      },
+      {
+        "name": "Cursor",
+        "logo": "cursor"
+      },
+      {
+        "name": "OpenAI (ChatGPT, Codex, API)"
+      },
+      {
+        "name": "Anthropic (Claude, Claude Code, API)",
+        "logo": "anthropic"
+      },
+      {
+        "name": "xAI (Grok)"
+      },
+      {
+        "name": "Kiro"
+      },
+      {
+        "name": "Model Context Protocol"
+      },
+      {
+        "name": "Amazon Nova Sonic",
+        "logo": "aws-nova"
+      },
+      {
+        "name": "Multi-model code review"
+      },
+      {
+        "name": "Agentic workflows"
+      },
+      {
+        "name": "AI first"
+      },
+      {
+        "name": "Context engineering"
+      },
+      {
+        "name": "Prompt engineering"
+      },
+      {
+        "name": "Guardrails"
+      },
+      {
+        "name": "AI ethics"
+      },
+      {
+        "name": "Bias mitigation"
+      },
+      {
+        "name": "Knowledge engineering"
+      },
+      {
+        "name": "Predictive analysis"
+      },
+      {
+        "name": "Supervised learning"
+      },
+      {
+        "name": "Artificial Intelligence (AI)"
+      },
+      {
+        "name": "SageMaker",
+        "logo": "aws-sagemaker"
+      },
+      {
+        "name": "Inferentia"
+      },
+      {
+        "name": "SageMaker Studio",
+        "logo": "aws-sagemaker"
+      },
+      {
+        "name": "PyTorch on AWS",
+        "logo": "pytorch"
+      },
+      {
+        "name": "Rekognition",
+        "logo": "aws-rekognition"
+      }
+    ]
+  },
+  {
+    "id": "practice",
+    "title": {
+      "en": "Practices and the rest of the record",
+      "pt-BR": "Práticas e o resto do registro"
+    },
+    "items": [
+      {
+        "name": "FinOps"
+      },
+      {
+        "name": "Scrum"
+      },
+      {
+        "name": "Kanban"
+      },
+      {
+        "name": "OKR"
+      },
+      {
+        "name": "KPI"
+      },
+      {
+        "name": "Solution architecture"
+      },
+      {
+        "name": "IT governance"
+      },
+      {
+        "name": "Change management"
+      },
+      {
+        "name": "AWS",
+        "logo": "aws"
+      },
+      {
+        "name": "VPN"
+      },
+      {
+        "name": "Backup"
+      },
+      {
+        "name": "Multithreading"
+      },
+      {
+        "name": "Parallel computing"
+      },
+      {
+        "name": "Memory management"
+      },
+      {
+        "name": "Distributed state"
+      },
+      {
+        "name": "Non-blocking asynchronous architectures"
+      },
+      {
+        "name": "Reactive programming"
+      },
+      {
+        "name": "Functional programming"
+      },
+      {
+        "name": "Horizontal scalability"
+      },
+      {
+        "name": "Services and microservices"
+      },
+      {
+        "name": "Monoliths"
+      },
+      {
+        "name": "TDD"
+      },
+      {
+        "name": "Unit, integration, and end-to-end tests"
+      },
+      {
+        "name": "Load tests"
+      },
+      {
+        "name": "Multi-region architecture"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Node.js",
+        "logo": "nodedotjs"
+      },
+      {
+        "name": "TCP"
+      },
+      {
+        "name": "UDP"
+      },
+      {
+        "name": "Jest",
+        "logo": "jest"
+      },
+      {
+        "name": "Mocha",
+        "logo": "mocha"
+      },
+      {
+        "name": "JUnit",
+        "logo": "junit5"
+      },
+      {
+        "name": "Cypress",
+        "logo": "cypress"
+      },
+      {
+        "name": "H.264"
+      },
+      {
+        "name": "H.265"
+      },
+      {
+        "name": "VP9"
+      },
+      {
+        "name": "AV1"
+      },
+      {
+        "name": "HLS"
+      },
+      {
+        "name": "Sonar",
+        "logo": "sonar"
+      },
+      {
+        "name": "Design patterns"
+      },
+      {
+        "name": "Microservices"
+      },
+      {
+        "name": "PHPUnit"
+      },
+      {
+        "name": "Git",
+        "logo": "git"
+      },
+      {
+        "name": "OpenCart"
+      },
+      {
+        "name": "Responsive design"
+      },
+      {
+        "name": "Adobe Photoshop"
+      },
+      {
+        "name": "CorelDRAW",
+        "logo": "coreldraw"
+      }
+    ]
+  }
+]

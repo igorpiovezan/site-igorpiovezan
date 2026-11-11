@@ -145,12 +145,14 @@
     {
       "source": "education",
       "school": "Centro Universitário Municipal de São José",
-      "tier": "secondary"
+      "tier": "secondary",
+      "logo": "usj"
     },
     {
       "source": "education",
       "school": "Dale Carnegie Training",
-      "tier": "secondary"
+      "tier": "secondary",
+      "logo": "dale"
     },
     {
       "source": "company",
@@ -167,7 +169,8 @@
       "line": {
         "en": "Interview with Igor Piovezan of Segware at ISC Brasil 2024.",
         "pt-BR": "Entrevista com Igor Piovezan, da Segware, na ISC Brasil 2024."
-      }
+      },
+      "logo": "netseg"
     }
   ],
   "field": [

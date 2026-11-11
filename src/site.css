@@ -666,6 +666,37 @@ summary {
 
 .plate .logo { height: 3.5rem; max-width: 100%; }
 
+.stack-group { margin-top: 2.2rem; }
+
+.stack-group h3 { margin: 0 0 0.85rem; }
+
+.stack-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.4rem, 1fr));
+  gap: 0.55rem;
+}
+
+.stack-logos .logo-chip {
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  min-height: 6.2rem;
+  padding: 0.7rem 0.45rem 0.6rem;
+}
+
+.stack-logos .logo { height: 2.15rem; max-width: 100%; }
+
+.stack-logos .mark-name {
+  font-size: 0.72rem;
+  overflow-wrap: anywhere;
+}
+
+.stack-rest { margin-top: 0.75rem; }
+
+.still-copy .logo-chip,
+.school .logo-chip,
+.honor .logo-chip { margin: 0 0 0.5rem; }
+
 .replay {
   display: none;
   min-height: 44px;
