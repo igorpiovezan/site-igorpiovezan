@@ -1,0 +1,206 @@
+{
+  "technologies": [
+    {
+      "id": "aws",
+      "name": {
+        "en": "AWS",
+        "pt-BR": "AWS"
+      },
+      "line": {
+        "en": "Six times at re:Invent. Speaker at AWS Summit São Paulo. AWS Certified Database – Specialty. Amazon Bedrock and Amazon Nova Sonic in the production cases.",
+        "pt-BR": "Seis vezes no re:Invent. Palestrante no AWS Summit São Paulo. AWS Certified Database – Specialty. Amazon Bedrock e Amazon Nova Sonic nos casos em produção."
+      },
+      "logo": "aws"
+    },
+    {
+      "id": "ai",
+      "name": {
+        "en": "AI and agents",
+        "pt-BR": "IA e agentes"
+      },
+      "line": {
+        "en": "AI-native platforms for 100+ engineers. Agents connected to cloud, repositories, CI/CD, observability, ticketing, and internal systems. Multi-model review on pull requests.",
+        "pt-BR": "Plataformas AI-native para mais de 100 engenheiros. Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados e sistemas internos. Revisão multimodelo em pull requests."
+      },
+      "logo": "bedrock",
+      "marks": [
+        "anthropic",
+        "cursor",
+        "bedrock"
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": {
+        "en": "Cloud",
+        "pt-BR": "Nuvem"
+      },
+      "line": {
+        "en": "More than 15 years in technology, from full-stack developer to CTO. FinOps on the same scorecard. Cost is an engineering metric.",
+        "pt-BR": "Mais de 15 anos em tecnologia, de desenvolvedor full-stack a CTO. FinOps no mesmo painel. Custo é métrica de engenharia."
+      },
+      "marks": [
+        "docker",
+        "kubernetes",
+        "terraform",
+        "grafana",
+        "prometheus",
+        "googlecloud",
+        "azure",
+        "nginx"
+      ]
+    },
+    {
+      "id": "iot",
+      "name": {
+        "en": "IoT",
+        "pt-BR": "IoT"
+      },
+      "line": {
+        "en": "More than 2 million devices across security, smart home, and multimedia. Cloud video with bidirectional audio, alarm monitoring, and access control on the same platforms.",
+        "pt-BR": "Mais de 2 milhões de dispositivos de segurança, casa inteligente e multimídia. Vídeo em nuvem com áudio bidirecional, monitoramento de alarmes e controle de acesso nas mesmas plataformas."
+      }
+    },
+    {
+      "id": "data",
+      "name": {
+        "en": "Data",
+        "pt-BR": "Dados"
+      },
+      "line": {
+        "en": "MongoDB Certified DBA. Atlas Data Federation for event data at scale. Predictive models trained on billions of events.",
+        "pt-BR": "MongoDB Certified DBA. Atlas Data Federation para eventos em escala. Modelos preditivos treinados em bilhões de eventos."
+      },
+      "logo": "mongodb",
+      "marks": [
+        "mongodb",
+        "mysql",
+        "postgresql",
+        "redis",
+        "apachespark"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "source": "company",
+      "id": "segware",
+      "tier": "primary",
+      "logo": "segware"
+    },
+    {
+      "source": "custom",
+      "id": "aws",
+      "tier": "primary",
+      "name": "AWS",
+      "url": "https://www.credly.com/badges/2e9b834e-0d50-4543-af3a-1e5b232c81af",
+      "line": {
+        "en": "AWS Certified Database – Specialty. Six-time re:Invent attendee. Speaker at AWS Summit São Paulo.",
+        "pt-BR": "AWS Certified Database – Specialty. Seis vezes no re:Invent. Palestrante no AWS Summit São Paulo."
+      },
+      "logo": "aws"
+    },
+    {
+      "source": "custom",
+      "id": "mongodb",
+      "tier": "primary",
+      "name": "MongoDB",
+      "url": "https://www.mongodb.com/blog/post/atlas-data-federation-segware-tames-growing-demands-security-companies-affordably",
+      "line": {
+        "en": "Quoted as a Segware software specialist on Atlas Data Federation and the MongoDB query language.",
+        "pt-BR": "Citado como especialista de software da Segware sobre Atlas Data Federation e a linguagem de consulta da MongoDB."
+      },
+      "logo": "mongodb"
+    },
+    {
+      "source": "custom",
+      "id": "realcloud",
+      "tier": "primary",
+      "name": "RealCloud",
+      "url": "https://www.realcloud.ai/case-segware",
+      "line": {
+        "en": "Case study of Segware SIGMA AI with RealCloud. The quote is from Igor Piovezan, then technology manager.",
+        "pt-BR": "Case do SIGMA AI da Segware com a RealCloud. A citação é de Igor Piovezan, então gerente de tecnologia."
+      },
+      "logo": "realcloud"
+    },
+    {
+      "source": "company",
+      "id": "dva",
+      "tier": "primary",
+      "logo": "mercedes"
+    },
+    {
+      "source": "education",
+      "school": "MIT Professional Education",
+      "tier": "primary",
+      "logo": "mit"
+    },
+    {
+      "source": "education",
+      "school": "IFSC — Instituto Federal de Santa Catarina",
+      "tier": "secondary",
+      "logo": "ifsc"
+    },
+    {
+      "source": "education",
+      "school": "Centro Universitário Municipal de São José",
+      "tier": "secondary",
+      "logo": "usj"
+    },
+    {
+      "source": "education",
+      "school": "Dale Carnegie Training",
+      "tier": "secondary",
+      "logo": "dale"
+    },
+    {
+      "source": "company",
+      "id": "ace",
+      "tier": "secondary",
+      "logo": "ace"
+    },
+    {
+      "source": "custom",
+      "id": "netseg",
+      "tier": "secondary",
+      "name": "NetSeg",
+      "url": "https://www.youtube.com/watch?v=yrm7_OIMaY8",
+      "line": {
+        "en": "Interview with Igor Piovezan of Segware at ISC Brasil 2024.",
+        "pt-BR": "Entrevista com Igor Piovezan, da Segware, na ISC Brasil 2024."
+      },
+      "logo": "netseg"
+    }
+  ],
+  "field": [
+    "aws",
+    "mongodb",
+    "docker",
+    "kubernetes",
+    "terraform",
+    "ansible",
+    "jenkins",
+    "grafana",
+    "prometheus",
+    "googlecloud",
+    "azure",
+    "python",
+    "go",
+    "rust",
+    "typescript",
+    "nodedotjs",
+    "react",
+    "php",
+    "linux",
+    "nginx",
+    "apache",
+    "mysql",
+    "postgresql",
+    "redis",
+    "git",
+    "apachespark",
+    "anthropic",
+    "cursor"
+  ]
+}

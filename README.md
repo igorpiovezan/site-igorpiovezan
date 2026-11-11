@@ -26,6 +26,26 @@ python3 scripts/build.py --env test --out dist
 
 Do not publish the repository root. Publish the `dist/` folder only. `dist/` is gitignored.
 
+## Staging
+
+The long-lived preview branch is `staging/personal-brand`. Publish it to the staging host below. Do not treat that host as production, and do not merge the branch from the deploy step.
+
+Staging host: <https://pure-sketch-dg8y.here.now/>
+Slug: `pure-sketch-dg8y`
+
+Publish only a **test** build to that slug. The test build sets `noindex, nofollow` and a `robots.txt` of `Disallow: /`. Do not publish a prod build there. Do not commit an API key, a claim token, or `.herenow/`.
+
+From the private deploy repository, where the here.now key already lives:
+
+```bash
+git fetch origin staging/personal-brand
+git checkout staging/personal-brand
+python3 scripts/build.py --env test --out /tmp/igor-staging
+publish.sh /tmp/igor-staging --slug pure-sketch-dg8y --client cursor
+```
+
+GA4 does not load on this host. The tag returns before `gtag.js` unless the hostname is `igorpiovezan.com` or `igorpiovezan.com.br`. Do not ping IndexNow for the staging host.
+
 ## here.now
 
 Deploy runs from the private deploy repository. The API key stays there, in CI secrets, and is never committed.
@@ -46,6 +66,14 @@ Run the IndexNow ping only after that production publish. It POSTs every URL in 
 Production canonical host is `https://igorpiovezan.com`. Point the here.now primary domain at that host. `igorpiovezan.com.br` may serve the same files; every canonical, `og:url`, sitemap URL, and JSON-LD `@id` still uses `https://igorpiovezan.com`.
 
 Binary files under `/assets/` are content-hashed because here.now caches that path for an hour.
+
+## Portrait, photographs, and marks
+
+The hero portrait (`assets/photos/igor-1.png`, original filename igor-1.png) was taken for speaker display at AWS Summit São Paulo. Igor provided the file on 10 November 2026. The site serves a WebP encode of that file and does not crop or restyle the face. The MongoDB case-study photograph stays in the gallery. The other public photographs are there too. Talk stills are optimized copies of the YouTube thumbnails for videos already linked on the site.
+
+Logos and badge artwork are career context, not endorsements or partner lockups. Every file’s source URL is in `assets/media.json`. Dale Carnegie stays typographic: an official mark could not be fetched. Do not generate a face. If `portrait` is set, `scripts/check_site.py` rejects the old “portrait reserved” caption.
+
+`content/chapters.json` is the visual layer. Its lines restate facts already in the career files. Do not add a claim there that the biography does not already make.
 
 ## SEO
 

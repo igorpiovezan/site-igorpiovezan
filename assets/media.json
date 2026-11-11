@@ -8,5 +8,2027 @@
     "file": "og.png",
     "width": 1200,
     "height": 630
-  }
+  },
+  "portrait": {
+    "file": "photos/igor-1.webp",
+    "width": 1221,
+    "height": 1296,
+    "original": "photos/igor-1.png",
+    "source": "Provided by Igor Agenor Piovezan on 2026-11-10. Original filename igor-1.png (Pictures folder, dated 28 Aug 2026). Photo taken for speaker display at AWS Summit São Paulo.",
+    "alt": {
+      "en": "Igor Agenor Piovezan. Photo taken for speaker display at AWS Summit São Paulo.",
+      "pt-BR": "Igor Agenor Piovezan. Foto tirada para exibição do speaker no AWS Summit São Paulo."
+    }
+  },
+  "stillSource": "Public YouTube thumbnails for talks already linked on this site.",
+  "stills": [
+    {
+      "id": "wlxcWPRgmYg",
+      "file": "stills/wlxcWPRgmYg.webp",
+      "width": 1280,
+      "height": 720,
+      "source": "https://i.ytimg.com/vi/wlxcWPRgmYg/maxresdefault.jpg"
+    },
+    {
+      "id": "TYpIwKSLiRE",
+      "file": "stills/TYpIwKSLiRE.webp",
+      "width": 1280,
+      "height": 720,
+      "source": "https://i.ytimg.com/vi/TYpIwKSLiRE/maxresdefault.jpg"
+    },
+    {
+      "id": "yrm7_OIMaY8",
+      "file": "stills/yrm7_OIMaY8.webp",
+      "width": 1280,
+      "height": 720,
+      "source": "https://i.ytimg.com/vi/yrm7_OIMaY8/maxresdefault.jpg"
+    }
+  ],
+  "photos": [
+    {
+      "file": "photos/igor-1.webp",
+      "width": 1221,
+      "height": 1296,
+      "source": "Provided by Igor Agenor Piovezan on 2026-11-10. Original filename igor-1.png (Pictures folder, dated 28 Aug 2026). Photo taken for speaker display at AWS Summit São Paulo.",
+      "focus": "center center",
+      "caption": {
+        "en": "Photo taken for speaker display at AWS Summit São Paulo.",
+        "pt-BR": "Foto tirada para exibição do speaker no AWS Summit São Paulo."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan. Photo taken for speaker display at AWS Summit São Paulo.",
+        "pt-BR": "Igor Agenor Piovezan. Foto tirada para exibição do speaker no AWS Summit São Paulo."
+      }
+    },
+    {
+      "file": "photos/hero-mongodb.webp",
+      "width": 1586,
+      "height": 1116,
+      "source": "https://www.mongodb.com/blog/post/atlas-data-federation-segware-tames-growing-demands-security-companies-affordably",
+      "focus": "center center",
+      "caption": {
+        "en": "Igor Agenor Piovezan. Photograph from the MongoDB case study, 2020.",
+        "pt-BR": "Igor Agenor Piovezan. Fotografia do caso da MongoDB, 2020."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan, photographed for the MongoDB Atlas Data Federation case study.",
+        "pt-BR": "Igor Agenor Piovezan, fotografado para o caso Atlas Data Federation da MongoDB."
+      }
+    },
+    {
+      "file": "photos/linkedin_2026-10-08_7514003325734920192_img00.webp",
+      "width": 1086,
+      "height": 1448,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7514003325734920192/",
+      "caption": {
+        "en": "AWS Summit São Paulo 2026, Palco 11.",
+        "pt-BR": "AWS Summit São Paulo 2026, Palco 11."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan beside the Palco 11 board at AWS Summit São Paulo 2026.",
+        "pt-BR": "Igor Agenor Piovezan ao lado do painel do Palco 11 no AWS Summit São Paulo 2026."
+      }
+    },
+    {
+      "file": "photos/linkedin_2026-09-18_7506691148569268224_img00.webp",
+      "width": 720,
+      "height": 1280,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7506691148569268224/",
+      "caption": {
+        "en": "Segware, live on 25 years of electronic security, 2026.",
+        "pt-BR": "Segware, live dos 25 anos de segurança eletrônica, 2026."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan in the Segware video on 25 years of electronic security.",
+        "pt-BR": "Igor Agenor Piovezan no vídeo da Segware sobre 25 anos de segurança eletrônica."
+      }
+    },
+    {
+      "file": "photos/linkedin_2026-09-14_7505067806095290368_img01.webp",
+      "focus": "18% center",
+      "width": 800,
+      "height": 600,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7505067806095290368/",
+      "caption": {
+        "en": "AWS Summit São Paulo 2026, on stage.",
+        "pt-BR": "AWS Summit São Paulo 2026, no palco."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan on stage at AWS Summit São Paulo 2026, with the co-speaker.",
+        "pt-BR": "Igor Agenor Piovezan no palco do AWS Summit São Paulo 2026, com o outro palestrante."
+      }
+    },
+    {
+      "file": "photos/revistasecurity_exposec-2026_segware-booth.webp",
+      "width": 342,
+      "height": 657,
+      "source": "https://revistasecurity.com.br/segware-celebra-25-anos-com-inovacao-em-portaria-remota-e-analitico-de-video-guiados-por-ia/",
+      "caption": {
+        "en": "Exposec 2026, Segware booth. Portal Security Brasil misprints the name as Higor Piovezan.",
+        "pt-BR": "Exposec 2026, estande da Segware. O Portal Security Brasil grafa o nome como Higor Piovezan."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at the Segware booth, Exposec 2026.",
+        "pt-BR": "Igor Agenor Piovezan no estande da Segware, Exposec 2026."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-12-01_7401055259302727680_img00.webp",
+      "width": 864,
+      "height": 1536,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7401055259302727680/",
+      "caption": {
+        "en": "AWS re:Invent 2025, Las Vegas.",
+        "pt-BR": "AWS re:Invent 2025, Las Vegas."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at AWS re:Invent 2025.",
+        "pt-BR": "Igor Agenor Piovezan no AWS re:Invent 2025."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-10-22_7386740789047021568_img00.webp",
+      "width": 1044,
+      "height": 1044,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7386740789047021568/",
+      "caption": {
+        "en": "AWS SaaS Forum, 2025.",
+        "pt-BR": "AWS SaaS Forum, 2025."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at the AWS SaaS Forum in 2025.",
+        "pt-BR": "Igor Agenor Piovezan no AWS SaaS Forum em 2025."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-04-30_7323466181502226432_img00.webp",
+      "width": 800,
+      "height": 851,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7323466181502226432/",
+      "caption": {
+        "en": "ISC West 2025, Las Vegas.",
+        "pt-BR": "ISC West 2025, Las Vegas."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at ISC West 2025.",
+        "pt-BR": "Igor Agenor Piovezan na ISC West 2025."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-03-29_7311692351503052800_img01.webp",
+      "width": 864,
+      "height": 1536,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7311692351503052800/",
+      "caption": {
+        "en": "RealCloud, from the 2025 note on the second half of 2024.",
+        "pt-BR": "RealCloud, da nota de 2025 sobre o segundo semestre de 2024."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan in front of a RealCloud sign.",
+        "pt-BR": "Igor Agenor Piovezan diante de um letreiro da RealCloud."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-03-29_7311692351503052800_img02.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7311692351503052800/",
+      "caption": {
+        "en": "SEG Summit, from the same 2025 note.",
+        "pt-BR": "SEG Summit, da mesma nota de 2025."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at SEG Summit.",
+        "pt-BR": "Igor Agenor Piovezan no SEG Summit."
+      }
+    },
+    {
+      "file": "photos/linkedin_2025-03-27_7311088786182959104_img01.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7311088786182959104/",
+      "caption": {
+        "en": "TDC Summit, artificial intelligence, 2025.",
+        "pt-BR": "TDC Summit, inteligência artificial, 2025."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at TDC Summit on artificial intelligence.",
+        "pt-BR": "Igor Agenor Piovezan no TDC Summit de inteligência artificial."
+      }
+    },
+    {
+      "file": "photos/linkedin_2024-10-09_7249759808864604160_img00.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7249759808864604160/",
+      "caption": {
+        "en": "AWS SaaS Forum Brasil 2024.",
+        "pt-BR": "AWS SaaS Forum Brasil 2024."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at AWS SaaS Forum Brasil 2024.",
+        "pt-BR": "Igor Agenor Piovezan no AWS SaaS Forum Brasil 2024."
+      }
+    },
+    {
+      "file": "photos/linkedin_2024-09-28_7245866717376040960_img00.webp",
+      "width": 404,
+      "height": 720,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7245866717376040960/",
+      "caption": {
+        "en": "NetSeg, 2024.",
+        "pt-BR": "NetSeg, 2024."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at a NetSeg microphone in 2024.",
+        "pt-BR": "Igor Agenor Piovezan em um microfone da NetSeg em 2024."
+      }
+    },
+    {
+      "file": "photos/linkedin_2023-11-27_7134804721659260928_img00.webp",
+      "width": 800,
+      "height": 450,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7134804721659260928/",
+      "caption": {
+        "en": "AWS re:Invent 2023, badge pickup.",
+        "pt-BR": "AWS re:Invent 2023, retirada do crachá."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan holding his AWS re:Invent 2023 badge.",
+        "pt-BR": "Igor Agenor Piovezan com o crachá do AWS re:Invent 2023."
+      }
+    },
+    {
+      "file": "photos/linkedin_2019-12-03_6607540272005951488_img00.webp",
+      "width": 800,
+      "height": 1422,
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:6607540272005951488/",
+      "caption": {
+        "en": "AWS re:Invent 2019, Las Vegas.",
+        "pt-BR": "AWS re:Invent 2019, Las Vegas."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan at AWS re:Invent 2019.",
+        "pt-BR": "Igor Agenor Piovezan no AWS re:Invent 2019."
+      }
+    },
+    {
+      "file": "photos/superme_avatar_large.webp",
+      "width": 800,
+      "height": 800,
+      "source": "https://www.superme.ai/igorpiovezan",
+      "caption": {
+        "en": "Public SuperMe profile photograph.",
+        "pt-BR": "Fotografia pública do perfil no SuperMe."
+      },
+      "alt": {
+        "en": "Igor Agenor Piovezan, public SuperMe profile photograph.",
+        "pt-BR": "Igor Agenor Piovezan, fotografia pública do perfil no SuperMe."
+      }
+    },
+    {
+      "file": "photos/superme_og-card.webp",
+      "width": 1100,
+      "height": 578,
+      "source": "https://www.superme.ai/igorpiovezan",
+      "caption": {
+        "en": "SuperMe profile card.",
+        "pt-BR": "Cartão do perfil no SuperMe."
+      },
+      "alt": {
+        "en": "SuperMe profile card for Igor Agenor Piovezan.",
+        "pt-BR": "Cartão do perfil no SuperMe de Igor Agenor Piovezan."
+      }
+    }
+  ],
+  "logos": [
+    {
+      "id": "segware",
+      "file": "logos/segware.png",
+      "width": 709,
+      "height": 160,
+      "source": "https://segware.com/wp-content/uploads/2024/06/logo_segware_branco-1024x231.webp",
+      "chip": "dark",
+      "name": "Segware"
+    },
+    {
+      "id": "aws",
+      "file": "logos/aws.png",
+      "width": 431,
+      "height": 280,
+      "source": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
+      "chip": "light",
+      "name": "AWS"
+    },
+    {
+      "id": "bedrock",
+      "file": "logos/bedrock.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/Bedrock.png",
+      "chip": "light",
+      "name": "Amazon Bedrock"
+    },
+    {
+      "id": "mongodb",
+      "file": "logos/mongodb.png",
+      "width": 128,
+      "height": 256,
+      "source": "https://www.mongodb.com/assets/images/global/leaf.png",
+      "chip": "light",
+      "name": "MongoDB"
+    },
+    {
+      "id": "realcloud",
+      "file": "logos/realcloud.png",
+      "width": 476,
+      "height": 280,
+      "source": "https://static.wixstatic.com/media/0850fb_90c24e4bf0f74456be27b16cc125c143~mv2.png",
+      "chip": "light",
+      "name": "RealCloud"
+    },
+    {
+      "id": "mercedes",
+      "file": "logos/mercedes.png",
+      "width": 240,
+      "height": 240,
+      "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Logo.svg",
+      "chip": "dark",
+      "name": "Mercedes-Benz"
+    },
+    {
+      "id": "mit",
+      "file": "logos/mit.png",
+      "width": 315,
+      "height": 66,
+      "source": "https://api.accredible.com/v1/frontend/credential_opengraph_seo_image/84339697",
+      "chip": "light",
+      "name": "MIT"
+    },
+    {
+      "id": "ifsc",
+      "file": "logos/ifsc.svg",
+      "width": 356,
+      "height": 100,
+      "source": "https://commons.wikimedia.org/wiki/File:Instituto_Federal_de_Santa_Catarina_-_Marca_Horizontal_2015.svg",
+      "chip": "light",
+      "name": "IFSC"
+    },
+    {
+      "id": "ace",
+      "file": "logos/ace.png",
+      "width": 430,
+      "height": 150,
+      "source": "https://www.aceenglishmalta.com/wp-content/uploads/2018/09/ace-logo-1x-white.webp",
+      "chip": "dark",
+      "name": "ACE English"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "file": "logos/marks/docker.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/docker.svg",
+      "chip": "light"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "file": "logos/marks/kubernetes.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/kubernetes.svg",
+      "chip": "light"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "file": "logos/marks/terraform.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/terraform.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "file": "logos/marks/ansible.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/ansible.svg",
+      "chip": "light"
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "file": "logos/marks/jenkins.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/jenkins.svg",
+      "chip": "light"
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "file": "logos/marks/grafana.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/grafana.svg",
+      "chip": "light"
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "file": "logos/marks/prometheus.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/prometheus.svg",
+      "chip": "light"
+    },
+    {
+      "id": "googlecloud",
+      "name": "Google Cloud",
+      "file": "logos/marks/googlecloud.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/googlecloud.svg",
+      "chip": "light"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "file": "logos/marks/python.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/python.svg",
+      "chip": "light"
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "file": "logos/marks/go.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/go.svg",
+      "chip": "light"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "file": "logos/marks/rust.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/rust.svg",
+      "chip": "light"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "file": "logos/marks/typescript.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/typescript.svg",
+      "chip": "light"
+    },
+    {
+      "id": "nodedotjs",
+      "name": "Node.js",
+      "file": "logos/marks/nodedotjs.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/nodedotjs.svg",
+      "chip": "light"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "file": "logos/marks/react.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/react.svg",
+      "chip": "light"
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "file": "logos/marks/php.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/php.svg",
+      "chip": "light"
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "file": "logos/marks/linux.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/linux.svg",
+      "chip": "light"
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "file": "logos/marks/nginx.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/nginx.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apache",
+      "name": "Apache",
+      "file": "logos/marks/apache.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apache.svg",
+      "chip": "light"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "file": "logos/marks/mysql.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/mysql.svg",
+      "chip": "light"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "file": "logos/marks/postgresql.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/postgresql.svg",
+      "chip": "light"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "file": "logos/marks/redis.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/redis.svg",
+      "chip": "light"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "file": "logos/marks/git.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/git.svg",
+      "chip": "light"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "file": "logos/marks/anthropic.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/anthropic.svg",
+      "chip": "light"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "file": "logos/marks/cursor.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/cursor.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachespark",
+      "name": "Apache Spark",
+      "file": "logos/marks/apachespark.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachespark.svg",
+      "chip": "light"
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "file": "logos/marks/azure.svg",
+      "width": 96,
+      "height": 96,
+      "source": "https://commons.wikimedia.org/wiki/File:Microsoft_Azure.svg",
+      "chip": "light"
+    },
+    {
+      "id": "angular",
+      "name": "angular",
+      "file": "logos/marks/angular.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/angular.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachecassandra",
+      "name": "apachecassandra",
+      "file": "logos/marks/apachecassandra.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachecassandra.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachecordova",
+      "name": "apachecordova",
+      "file": "logos/marks/apachecordova.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachecordova.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachehadoop",
+      "name": "apachehadoop",
+      "file": "logos/marks/apachehadoop.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachehadoop.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachehive",
+      "name": "apachehive",
+      "file": "logos/marks/apachehive.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachehive.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachekafka",
+      "name": "apachekafka",
+      "file": "logos/marks/apachekafka.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachekafka.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apachetomcat",
+      "name": "apachetomcat",
+      "file": "logos/marks/apachetomcat.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apachetomcat.svg",
+      "chip": "light"
+    },
+    {
+      "id": "asterisk",
+      "name": "asterisk",
+      "file": "logos/marks/asterisk.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/asterisk.svg",
+      "chip": "light"
+    },
+    {
+      "id": "aws-acm",
+      "name": "aws-acm",
+      "file": "logos/aws/aws-acm.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/CertificateManager.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-apigateway",
+      "name": "aws-apigateway",
+      "file": "logos/aws/aws-apigateway.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/APIGateway.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-artifact",
+      "name": "aws-artifact",
+      "file": "logos/aws/aws-artifact.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/Artifact.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-athena",
+      "name": "aws-athena",
+      "file": "logos/aws/aws-athena.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/Athena.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-aurora",
+      "name": "aws-aurora",
+      "file": "logos/aws/aws-aurora.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/Aurora.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-autoscaling",
+      "name": "aws-autoscaling",
+      "file": "logos/aws/aws-autoscaling.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/EC2AutoScaling.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-beanstalk",
+      "name": "aws-beanstalk",
+      "file": "logos/aws/aws-beanstalk.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/ElasticBeanstalk.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-budgets",
+      "name": "aws-budgets",
+      "file": "logos/aws/aws-budgets.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/CloudFinancialManagement/Budgets.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-chime",
+      "name": "aws-chime",
+      "file": "logos/aws/aws-chime.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/BusinessApplications/Chime.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cli",
+      "name": "aws-cli",
+      "file": "logos/aws/aws-cli.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/DeveloperTools/CommandLineInterface.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cloudformation",
+      "name": "aws-cloudformation",
+      "file": "logos/aws/aws-cloudformation.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/CloudFormation.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cloudfront",
+      "name": "aws-cloudfront",
+      "file": "logos/aws/aws-cloudfront.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/CloudFront.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cloudshell",
+      "name": "aws-cloudshell",
+      "file": "logos/aws/aws-cloudshell.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/DeveloperTools/CloudShell.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cloudtrail",
+      "name": "aws-cloudtrail",
+      "file": "logos/aws/aws-cloudtrail.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/CloudTrail.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cloudwatch",
+      "name": "aws-cloudwatch",
+      "file": "logos/aws/aws-cloudwatch.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/CloudWatch.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-codeartifact",
+      "name": "aws-codeartifact",
+      "file": "logos/aws/aws-codeartifact.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/DeveloperTools/CodeArtifact.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-codebuild",
+      "name": "aws-codebuild",
+      "file": "logos/aws/aws-codebuild.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/DeveloperTools/CodeBuild.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-codecommit",
+      "name": "aws-codecommit",
+      "file": "logos/aws/aws-codecommit.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/DeveloperTools/CodeCommit.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-codedeploy",
+      "name": "aws-codedeploy",
+      "file": "logos/aws/aws-codedeploy.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/DeveloperTools/CodeDeploy.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cognito",
+      "name": "aws-cognito",
+      "file": "logos/aws/aws-cognito.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/Cognito.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-compute-optimizer",
+      "name": "aws-compute-optimizer",
+      "file": "logos/aws/aws-compute-optimizer.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/ComputeOptimizer2.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-config",
+      "name": "aws-config",
+      "file": "logos/aws/aws-config.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/Config.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-control-tower",
+      "name": "aws-control-tower",
+      "file": "logos/aws/aws-control-tower.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/ControlTower.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-corretto",
+      "name": "aws-corretto",
+      "file": "logos/aws/aws-corretto.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/DeveloperTools/Corretto.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cost-explorer",
+      "name": "aws-cost-explorer",
+      "file": "logos/aws/aws-cost-explorer.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/CloudFinancialManagement/CostExplorer.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-cur",
+      "name": "aws-cur",
+      "file": "logos/aws/aws-cur.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/CloudFinancialManagement/CostandUsageReport.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-datasync",
+      "name": "aws-datasync",
+      "file": "logos/aws/aws-datasync.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/MigrationModernization/DataSync.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-detective",
+      "name": "aws-detective",
+      "file": "logos/aws/aws-detective.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/Detective.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-device-farm",
+      "name": "aws-device-farm",
+      "file": "logos/aws/aws-device-farm.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/FrontEndWebMobile/DeviceFarm.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-devops-guru",
+      "name": "aws-devops-guru",
+      "file": "logos/aws/aws-devops-guru.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/DevOpsGuru.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-dms",
+      "name": "aws-dms",
+      "file": "logos/aws/aws-dms.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/DatabaseMigrationService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-documentdb",
+      "name": "aws-documentdb",
+      "file": "logos/aws/aws-documentdb.png",
+      "width": 40,
+      "height": 40,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/DocumentDB.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-dynamodb",
+      "name": "aws-dynamodb",
+      "file": "logos/aws/aws-dynamodb.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/DynamoDB.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-ebs",
+      "name": "aws-ebs",
+      "file": "logos/aws/aws-ebs.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Storage/ElasticBlockStore.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-ec2",
+      "name": "aws-ec2",
+      "file": "logos/aws/aws-ec2.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/EC2.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-ecr",
+      "name": "aws-ecr",
+      "file": "logos/aws/aws-ecr.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Containers/ElasticContainerRegistry.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-ecs",
+      "name": "aws-ecs",
+      "file": "logos/aws/aws-ecs.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Containers/ElasticContainerService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-efs",
+      "name": "aws-efs",
+      "file": "logos/aws/aws-efs.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Storage/EFS.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-eks",
+      "name": "aws-eks",
+      "file": "logos/aws/aws-eks.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Containers/ElasticKubernetesService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-elasticache",
+      "name": "aws-elasticache",
+      "file": "logos/aws/aws-elasticache.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/ElastiCache.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-elb",
+      "name": "aws-elb",
+      "file": "logos/aws/aws-elb.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/ElasticLoadBalancing.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-emr",
+      "name": "aws-emr",
+      "file": "logos/aws/aws-emr.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/EMR.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-eventbridge",
+      "name": "aws-eventbridge",
+      "file": "logos/aws/aws-eventbridge.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ApplicationIntegration/EventBridge.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-fargate",
+      "name": "aws-fargate",
+      "file": "logos/aws/aws-fargate.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Containers/Fargate.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-glacier",
+      "name": "aws-glacier",
+      "file": "logos/aws/aws-glacier.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Storage/SimpleStorageServiceGlacier.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-global-accelerator",
+      "name": "aws-global-accelerator",
+      "file": "logos/aws/aws-global-accelerator.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/GlobalAccelerator.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-glue",
+      "name": "aws-glue",
+      "file": "logos/aws/aws-glue.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/Glue.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-guardduty",
+      "name": "aws-guardduty",
+      "file": "logos/aws/aws-guardduty.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/GuardDuty.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-iam",
+      "name": "aws-iam",
+      "file": "logos/aws/aws-iam.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/IdentityandAccessManagement.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-inspector",
+      "name": "aws-inspector",
+      "file": "logos/aws/aws-inspector.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/Inspector.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-iot",
+      "name": "aws-iot",
+      "file": "logos/aws/aws-iot.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/InternetOfThings/IoTCore.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-keyspaces",
+      "name": "aws-keyspaces",
+      "file": "logos/aws/aws-keyspaces.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/Keyspaces.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-kinesis",
+      "name": "aws-kinesis",
+      "file": "logos/aws/aws-kinesis.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/Kinesis.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-kinesis-video",
+      "name": "aws-kinesis-video",
+      "file": "logos/aws/aws-kinesis-video.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/KinesisVideoStreams.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-kms",
+      "name": "aws-kms",
+      "file": "logos/aws/aws-kms.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/KeyManagementService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-lakeformation",
+      "name": "aws-lakeformation",
+      "file": "logos/aws/aws-lakeformation.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/LakeFormation.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-lambda",
+      "name": "aws-lambda",
+      "file": "logos/aws/aws-lambda.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/Lambda.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-lightsail",
+      "name": "aws-lightsail",
+      "file": "logos/aws/aws-lightsail.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/Lightsail.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-macie",
+      "name": "aws-macie",
+      "file": "logos/aws/aws-macie.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/Macie.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-marketplace",
+      "name": "aws-marketplace",
+      "file": "logos/aws/aws-marketplace.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/General/Marketplace.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-memorydb",
+      "name": "aws-memorydb",
+      "file": "logos/aws/aws-memorydb.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/MemoryDB.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-mq",
+      "name": "aws-mq",
+      "file": "logos/aws/aws-mq.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ApplicationIntegration/MQ.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-msk",
+      "name": "aws-msk",
+      "file": "logos/aws/aws-msk.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/ManagedStreamingforApacheKafka.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-network-firewall",
+      "name": "aws-network-firewall",
+      "file": "logos/aws/aws-network-firewall.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/NetworkFirewall.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-nova",
+      "name": "aws-nova",
+      "file": "logos/aws/aws-nova.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/Nova.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-opensearch",
+      "name": "aws-opensearch",
+      "file": "logos/aws/aws-opensearch.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/OpenSearchService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-organizations",
+      "name": "aws-organizations",
+      "file": "logos/aws/aws-organizations.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/Organizations.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-privatelink",
+      "name": "aws-privatelink",
+      "file": "logos/aws/aws-privatelink.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/PrivateLink.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-rds",
+      "name": "aws-rds",
+      "file": "logos/aws/aws-rds.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/RDS.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-redshift",
+      "name": "aws-redshift",
+      "file": "logos/aws/aws-redshift.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Analytics/Redshift.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-rekognition",
+      "name": "aws-rekognition",
+      "file": "logos/aws/aws-rekognition.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/Rekognition.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-route53",
+      "name": "aws-route53",
+      "file": "logos/aws/aws-route53.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/Route53.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-s3",
+      "name": "aws-s3",
+      "file": "logos/aws/aws-s3.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Storage/SimpleStorageService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-sagemaker",
+      "name": "aws-sagemaker",
+      "file": "logos/aws/aws-sagemaker.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/SageMakerAI.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-savings",
+      "name": "aws-savings",
+      "file": "logos/aws/aws-savings.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/CloudFinancialManagement/SavingsPlans.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-security-hub",
+      "name": "aws-security-hub",
+      "file": "logos/aws/aws-security-hub.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/SecurityHub.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-ses",
+      "name": "aws-ses",
+      "file": "logos/aws/aws-ses.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/BusinessApplications/SimpleEmailService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-shield",
+      "name": "aws-shield",
+      "file": "logos/aws/aws-shield.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/Shield.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-sns",
+      "name": "aws-sns",
+      "file": "logos/aws/aws-sns.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ApplicationIntegration/SimpleNotificationService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-spot",
+      "name": "aws-spot",
+      "file": "logos/aws/aws-spot.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/EC2SpotInstance.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-sqs",
+      "name": "aws-sqs",
+      "file": "logos/aws/aws-sqs.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ApplicationIntegration/SimpleQueueService.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-systems-manager",
+      "name": "aws-systems-manager",
+      "file": "logos/aws/aws-systems-manager.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/SystemsManager.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-trusted-advisor",
+      "name": "aws-trusted-advisor",
+      "file": "logos/aws/aws-trusted-advisor.png",
+      "width": 40,
+      "height": 40,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/TrustedAdvisor.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-vpc",
+      "name": "aws-vpc",
+      "file": "logos/aws/aws-vpc.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/VirtualPrivateCloud.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-waf",
+      "name": "aws-waf",
+      "file": "logos/aws/aws-waf.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/WAF.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-well-architected",
+      "name": "aws-well-architected",
+      "file": "logos/aws/aws-well-architected.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ManagementGovernance/WellArchitectedTool.png",
+      "chip": "light"
+    },
+    {
+      "id": "bootstrap",
+      "name": "bootstrap",
+      "file": "logos/marks/bootstrap.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/bootstrap.svg",
+      "chip": "light"
+    },
+    {
+      "id": "cakephp",
+      "name": "cakephp",
+      "file": "logos/marks/cakephp.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/cakephp.svg",
+      "chip": "light"
+    },
+    {
+      "id": "codeigniter",
+      "name": "codeigniter",
+      "file": "logos/marks/codeigniter.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/codeigniter.svg",
+      "chip": "light"
+    },
+    {
+      "id": "coffeescript",
+      "name": "coffeescript",
+      "file": "logos/marks/coffeescript.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/coffeescript.svg",
+      "chip": "light"
+    },
+    {
+      "id": "composer",
+      "name": "composer",
+      "file": "logos/marks/composer.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/composer.svg",
+      "chip": "light"
+    },
+    {
+      "id": "coreldraw",
+      "name": "coreldraw",
+      "file": "logos/marks/coreldraw.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/coreldraw.svg",
+      "chip": "light"
+    },
+    {
+      "id": "cplusplus",
+      "name": "cplusplus",
+      "file": "logos/marks/cplusplus.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/cplusplus.svg",
+      "chip": "light"
+    },
+    {
+      "id": "css",
+      "name": "css",
+      "file": "logos/marks/css.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/css.svg",
+      "chip": "light"
+    },
+    {
+      "id": "cypress",
+      "name": "cypress",
+      "file": "logos/marks/cypress.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/cypress.svg",
+      "chip": "light"
+    },
+    {
+      "id": "dale",
+      "name": "Dale Carnegie Training",
+      "file": "logos/dale-carnegie.svg",
+      "width": 200,
+      "height": 50,
+      "source": "https://www.dalecarnegie.com/static/dalecarnegie/DcLogoWide.svg",
+      "chip": "light"
+    },
+    {
+      "id": "dotnet",
+      "name": "dotnet",
+      "file": "logos/marks/dotnet.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/dotnet.svg",
+      "chip": "light"
+    },
+    {
+      "id": "elasticsearch",
+      "name": "elasticsearch",
+      "file": "logos/marks/elasticsearch.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/elasticsearch.svg",
+      "chip": "light"
+    },
+    {
+      "id": "express",
+      "name": "express",
+      "file": "logos/marks/express.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/express.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ffmpeg",
+      "name": "ffmpeg",
+      "file": "logos/marks/ffmpeg.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/ffmpeg.svg",
+      "chip": "light"
+    },
+    {
+      "id": "gnubash",
+      "name": "gnubash",
+      "file": "logos/marks/gnubash.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/gnubash.svg",
+      "chip": "light"
+    },
+    {
+      "id": "graphql",
+      "name": "graphql",
+      "file": "logos/marks/graphql.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/graphql.svg",
+      "chip": "light"
+    },
+    {
+      "id": "haproxy",
+      "name": "haproxy",
+      "file": "logos/marks/haproxy.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/haproxy.svg",
+      "chip": "light"
+    },
+    {
+      "id": "html5",
+      "name": "html5",
+      "file": "logos/marks/html5.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/html5.svg",
+      "chip": "light"
+    },
+    {
+      "id": "influxdb",
+      "name": "influxdb",
+      "file": "logos/marks/influxdb.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/influxdb.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ionic",
+      "name": "ionic",
+      "file": "logos/marks/ionic.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/ionic.svg",
+      "chip": "light"
+    },
+    {
+      "id": "javascript",
+      "name": "javascript",
+      "file": "logos/marks/javascript.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/javascript.svg",
+      "chip": "light"
+    },
+    {
+      "id": "jest",
+      "name": "jest",
+      "file": "logos/marks/jest.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/jest.svg",
+      "chip": "light"
+    },
+    {
+      "id": "jquery",
+      "name": "jquery",
+      "file": "logos/marks/jquery.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/jquery.svg",
+      "chip": "light"
+    },
+    {
+      "id": "junit5",
+      "name": "junit5",
+      "file": "logos/marks/junit5.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/junit5.svg",
+      "chip": "light"
+    },
+    {
+      "id": "kotlin",
+      "name": "kotlin",
+      "file": "logos/marks/kotlin.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/kotlin.svg",
+      "chip": "light"
+    },
+    {
+      "id": "laravel",
+      "name": "laravel",
+      "file": "logos/marks/laravel.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/laravel.svg",
+      "chip": "light"
+    },
+    {
+      "id": "less",
+      "name": "less",
+      "file": "logos/marks/less.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/less.svg",
+      "chip": "light"
+    },
+    {
+      "id": "mocha",
+      "name": "mocha",
+      "file": "logos/marks/mocha.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/mocha.svg",
+      "chip": "light"
+    },
+    {
+      "id": "netseg",
+      "name": "NetSeg",
+      "file": "logos/netseg.png",
+      "width": 300,
+      "height": 95,
+      "source": "https://netseg.com.br/images/logo.png",
+      "chip": "light"
+    },
+    {
+      "id": "openjdk",
+      "name": "openjdk",
+      "file": "logos/marks/openjdk.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/openjdk.svg",
+      "chip": "light"
+    },
+    {
+      "id": "openvpn",
+      "name": "openvpn",
+      "file": "logos/marks/openvpn.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/openvpn.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ovh",
+      "name": "ovh",
+      "file": "logos/marks/ovh.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/ovh.svg",
+      "chip": "light"
+    },
+    {
+      "id": "pfsense",
+      "name": "pfsense",
+      "file": "logos/marks/pfsense.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/pfsense.svg",
+      "chip": "light"
+    },
+    {
+      "id": "puppet",
+      "name": "puppet",
+      "file": "logos/marks/puppet.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/puppet.svg",
+      "chip": "light"
+    },
+    {
+      "id": "pytorch",
+      "name": "pytorch",
+      "file": "logos/marks/pytorch.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/pytorch.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ruby",
+      "name": "ruby",
+      "file": "logos/marks/ruby.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/ruby.svg",
+      "chip": "light"
+    },
+    {
+      "id": "sass",
+      "name": "sass",
+      "file": "logos/marks/sass.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/sass.svg",
+      "chip": "light"
+    },
+    {
+      "id": "scala",
+      "name": "scala",
+      "file": "logos/marks/scala.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/scala.svg",
+      "chip": "light"
+    },
+    {
+      "id": "socketdotio",
+      "name": "socketdotio",
+      "file": "logos/marks/socketdotio.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/socketdotio.svg",
+      "chip": "light"
+    },
+    {
+      "id": "sonar",
+      "name": "sonar",
+      "file": "logos/marks/sonar.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/sonar.svg",
+      "chip": "light"
+    },
+    {
+      "id": "spring",
+      "name": "spring",
+      "file": "logos/marks/spring.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/spring.svg",
+      "chip": "light"
+    },
+    {
+      "id": "springboot",
+      "name": "springboot",
+      "file": "logos/marks/springboot.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/springboot.svg",
+      "chip": "light"
+    },
+    {
+      "id": "sqlite",
+      "name": "sqlite",
+      "file": "logos/marks/sqlite.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/sqlite.svg",
+      "chip": "light"
+    },
+    {
+      "id": "swagger",
+      "name": "swagger",
+      "file": "logos/marks/swagger.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/swagger.svg",
+      "chip": "light"
+    },
+    {
+      "id": "symfony",
+      "name": "symfony",
+      "file": "logos/marks/symfony.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/symfony.svg",
+      "chip": "light"
+    },
+    {
+      "id": "usj",
+      "name": "USJ",
+      "file": "logos/usj.png",
+      "width": 244,
+      "height": 61,
+      "source": "https://web.archive.org/web/20160307005351/http://usj.edu.br/wp-content/uploads/2014/07/Topo-Site1.jpg",
+      "chip": "light"
+    },
+    {
+      "id": "vagrant",
+      "name": "vagrant",
+      "file": "logos/marks/vagrant.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/vagrant.svg",
+      "chip": "light"
+    },
+    {
+      "id": "vmware",
+      "name": "vmware",
+      "file": "logos/marks/vmware.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/vmware.svg",
+      "chip": "light"
+    },
+    {
+      "id": "wordpress",
+      "name": "wordpress",
+      "file": "logos/marks/wordpress.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/wordpress.svg",
+      "chip": "light"
+    },
+    {
+      "id": "zend",
+      "name": "zend",
+      "file": "logos/marks/zend.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/zend.svg",
+      "chip": "light"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "file": "logos/marks/openai.svg",
+      "width": 1180,
+      "height": 320,
+      "source": "https://commons.wikimedia.org/wiki/File:OpenAI_Logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "file": "logos/marks/oracle.svg",
+      "width": 231,
+      "height": 30,
+      "source": "https://commons.wikimedia.org/wiki/File:Oracle_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "ibm",
+      "name": "IBM",
+      "file": "logos/marks/ibm.svg",
+      "width": 1075,
+      "height": 401,
+      "source": "https://commons.wikimedia.org/wiki/File:IBM_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "file": "logos/marks/windows.svg",
+      "width": 4875,
+      "height": 4875,
+      "source": "https://commons.wikimedia.org/wiki/File:Windows_logo_-_2021.svg",
+      "chip": "light"
+    },
+    {
+      "id": "excel",
+      "name": "Microsoft Excel",
+      "file": "logos/marks/excel.svg",
+      "width": 165,
+      "height": 156,
+      "source": "https://commons.wikimedia.org/wiki/File:Microsoft_Excel_2013-2019_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "photoshop",
+      "name": "Adobe Photoshop",
+      "file": "logos/marks/photoshop.svg",
+      "width": 240,
+      "height": 234,
+      "source": "https://commons.wikimedia.org/wiki/File:Adobe_Photoshop_CC_icon.svg",
+      "chip": "light"
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "file": "logos/marks/redux.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/redux.svg",
+      "chip": "light"
+    },
+    {
+      "id": "expo",
+      "name": "Expo",
+      "file": "logos/marks/expo.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/expo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "file": "logos/marks/c.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/c.svg",
+      "chip": "light"
+    },
+    {
+      "id": "rancher",
+      "name": "Rancher",
+      "file": "logos/marks/rancher.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/rancher.svg",
+      "chip": "light"
+    }
+  ],
+  "badges": [
+    {
+      "id": "aws-database",
+      "file": "badges/aws-database.webp",
+      "width": 480,
+      "height": 480,
+      "source": "https://images.credly.com/images/885d38e4-55c0-4c35-b4ed-694e2b26be6c/image.png",
+      "match": "2e9b834e-0d50-4543-af3a-1e5b232c81af"
+    },
+    {
+      "id": "mongodb-dba",
+      "file": "badges/mongodb-dba.webp",
+      "width": 480,
+      "height": 480,
+      "source": "https://images.credly.com/images/395e38b5-2a2e-49aa-9416-df8f5619399d/image.png",
+      "match": "51674310-5aaf-4d09-be08-756d43b29b7c"
+    },
+    {
+      "id": "mit",
+      "file": "badges/mit-certificate.webp",
+      "width": 891,
+      "height": 629,
+      "source": "https://api.accredible.com/v1/frontend/credential_opengraph_seo_image/84339697",
+      "match": "credential.net/9a542380"
+    }
+  ],
+  "logoNote": "Marks are career context for organizations and technologies already named on the site. They are not endorsements, partnerships, or a sponsor wall. Dale Carnegie has no logo here because an official file could not be fetched. Technology marks are the public brand shapes for tools named in the experience record: Simple Icons 16.37.0 (CC0) and the Azure mark from Wikimedia Commons (public domain). Added marks use Simple Icons 16.37.0 (CC0), the AWS architecture icons redistributed by awslabs/aws-icons-for-plantuml, the Dale Carnegie wordmark from dalecarnegie.com, the NetSeg logo from netseg.com.br, and the USJ logotype from the university site as archived on 7 Mar 2016 (the USJ portion only)."
 }

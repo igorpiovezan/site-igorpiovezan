@@ -23,6 +23,14 @@
     "en": "Footprint",
     "pt-BR": "Presença"
   },
+  "navTechnologies": {
+    "en": "Technologies",
+    "pt-BR": "Tecnologias"
+  },
+  "navWorld": {
+    "en": "Organizations",
+    "pt-BR": "Organizações"
+  },
   "navBackground": {
     "en": "Background",
     "pt-BR": "Formação"
@@ -62,6 +70,66 @@
   "impactTitle": {
     "en": "In production",
     "pt-BR": "Em produção"
+  },
+  "publicStills": {
+    "en": "Public stills",
+    "pt-BR": "Quadros públicos"
+  },
+  "portraitReserved": {
+    "en": "Portrait reserved",
+    "pt-BR": "Retrato reservado"
+  },
+  "portraitCaption": {
+    "en": "This frame is ready for a photograph of Igor. Until then it shows the public nameplate.",
+    "pt-BR": "Este quadro está pronto para uma fotografia de Igor. Até lá, mostra o cartão público com o nome."
+  },
+  "portraitReadyCaption": {
+    "en": "Photo taken for speaker display at AWS Summit São Paulo.",
+    "pt-BR": "Foto tirada para exibição do speaker no AWS Summit São Paulo."
+  },
+  "photoTitle": {
+    "en": "Photographs",
+    "pt-BR": "Fotografias"
+  },
+  "photoLead": {
+    "en": "The first was taken for speaker display at AWS Summit São Paulo. The others are public photographs, and each of those links to the page it came from.",
+    "pt-BR": "A primeira foi tirada para exibição do speaker no AWS Summit São Paulo. As outras são fotografias públicas, e cada uma aponta para a página de origem."
+  },
+  "igorTitle": {
+    "en": "In public",
+    "pt-BR": "Em público"
+  },
+  "igorLead": {
+    "en": "The portrait at the top was taken for speaker display at AWS Summit São Paulo. Below are public talk stills, then the other photographs, including the MongoDB case study.",
+    "pt-BR": "O retrato do topo foi tirado para exibição do speaker no AWS Summit São Paulo. Abaixo, os quadros das palestras públicas e as outras fotografias, inclusive o caso da MongoDB."
+  },
+  "technologiesTitle": {
+    "en": "Technologies",
+    "pt-BR": "Tecnologias"
+  },
+  "technologiesLead": {
+    "en": "Five parts of the work already on this site. Marks are the public brands named there, not endorsements. The roles below keep the full stack.",
+    "pt-BR": "Cinco partes do trabalho que já está neste site. Os logotipos são as marcas públicas já citadas no texto, não um endosso. Os cargos abaixo guardam a stack completa."
+  },
+  "markNote": {
+    "en": "Marks named in the work. Not an endorsement.",
+    "pt-BR": "Marcas citadas no trabalho. Não são um endosso."
+  },
+  "replayEntrance": {
+    "en": "Replay entrance",
+    "pt-BR": "Repetir a entrada"
+  },
+  "worldTitle": {
+    "en": "Organizations",
+    "pt-BR": "Organizações"
+  },
+  "worldLead": {
+    "en": "Employers, schools, and the companies named in the public record. Context for the work, not endorsements or partner logos.",
+    "pt-BR": "Empregadores, escolas e as empresas citadas no registro público. Contexto do trabalho, não endosso nem logos de parceria."
+  },
+  "alsoOnRecord": {
+    "en": "Also on the record",
+    "pt-BR": "Também no registro"
   },
   "aboutTitle": {
     "en": "About",

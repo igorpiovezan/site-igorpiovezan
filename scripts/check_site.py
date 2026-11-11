@@ -84,6 +84,39 @@ def check_prod(out: Path) -> None:
                 fail(f"{name} home JSON-LD must be a ProfilePage whose mainEntity is the person")
             if "Approved and ranked 8th, IFSC federal civil-service exam Edital 42/2014 (IT Technician)" not in html and "Aprovado e classificado em 8º lugar, concurso público federal do IFSC, Edital 42/2014 (Técnico em Tecnologia da Informação)" not in html:
                 fail(f"{name} missing the IFSC exam award")
+            for marker in (
+                'id="about"',
+                'id="igor"',
+                'id="technologies"',
+                'id="world"',
+                'id="experience"',
+                'id="work"',
+                'id="speaking"',
+                'id="footprint"',
+                'id="background"',
+                'id="notes"',
+                "15+",
+                "100+",
+                "16M+",
+                "2M+",
+                "prefers-reduced-motion",
+            ):
+                if marker not in html:
+                    fail(f"{name} missing {marker}")
+            media = json.loads((ROOT / "assets" / "media.json").read_text(encoding="utf-8"))
+            disclaimer = (
+                "not endorsements or partner logos"
+                if name == "index.html"
+                else "não endosso nem logos de parceria"
+            )
+            if disclaimer not in html:
+                fail(f"{name} must keep the organizations disclaimer")
+            if not media.get("portrait"):
+                expected = "Portrait reserved" if name == "index.html" else "Retrato reservado"
+                if expected not in html:
+                    fail(f"{name} must keep the portrait slot caption ({expected})")
+            elif "Portrait reserved" in html or "Retrato reservado" in html:
+                fail(f"{name} still shows the empty portrait slot")
         if "linkedin.com/in/igorpiovezan" not in html or "github.com/igorpiovezan" not in html:
             fail(f"{name} Person sameAs links missing")
         if name == "404.html":
