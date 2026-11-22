@@ -20,6 +20,20 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content"
 SRC = ROOT / "src"
 ASSETS = ROOT / "assets"
+CVS = (
+    {
+        "file": ASSETS / "cv" / "igor-piovezan-linkedin-en.pdf",
+        "download": "igor-piovezan-linkedin-en.pdf",
+        "label": "Download CV (English)",
+        "lang": "en",
+    },
+    {
+        "file": ASSETS / "cv" / "igor-piovezan-linkedin-pt-br.pdf",
+        "download": "igor-piovezan-linkedin-pt-br.pdf",
+        "label": "Baixar CV (Português)",
+        "lang": "pt-BR",
+    },
+)
 
 MEASUREMENT_ID_RE = re.compile(r"^G-[A-Z0-9]+$")
 
@@ -119,6 +133,28 @@ def write_hashed(src: Path, dest_dir: Path) -> str:
     target = dest_dir / name
     target.write_bytes(src.read_bytes())
     return f"/assets/{name}"
+
+
+def load_cvs(dest_dir: Path) -> list[dict]:
+    found = []
+    for item in CVS:
+        if not item["file"].is_file():
+            continue
+        found.append({
+            "href": write_hashed(item["file"], dest_dir),
+            "download": item["download"],
+            "label": item["label"],
+            "lang": item["lang"],
+        })
+    return found
+
+
+def cv_links(assets) -> str:
+    return "".join(
+        f'<a href="{e(item["href"])}" download="{e(item["download"])}" '
+        f'lang="{e(item["lang"])}" hreflang="{e(item["lang"])}">{e(item["label"])}</a>'
+        for item in assets.get("cvs") or []
+    )
 
 
 def absolute(host: str, path: str) -> str:
@@ -393,6 +429,7 @@ def footer(bundle, lang) -> str:
         f'<a href="{e(notes)}">{e(ui(bundle, lang, "navNotes"))}</a>'
         f'<a href="{e(site["linkedin"])}">LinkedIn</a>'
         f'<a href="{e(site["github"])}">GitHub</a>'
+        f'{cv_links(bundle.get("_assets") or {})}'
         "</p></div></footer>"
     )
 
@@ -663,6 +700,7 @@ def render_hero(bundle, lang, assets) -> str:
         '<p class="hero-actions">'
         f'<a href="{e(bundle["site"]["linkedin"])}">LinkedIn</a>'
         f'<a href="{e(bundle["site"]["github"])}">GitHub</a>'
+        f'{cv_links(assets)}'
         f'<a href="#igor">{e(ui(bundle, lang, "publicStills"))}</a>'
         "</p></div>"
         f'<figure class="{frame}">'
@@ -935,6 +973,8 @@ def render_home(bundle, lang, assets) -> str:
         if cert.get("expires"):
             key = "expired" if cert["expires"] < updated else "expires"
             bits.append(f'{e(ui(bundle, lang, key))} {e(fmt_cert_date(cert["expires"], lang))}')
+        if cert.get("credentialId"):
+            bits.append(f'{e(ui(bundle, lang, "credentialId"))} {e(cert["credentialId"])}')
         link = ""
         if cert.get("url"):
             link = f' <a href="{e(cert["url"])}">{e(ui(bundle, lang, "showCredential"))}</a>'
@@ -1492,7 +1532,9 @@ def build(env: str, out: Path) -> None:
         "photos": [],
         "logos": {},
         "badges": [],
+        "cvs": [],
     }
+    assets["cvs"] = load_cvs(assets_dir)
     for still in media.get("stills") or []:
         assets["stills"][still["id"]] = {
             "src": write_hashed(ASSETS / still["file"], assets_dir),
