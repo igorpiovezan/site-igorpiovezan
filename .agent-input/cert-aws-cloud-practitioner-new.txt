@@ -1,0 +1,9 @@
+ADD: Licenses & certifications (old: none, new entry)
+Name: AWS Certified Cloud Practitioner
+Issuing organization: Amazon Web Services (AWS)
+Issued: Nov 2026 · Expires: Nov 2029
+Credential ID: ae030534fc764c35a03eda244a344798
+Credential URL: https://www.credly.com/badges/74584c30-2541-4bd1-9872-9f9a268094a5
+Skills: Amazon Web Services (AWS), Cloud Computing, Cloud Security, Financial Operations, Software Architecture, Technical Vision, Software Development Life Cycle (SDLC), Cloud Infrastructure, Technology Management, DevOps
+Media: Credly link titled "AWS Certified Cloud Practitioner was issued by Amazon Web Services Training and Certification to Igor Agenor Piovezan."
+Feed post: none

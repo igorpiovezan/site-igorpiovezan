@@ -1,0 +1,100 @@
+Artificial Intelligence (AI)
+Technology Management
+Amazon Web Services (AWS)
+Cloud Infrastructure
+Performance Tuning
+Cloud Security
+Apache
+Windows Server
+Oracle Database
+Microservices
+Software Development
+Cloud Computing
+Object-Oriented Programming (OOP)
+Internet Protocol Suite (TCP/IP)
+Apache Spark Streaming
+Platform as a Service (PAAS)
+Technology Roadmapping
+Go (Programming Language)
+C (Programming Language)
+Problem Solving
+Communication
+Customer Service
+Software Architecture
+Technical Understanding
+Operational Excellence
+Large Scale Systems
+Large-scale Data Analysis
+Software Development Life Cycle (SDLC)
+Management
+Team Leadership
+Psychological Safety
+Agile Methodologies
+Team Management
+Workload Prioritization
+Financial Operations
+Leadership
+CTO
+Java
+JavaScript
+Morale
+Technical Vision
+Spa
+OVH
+High Throughput
+Scala
+Financial Analysis
+Microsoft Excel
+Expo
+C#
+C++
+Amazon DynamoDB
+MapReduce
+Spring Boot
+Amazon Web Services
+Puppet (Software)
+Redux.js
+Ansible
+GraphQL
+Big data
+Hive
+Jenkins
+Grafana
+MongoDB
+Node.js
+People Management
+Product Management
+Downstream
+Upstream
+DevOps
+Continuous Integration and Continuous Delivery (CI/CD)
+Spring Framework
+React.js
+React Native
+Python (Programming Language)
+PHP
+SQL
+MySQL
+PostgreSQL
+Microsoft SQL Server
+Redis
+Data Lakes
+Apache Kafka
+Apache Spark
+Hadoop
+Elasticsearch
+Kubernetes
+Docker Swarm
+Rancher Kubernetes Management
+Docker
+Terraform
+Prometheus.io
+Firewalls
+Computer Networking
+Linux
+Microsoft Azure
+Google Cloud Platform (GCP)
+AngularJS
+Nginx
+Overclocking
+TDD
