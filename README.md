@@ -71,7 +71,7 @@ Binary files under `/assets/` are content-hashed because here.now caches that pa
 
 The hero portrait (`assets/photos/igor-1.png`, original filename igor-1.png) was taken for speaker display at AWS Summit São Paulo. Igor provided the file on 10 November 2026. The site serves a WebP encode of that file and does not crop or restyle the face. The MongoDB case-study photograph stays in the gallery. The other public photographs are there too. Talk stills are optimized copies of the YouTube thumbnails for videos already linked on the site.
 
-Logos and badge artwork are career context, not endorsements or partner lockups. Every file’s source URL is in `assets/media.json`. Dale Carnegie stays typographic: an official mark could not be fetched. Do not generate a face. If `portrait` is set, `scripts/check_site.py` rejects the old “portrait reserved” caption.
+Logos and badge artwork are career context, not endorsements or partner lockups. Every file’s source URL is in `assets/media.json`. Dale Carnegie uses the official wordmark from dalecarnegie.com. Do not generate a face. If `portrait` is set, `scripts/check_site.py` rejects the old “portrait reserved” caption.
 
 `content/chapters.json` is the visual layer. Its lines restate facts already in the career files. Do not add a claim there that the biography does not already make.
 

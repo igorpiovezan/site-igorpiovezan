@@ -206,6 +206,67 @@ def check_test(out: Path) -> None:
             fail(f"preview {path.name} must be noindex")
 
 
+def check_organization_marks(out: Path) -> None:
+    """Every organization slot must render a real mark, and branded stack items must not fall back to text."""
+    import build
+
+    stack = json.loads((ROOT / "content" / "stack.json").read_text(encoding="utf-8"))
+    text_only = []
+    branded = []
+    for group in stack:
+        for item in group["items"]:
+            if build.stack_logo_ids(item):
+                branded.append(item["name"])
+            else:
+                text_only.append(item["name"])
+    home_pages = ("index.html", "pt-br/index.html")
+    for name in home_pages:
+        html = (out / name).read_text(encoding="utf-8")
+        for classes in (
+            "company",
+            "school",
+            "cert",
+            "honor",
+            "press-card",
+            "cover",
+            "talk",
+            "seal",
+            "plate",
+        ):
+            blocks = re.findall(rf'<article class="{classes}[^"]*">.*?</article>', html, re.S)
+            if not blocks:
+                fail(f"{name} renders no {classes} organization blocks")
+            for block in blocks:
+                if 'class="logo"' not in block:
+                    fail(f"{name} renders a {classes} block without a mark")
+        for block in re.findall(r'<ul class="plain-list">(.*?)</ul>', html, re.S):
+            items = re.findall(r"<li>.*?</li>", block, re.S)
+            if not items:
+                fail(f"{name} elsewhere list is empty")
+            for item in items:
+                if 'class="logo"' not in item:
+                    fail(f"{name} renders an elsewhere organization without a mark")
+        for item in re.findall(r'<ol class="timeline">(.*?)</ol>', html, re.S):
+            for entry in re.findall(r"<li>.*?</li>", item, re.S):
+                if ("IFSC" in entry or "USJ" in entry) and 'class="logo"' not in entry:
+                    fail(f"{name} renders IFSC or USJ in the timeline without a mark")
+        rest = []
+        for block in re.findall(r'<ul class="chips stack-rest">(.*?)</ul>', html, re.S):
+            rest.extend(re.findall(r"<li>(.*?)</li>", block, re.S))
+        if sorted(rest) != sorted(text_only):
+            extra = sorted(set(rest) - set(text_only))
+            missing = sorted(set(text_only) - set(rest))
+            fail(f"{name} stack text chips do not match unmarked concepts: extra {extra[:6]} missing {missing[:6]}")
+        for brand in branded:
+            if f">{brand}<" not in html and f">{brand}</span>" not in html:
+                # labeled chips put the name in mark-name
+                if brand not in html:
+                    fail(f"{name} drops branded stack item {brand}")
+        for link_label in ("LinkedIn", "GitHub", "YouTube"):
+            if link_label in html and 'class="logo"' not in html:
+                fail(f"{name} names {link_label} without any mark")
+
+
 def check_source_id() -> None:
     hits = []
     for path in (ROOT / "content").rglob("*.json"):
@@ -233,6 +294,7 @@ def main() -> None:
         build("test", preview)
         check_prod(prod)
         check_test(preview)
+        check_organization_marks(prod)
     print("site checks passed")
 
 

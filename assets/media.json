@@ -2002,6 +2002,438 @@
       "height": 24,
       "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/rancher.svg",
       "chip": "light"
+    },
+    {
+      "id": "itforum",
+      "name": "IT Forum",
+      "file": "logos/itforum.svg",
+      "width": 90,
+      "height": 20,
+      "source": "https://itforum.com.br/wp-content/themes/itforumportal/assets/images/logos/itforum.svg",
+      "chip": "light"
+    },
+    {
+      "id": "tiinside",
+      "name": "TI Inside",
+      "file": "logos/tiinside.png",
+      "width": 256,
+      "height": 63,
+      "source": "https://tiinside.com.br/wp-content/uploads/2024/01/logo_ti_2024.png",
+      "chip": "dark"
+    },
+    {
+      "id": "portalsecurity",
+      "name": "Portal Security Brasil",
+      "file": "logos/portalsecurity.png",
+      "width": 900,
+      "height": 178,
+      "source": "https://revistasecurity.com.br/wp-content/uploads/2025/09/logo-revista-security-brasil-2048x420-1.png",
+      "chip": "light"
+    },
+    {
+      "id": "engenhariae",
+      "name": "Engenharia é",
+      "file": "logos/engenhariae.png",
+      "width": 250,
+      "height": 250,
+      "source": "https://cdnsjengenhariae.nuneshost.com/wp-content/uploads/2024/02/Engenharia-e-1-.png",
+      "chip": "light"
+    },
+    {
+      "id": "iabrasil",
+      "name": "IA Brasil Notícias",
+      "file": "logos/iabrasil.png",
+      "width": 800,
+      "height": 167,
+      "source": "https://iabrasilnoticias.com.br/wp-content/uploads/2025/01/logo-novo-1024x214.webp",
+      "chip": "dark"
+    },
+    {
+      "id": "pensador",
+      "name": "Pensador",
+      "file": "logos/pensador.png",
+      "width": 198,
+      "height": 36,
+      "source": "https://cdn.pensador.com/img/logo.png",
+      "chip": "light"
+    },
+    {
+      "id": "superme",
+      "name": "SuperMe",
+      "file": "logos/superme.png",
+      "width": 192,
+      "height": 192,
+      "source": "https://www.superme.ai/android-chrome-192x192.png",
+      "chip": "light"
+    },
+    {
+      "id": "iscbrasil",
+      "name": "ISC Brasil",
+      "file": "logos/iscbrasil.png",
+      "width": 739,
+      "height": 371,
+      "source": "https://www.iscbrasil.com.br/content/dam/sitebuilder/rxb/isc-brasil/2020/logos/ISC%20Brazil_Logo_Branco-01.png",
+      "chip": "dark"
+    },
+    {
+      "id": "exposec",
+      "name": "Exposec",
+      "file": "logos/exposec.png",
+      "width": 900,
+      "height": 145,
+      "source": "https://exposec.tmp.br/wp-content/uploads/2023/05/Exposec-Logo-2025_positivo-scaled.png",
+      "chip": "light"
+    },
+    {
+      "id": "credly",
+      "name": "Credly",
+      "file": "logos/credly.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/credly.svg",
+      "chip": "light"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "file": "logos/youtube.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/youtube.svg",
+      "chip": "light"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "file": "logos/github.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/github.svg",
+      "chip": "light"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "file": "logos/spotify.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/spotify.svg",
+      "chip": "light"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "file": "logos/linkedin.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/linkedin.svg",
+      "chip": "light"
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "file": "logos/kiro.svg",
+      "width": 1200,
+      "height": 1200,
+      "source": "https://kiro.dev/icon.svg",
+      "chip": "light"
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "file": "logos/xai.png",
+      "width": 256,
+      "height": 256,
+      "source": "https://x.ai/icon.png",
+      "chip": "light"
+    },
+    {
+      "id": "finops",
+      "name": "FinOps Foundation",
+      "file": "logos/finops.svg",
+      "width": 293,
+      "height": 16,
+      "source": "https://www.finops.org/wp-content/themes/finops-foundation/assets/images/tlf_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "datomic",
+      "name": "Datomic",
+      "file": "logos/datomic.svg",
+      "width": 415,
+      "height": 100,
+      "source": "https://www.datomic.com/images/Datomic%20wordmark%20horizontal.svg",
+      "chip": "light"
+    },
+    {
+      "id": "phpunit",
+      "name": "PHPUnit",
+      "file": "logos/phpunit.svg",
+      "width": 38,
+      "height": 10,
+      "source": "https://phpunit.de/img/phpunit.svg",
+      "chip": "light"
+    },
+    {
+      "id": "hhvm",
+      "name": "HHVM",
+      "file": "logos/hhvm.svg",
+      "width": 254,
+      "height": 254,
+      "source": "https://hhvm.com/static/logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "file": "logos/microsoft.svg",
+      "width": 338,
+      "height": 72,
+      "source": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(2012).svg",
+      "chip": "light"
+    },
+    {
+      "id": "powerbi",
+      "name": "Power BI",
+      "file": "logos/powerbi.svg",
+      "width": 630,
+      "height": 630,
+      "source": "https://commons.wikimedia.org/wiki/File:New_Power_BI_Logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "sqlserver",
+      "name": "Microsoft SQL Server",
+      "file": "logos/sqlserver.svg",
+      "width": 48,
+      "height": 48,
+      "source": "https://commons.wikimedia.org/wiki/File:Microsoft_SQL_Server_2025_icon.svg",
+      "chip": "light"
+    },
+    {
+      "id": "windowsserver",
+      "name": "Windows Server",
+      "file": "logos/windowsserver.svg",
+      "width": 2134,
+      "height": 301,
+      "source": "https://commons.wikimedia.org/wiki/File:Windows_Server_logo.svg",
+      "chip": "light"
+    },
+    {
+      "id": "wildfly",
+      "name": "WildFly",
+      "file": "logos/wildfly.png",
+      "width": 320,
+      "height": 95,
+      "source": "https://www.wildfly.org/assets/img/wildfly_icons_one-color-logo.png",
+      "chip": "light"
+    },
+    {
+      "id": "samza",
+      "name": "Apache Samza",
+      "file": "logos/samza.png",
+      "width": 200,
+      "height": 50,
+      "source": "https://samza.apache.org/img/samza-logo.png",
+      "chip": "light"
+    },
+    {
+      "id": "orc",
+      "name": "Apache ORC",
+      "file": "logos/orc.png",
+      "width": 489,
+      "height": 188,
+      "source": "https://orc.apache.org/img/logo.png",
+      "chip": "light"
+    },
+    {
+      "id": "isc",
+      "name": "ISC",
+      "file": "logos/isc.png",
+      "width": 264,
+      "height": 65,
+      "source": "https://www.isc.org/images/logo.png",
+      "chip": "light"
+    },
+    {
+      "id": "elastix",
+      "name": "Elastix",
+      "file": "logos/elastix.png",
+      "width": 401,
+      "height": 453,
+      "source": "https://commons.wikimedia.org/wiki/File:Isotipo-elastix.png",
+      "chip": "light"
+    },
+    {
+      "id": "netfilter",
+      "name": "Netfilter",
+      "file": "logos/netfilter.png",
+      "width": 621,
+      "height": 143,
+      "source": "https://www.netfilter.org/images/netfilter-logo3.png",
+      "chip": "light"
+    },
+    {
+      "id": "apigility",
+      "name": "Apigility",
+      "file": "logos/apigility.png",
+      "width": 250,
+      "height": 175,
+      "source": "https://apigility.org/img/ag-hero.png",
+      "chip": "light"
+    },
+    {
+      "id": "squid",
+      "name": "Squid",
+      "file": "logos/squid.png",
+      "width": 520,
+      "height": 384,
+      "source": "https://commons.wikimedia.org/wiki/File:Squid-cache.png",
+      "chip": "light"
+    },
+    {
+      "id": "cacti",
+      "name": "Cacti",
+      "file": "logos/cacti.png",
+      "width": 300,
+      "height": 480,
+      "source": "https://github.com/Cacti/cacti/raw/1.2.x/images/cacti_logo.gif",
+      "chip": "light"
+    },
+    {
+      "id": "spiceworks",
+      "name": "Spiceworks",
+      "file": "logos/spiceworks.png",
+      "width": 41,
+      "height": 49,
+      "source": "https://www.spiceworks.com/wp-content/uploads/sites/3/2024/07/spiceworks-logo-icon.jpg",
+      "chip": "light"
+    },
+    {
+      "id": "aomedia",
+      "name": "AOMedia",
+      "file": "logos/aomedia.png",
+      "width": 146,
+      "height": 174,
+      "source": "https://aomedia.org/assets/images/aomedia-icon-only.png",
+      "chip": "light"
+    },
+    {
+      "id": "memcached",
+      "name": "Memcached",
+      "file": "logos/memcached.png",
+      "width": 160,
+      "height": 110,
+      "source": "https://memcached.org/images/memcached_banner75.jpg",
+      "chip": "light"
+    },
+    {
+      "id": "webassembly",
+      "name": "WebAssembly",
+      "file": "logos/marks/webassembly.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/webassembly.svg",
+      "chip": "light"
+    },
+    {
+      "id": "polymerproject",
+      "name": "Polymer",
+      "file": "logos/marks/polymerproject.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/polymerproject.svg",
+      "chip": "light"
+    },
+    {
+      "id": "thymeleaf",
+      "name": "Thymeleaf",
+      "file": "logos/marks/thymeleaf.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/thymeleaf.svg",
+      "chip": "light"
+    },
+    {
+      "id": "h2database",
+      "name": "H2 Database",
+      "file": "logos/marks/h2database.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/h2database.svg",
+      "chip": "light"
+    },
+    {
+      "id": "presto",
+      "name": "Presto",
+      "file": "logos/marks/presto.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/presto.svg",
+      "chip": "light"
+    },
+    {
+      "id": "apacheparquet",
+      "name": "Apache Parquet",
+      "file": "logos/marks/apacheparquet.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/apacheparquet.svg",
+      "chip": "light"
+    },
+    {
+      "id": "webrtc",
+      "name": "WebRTC",
+      "file": "logos/marks/webrtc.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/webrtc.svg",
+      "chip": "light"
+    },
+    {
+      "id": "roundcube",
+      "name": "Roundcube",
+      "file": "logos/marks/roundcube.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/roundcube.svg",
+      "chip": "light"
+    },
+    {
+      "id": "owasp",
+      "name": "OWASP",
+      "file": "logos/marks/owasp.svg",
+      "width": 24,
+      "height": 24,
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/owasp.svg",
+      "chip": "light"
+    },
+    {
+      "id": "aws-backup",
+      "name": "AWS Backup",
+      "file": "logos/aws/aws-backup.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Storage/Backup.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-vpn",
+      "name": "AWS Client VPN",
+      "file": "logos/aws/aws-vpn.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/ClientVPN.png",
+      "chip": "light"
+    },
+    {
+      "id": "aws-neuron",
+      "name": "AWS Neuron",
+      "file": "logos/aws/aws-neuron.png",
+      "width": 64,
+      "height": 64,
+      "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/Neuron.png",
+      "chip": "light"
     }
   ],
   "badges": [
@@ -2030,5 +2462,5 @@
       "match": "credential.net/9a542380"
     }
   ],
-  "logoNote": "Marks are career context for organizations and technologies already named on the site. They are not endorsements, partnerships, or a sponsor wall. Dale Carnegie has no logo here because an official file could not be fetched. Technology marks are the public brand shapes for tools named in the experience record: Simple Icons 16.37.0 (CC0) and the Azure mark from Wikimedia Commons (public domain). Added marks use Simple Icons 16.37.0 (CC0), the AWS architecture icons redistributed by awslabs/aws-icons-for-plantuml, the Dale Carnegie wordmark from dalecarnegie.com, the NetSeg logo from netseg.com.br, and the USJ logotype from the university site as archived on 7 Mar 2016 (the USJ portion only)."
+  "logoNote": "Marks are career context for organizations and technologies already named on the site. They are not endorsements, partnerships, or a sponsor wall. The Dale Carnegie wordmark is the official file from dalecarnegie.com. Technology marks are the public brand shapes for tools named in the experience record: Simple Icons 16.37.0 (CC0) and the Azure mark from Wikimedia Commons (public domain). Added marks use Simple Icons 16.37.0 (CC0), the AWS architecture icons redistributed by awslabs/aws-icons-for-plantuml, the Dale Carnegie wordmark from dalecarnegie.com, the NetSeg logo from netseg.com.br, and the USJ logotype from the university site as archived on 7 Mar 2016 (the USJ portion only)."
 }

@@ -64,7 +64,7 @@ def main():
         "hero": {"file": "hero.webp", "width": 1200, "height": 675},
         "og": {"file": "og.png", "width": 1200, "height": 630},
     }
-    for key in ("portrait", "stills", "stillSource"):
+    for key in ("portrait", "stills", "stillSource", "photos", "logos", "badges", "logoNote"):
         if key in existing:
             meta[key] = existing[key]
     meta_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
