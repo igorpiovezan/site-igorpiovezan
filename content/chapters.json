@@ -7,8 +7,8 @@
         "pt-BR": "AWS"
       },
       "line": {
-        "en": "Six times at re:Invent. Speaker at AWS Summit São Paulo. AWS Certified Database – Specialty. Amazon Bedrock and Amazon Nova Sonic in the production cases.",
-        "pt-BR": "Seis vezes no re:Invent. Palestrante no AWS Summit São Paulo. AWS Certified Database – Specialty. Amazon Bedrock e Amazon Nova Sonic nos casos em produção."
+        "en": "Six times at re:Invent. Speaker at AWS Summit São Paulo. AWS Certified Cloud Practitioner, issued November 2026. AWS Certified Database – Specialty expired in November 2026. Amazon Bedrock and Amazon Nova Sonic in the production cases.",
+        "pt-BR": "Seis vezes no re:Invent. Palestrante no AWS Summit São Paulo. AWS Certified Cloud Practitioner, emitida em novembro de 2026. AWS Certified Database – Specialty expirada em novembro de 2026. Amazon Bedrock e Amazon Nova Sonic nos casos em produção."
       },
       "logo": "aws"
     },
@@ -19,8 +19,8 @@
         "pt-BR": "IA e agentes"
       },
       "line": {
-        "en": "AI-native platforms for 100+ engineers. Agents connected to cloud, repositories, CI/CD, observability, ticketing, and internal systems. Multi-model review on pull requests.",
-        "pt-BR": "Plataformas AI-native para mais de 100 engenheiros. Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados e sistemas internos. Revisão multimodelo em pull requests."
+        "en": "AI-native platforms for 100+ tech professionals. Agents connected to cloud, repositories, CI/CD, observability, ticketing, and internal systems. Multi-model review on pull requests.",
+        "pt-BR": "Plataformas AI-native para mais de 100 profissionais de tecnologia. Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados e sistemas internos. Revisão multimodelo em pull requests."
       },
       "logo": "bedrock",
       "marks": [
@@ -93,10 +93,10 @@
       "id": "aws",
       "tier": "primary",
       "name": "AWS",
-      "url": "https://www.credly.com/badges/2e9b834e-0d50-4543-af3a-1e5b232c81af",
+      "url": "https://www.credly.com/badges/74584c30-2541-4bd1-9872-9f9a268094a5",
       "line": {
-        "en": "AWS Certified Database – Specialty. Six-time re:Invent attendee. Speaker at AWS Summit São Paulo.",
-        "pt-BR": "AWS Certified Database – Specialty. Seis vezes no re:Invent. Palestrante no AWS Summit São Paulo."
+        "en": "AWS Certified Cloud Practitioner, issued November 2026. AWS Certified Database – Specialty expired in November 2026. Six-time re:Invent attendee. Speaker at AWS Summit São Paulo.",
+        "pt-BR": "AWS Certified Cloud Practitioner, emitida em novembro de 2026. AWS Certified Database – Specialty expirada em novembro de 2026. Seis vezes no re:Invent. Palestrante no AWS Summit São Paulo."
       },
       "logo": "aws"
     },

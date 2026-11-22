@@ -516,7 +516,7 @@
     var ry = 0;
     var hot = false;
     var glass = createGlass();
-    var items = ".logo-chip, .chips li, .tagline li, .proof li, .tech-card, .plate, .work-card, .press-card, .cover, .honor, .school, .cert, .seal, .note, .talk, .role, .company, .timeline li, .quote, .photo-frame, .still-media, .portrait-frame, .replay, button, .hero-actions a, summary";
+    var items = ".logo-chip, .chips li, .tagline li, .proof li, .tech-card, .plate, .work-card, .press-card, .cover, .honor, .school, .cert, .seal, .note, .talk, .role, .company, .timeline li, .quote, .photo-frame, .still-media, .portrait-frame, .replay, button, .hero-actions a, .profile-links a, summary";
     var running = false;
     var lastNow = 0;
     var pulled = null;

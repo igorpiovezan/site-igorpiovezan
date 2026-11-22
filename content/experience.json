@@ -10,8 +10,8 @@
         "pt-BR": "jan 2016 – atual · 10 anos e 11 meses"
       },
       "summary": {
-        "en": "AI-native cloud platforms for security, smart home, and multimedia. They connect 2 million+ IoT devices and help 16 million+ people.",
-        "pt-BR": "Plataformas em nuvem AI-native para segurança, casa inteligente e multimídia. Conectam mais de 2 milhões de dispositivos IoT e ajudam mais de 16 milhões de pessoas."
+        "en": "AI-native cloud platforms for electronic security, video monitoring, smart home, multimedia, access control, remote concierge, and IoT. They connect 2 million+ devices and help 16 million+ people.",
+        "pt-BR": "Plataformas em nuvem AI-native para segurança eletrônica, videomonitoramento, casa inteligente, multimídia, controle de acesso, portaria remota e IoT. Conectam mais de 2 milhões de dispositivos e ajudam mais de 16 milhões de pessoas."
       }
     },
     {
@@ -64,32 +64,42 @@
         "pt-BR": "São Paulo, Brasil"
       },
       "summary": {
-        "en": "Leads 100+ engineers building AI-native cloud platforms that connect 2 million+ IoT devices across security, smart home, and multimedia, helping 16 million+ people live safer, better lives. Sets enterprise governance for the AI ecosystem and raises intermediate leaders into tribe coordinators, with domain ownership over strategy, people, and delivery, and with clear KPIs. Stays close to models, agents, and the path from pull request to production. FinOps sits on the same scorecard.",
-        "pt-BR": "Lidera mais de 100 engenheiros na construção de plataformas em nuvem AI-native que conectam mais de 2 milhões de dispositivos IoT de segurança, casa inteligente e multimídia, ajudando mais de 16 milhões de pessoas a viverem de forma mais segura e com mais qualidade. Define a governança corporativa do ecossistema de IA e eleva lideranças intermediárias a coordenadores de tribo, com autonomia de domínio sobre estratégia, pessoas e entrega, e com KPIs claros. Segue perto dos modelos, dos agentes e do caminho do pull request à produção. FinOps entra no mesmo painel."
+        "en": "Leads 100+ people, including spec-driven development with AI for more than 100 software developers. Sets enterprise governance for the AI ecosystem and raises intermediate leaders into tribe coordinators, with domain ownership of strategy, people, and delivery, and with clear KPIs. Stays with the models, the agents, and the path from pull request to production. Continuous AI operation and FinOps sit on the same scorecard.",
+        "pt-BR": "Lidera mais de 100 pessoas, incluindo a adoção de desenvolvimento orientado a especificação com IA para mais de 100 desenvolvedores de software. Define a governança corporativa do ecossistema de IA e eleva lideranças intermediárias a coordenadores de tribo, com autonomia de domínio sobre estratégia, pessoas e entrega, e com KPIs claros. Segue perto dos modelos, dos agentes e do caminho do pull request à produção. A operação contínua de IA e o FinOps ficam no mesmo painel."
       },
       "highlights": {
         "en": [
-          "AI-embedded SDLC for 100+ engineers.",
-          "Multi-model review on pull requests and CI.",
-          "Agents connected to cloud, repositories, CI/CD, observability, ticketing, and internal systems.",
-          "Amazon Nova Sonic for bidirectional audio and video in the same model context."
+          "AI-embedded software lifecycle, with multi-model review on every pull request and in CI.",
+          "Agents connected to cloud, repositories, CI/CD, observability, ticketing, email, chat, and internal systems.",
+          "Daily use of the OpenAI, Anthropic, xAI, and Kiro stacks, including Grok, Claude, Codex, Cursor, and Kiro.",
+          "Nova Sonic 2 for bidirectional audio and video in the same model context, with smaller language and video models where they cost less."
         ],
         "pt-BR": [
-          "SDLC com IA para mais de 100 engenheiros.",
-          "Revisão multimodelo em pull requests e na CI.",
-          "Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados e sistemas internos.",
-          "Amazon Nova Sonic para áudio e vídeo bidirecionais no mesmo contexto de modelo."
+          "Ciclo de software com IA incorporada, e revisão multimodelo em todo pull request e na CI.",
+          "Agentes conectados a nuvem, repositórios, CI/CD, observabilidade, chamados, e-mail, chat e sistemas internos.",
+          "Uso diário das stacks da OpenAI, da Anthropic, da xAI e do Kiro, incluindo Grok, Claude, Codex, Cursor e Kiro.",
+          "Nova Sonic 2 para áudio e vídeo bidirecionais no mesmo contexto de modelo, com modelos menores de linguagem e de vídeo quando custam menos."
         ]
       },
       "technologies": [
         "Spec-driven development",
         "Cursor",
+        "Cursor Teams and Enterprise",
         "OpenAI (ChatGPT, Codex, API)",
         "Anthropic (Claude, Claude Code, API)",
-        "xAI (Grok)",
+        "xAI (Grok, Grok Bot, Grok Build)",
         "Kiro",
+        "Kiro Crew",
+        "Kiro CLI",
+        "Opus",
+        "Luna",
+        "Terra",
+        "Sol",
+        "Fable",
+        "Nova Micro",
         "Model Context Protocol",
-        "Amazon Nova Sonic",
+        "Nova Sonic 2",
+        "Small language and video models",
         "Multi-model code review",
         "Agentic workflows",
         "FinOps"
@@ -284,16 +294,16 @@
       },
       "highlights": {
         "en": [
-          "Alarm monitoring: real-time data for around-the-clock monitoring centers, with shorter response on critical events.",
-          "Access control: hardware integration and facial recognition for condominium residents on the same platforms.",
+          "Alarm monitoring: real-time data from 500,000 alarm panels and 10 million sensors for tens of thousands of around-the-clock users, with shorter response on critical events.",
+          "Access control: hardware integration and facial recognition, improving daily life for more than a million condo residents.",
           "AI: predictive models that helped reduce burglaries and false alarms across billions of events.",
-          "Cloud video and multimedia: a scalable surveillance system with two-way audio, part of the 2 million+ IoT device fleet."
+          "Cloud video monitoring: a scalable system with two-way audio, built for global deployment of large camera fleets."
         ],
         "pt-BR": [
-          "Monitoramento de alarmes: dados em tempo real para centrais 24 horas, com menor tempo de resposta em eventos críticos.",
-          "Controle de acesso: integração de hardware e reconhecimento facial para moradores de condomínios nas mesmas plataformas.",
+          "Monitoramento de alarmes: dados em tempo real de 500 mil painéis e 10 milhões de sensores para dezenas de milhares de usuários em operação 24 horas, com menor tempo de resposta em eventos críticos.",
+          "Controle de acesso: integração de hardware e reconhecimento facial, melhorando o dia a dia de mais de um milhão de moradores de condomínios.",
           "IA: modelos preditivos que ajudaram a reduzir furtos e falsos alarmes ao longo de bilhões de eventos.",
-          "Vídeo e multimídia em nuvem: um sistema escalável, com áudio bidirecional, parte da frota de mais de 2 milhões de dispositivos IoT."
+          "Videomonitoramento em nuvem: um sistema escalável, com áudio bidirecional, preparado para implantação global de grandes frotas de câmeras."
         ]
       },
       "technologies": [
@@ -535,12 +545,17 @@
         "Spring Boot",
         "Spring Data",
         "Spring Security",
+        "Spring Session",
         "Spring Batch",
+        "Spring AMQP",
         "Spring for Apache Kafka",
+        "Spring Shell",
         "Thymeleaf",
         "Swagger",
         "Express",
         "GraphQL",
+        "Drogon",
+        "Symfony",
         "Jest",
         "Mocha",
         "JUnit",

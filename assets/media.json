@@ -2434,6 +2434,15 @@
       "height": 64,
       "source": "https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/ArtificialIntelligence/Neuron.png",
       "chip": "light"
+    },
+    {
+      "id": "drogon",
+      "name": "Drogon",
+      "file": "logos/drogon.png",
+      "width": 396,
+      "height": 136,
+      "source": "https://github.com/an-tao/drogon/wiki/images/drogon-white17.jpg",
+      "chip": "light"
     }
   ],
   "badges": [
