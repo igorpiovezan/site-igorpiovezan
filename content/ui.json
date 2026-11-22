@@ -17,7 +17,7 @@
   },
   "navSpeaking": {
     "en": "Speaking",
-    "pt-BR": "Falando"
+    "pt-BR": "Palestras"
   },
   "navFootprint": {
     "en": "Footprint",
@@ -230,6 +230,10 @@
   "showCredential": {
     "en": "Show credential",
     "pt-BR": "Ver credencial"
+  },
+  "credentialId": {
+    "en": "Credential ID",
+    "pt-BR": "ID da credencial"
   },
   "skillsTitle": {
     "en": "Skills",

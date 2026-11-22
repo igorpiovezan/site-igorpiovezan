@@ -133,6 +133,18 @@
         "logo": "spring"
       },
       {
+        "name": "Spring Session",
+        "logo": "spring"
+      },
+      {
+        "name": "Spring AMQP",
+        "logo": "spring"
+      },
+      {
+        "name": "Spring Shell",
+        "logo": "spring"
+      },
+      {
         "name": "Spring for Apache Kafka",
         "logo": "apachekafka"
       },
@@ -150,6 +162,9 @@
       {
         "name": "GraphQL",
         "logo": "graphql"
+      },
+      {
+        "name": "Drogon"
       },
       {
         "name": "Apache Tomcat",
@@ -216,6 +231,10 @@
       },
       {
         "name": "Symfony 2",
+        "logo": "symfony"
+      },
+      {
+        "name": "Symfony",
         "logo": "symfony"
       },
       {
@@ -1054,6 +1073,10 @@
         "logo": "cursor"
       },
       {
+        "name": "Cursor Teams and Enterprise",
+        "logo": "cursor"
+      },
+      {
         "name": "OpenAI (ChatGPT, Codex, API)",
         "logo": "openai"
       },
@@ -1065,7 +1088,34 @@
         "name": "xAI (Grok)"
       },
       {
+        "name": "xAI (Grok, Grok Bot, Grok Build)"
+      },
+      {
         "name": "Kiro"
+      },
+      {
+        "name": "Kiro Crew"
+      },
+      {
+        "name": "Kiro CLI"
+      },
+      {
+        "name": "Opus"
+      },
+      {
+        "name": "Luna"
+      },
+      {
+        "name": "Terra"
+      },
+      {
+        "name": "Sol"
+      },
+      {
+        "name": "Fable"
+      },
+      {
+        "name": "Nova Micro"
       },
       {
         "name": "Model Context Protocol"
@@ -1073,6 +1123,13 @@
       {
         "name": "Amazon Nova Sonic",
         "logo": "aws-nova"
+      },
+      {
+        "name": "Nova Sonic 2",
+        "logo": "aws-nova"
+      },
+      {
+        "name": "Small language and video models"
       },
       {
         "name": "Multi-model code review"

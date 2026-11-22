@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import re
 import json
 import subprocess
@@ -206,6 +207,30 @@ def check_test(out: Path) -> None:
             fail(f"preview {path.name} must be noindex")
 
 
+CV_SPECS = (
+    ("assets/cv/igor-piovezan-linkedin-en.pdf", "Download CV (English)", "igor-piovezan-linkedin-en.pdf", "en"),
+    ("assets/cv/igor-piovezan-linkedin-pt-br.pdf", "Baixar CV (Português)", "igor-piovezan-linkedin-pt-br.pdf", "pt-BR"),
+)
+
+
+def check_cvs(out: Path) -> None:
+    pages = [path.read_text(encoding="utf-8") for path in html_files(out)]
+    for rel, label, filename, lang in CV_SPECS:
+        src = ROOT / rel
+        if not src.is_file():
+            fail(f"{rel} must be present so the {label} button is always shown")
+        digest = hashlib.sha256(src.read_bytes()).hexdigest()[:10]
+        hashed = f"/assets/{src.stem}-{digest}{src.suffix}"
+        if not (out / hashed.lstrip("/")).is_file():
+            fail(f"build did not copy {rel} to a content-hashed asset")
+        needle = f'href="{hashed}" download="{filename}" lang="{lang}"'
+        for html in pages:
+            if needle not in html or f">{label}<" not in html:
+                fail(f"pages must offer {label}")
+            if "LinkedIn gerou" in html or "LinkedIn generated" in html:
+                fail("pages must not claim LinkedIn generated a résumé")
+
+
 def check_source_id() -> None:
     hits = []
     for path in (ROOT / "content").rglob("*.json"):
@@ -233,6 +258,8 @@ def main() -> None:
         build("test", preview)
         check_prod(prod)
         check_test(preview)
+        check_cvs(prod)
+        check_cvs(preview)
     print("site checks passed")
 
 

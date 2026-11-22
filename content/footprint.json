@@ -162,14 +162,26 @@
   "credentials": [
     {
       "issuer": "Credly",
+      "url": "https://www.credly.com/badges/74584c30-2541-4bd1-9872-9f9a268094a5",
+      "title": {
+        "en": "AWS Certified Cloud Practitioner",
+        "pt-BR": "AWS Certified Cloud Practitioner"
+      },
+      "summary": {
+        "en": "Public badge issued by Amazon Web Services Training and Certification in November 2026. Expires November 2029. Credential ID ae030534fc764c35a03eda244a344798.",
+        "pt-BR": "Badge público emitido pela Amazon Web Services Training and Certification em novembro de 2026. Expira em novembro de 2029. ID da credencial ae030534fc764c35a03eda244a344798."
+      }
+    },
+    {
+      "issuer": "Credly",
       "url": "https://www.credly.com/badges/2e9b834e-0d50-4543-af3a-1e5b232c81af",
       "title": {
         "en": "AWS Certified Database – Specialty",
         "pt-BR": "AWS Certified Database – Specialty"
       },
       "summary": {
-        "en": "Public badge, issued 11 November 2023, expires 11 November 2026.",
-        "pt-BR": "Badge público, emitido em 11 de novembro de 2023, expira em 11 de novembro de 2026."
+        "en": "Public badge, issued 11 November 2023, expired 11 November 2026.",
+        "pt-BR": "Badge público, emitido em 11 de novembro de 2023, expirou em 11 de novembro de 2026."
       }
     },
     {
