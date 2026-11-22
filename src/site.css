@@ -579,10 +579,100 @@ summary {
   max-width: 100%;
   padding: 0.4rem 0.55rem;
   background: #fff;
+  border: 1px solid rgba(16, 33, 30, 0.1);
   border-radius: 0.35rem;
 }
 
-.logo-chip.on-dark { background: #10211e; }
+.logo-chip.on-dark {
+  background: #10211e;
+  border-color: transparent;
+}
+
+.logo-chip.is-inline {
+  min-height: 0;
+  margin: 0 0.4rem 0 0;
+  padding: 0.12rem 0.28rem;
+  vertical-align: -0.28rem;
+}
+
+.logo-chip.is-inline .logo {
+  height: 1.05rem;
+  width: auto;
+  max-width: 1.45rem;
+}
+
+.org-marks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.7rem;
+}
+
+.org-marks .logo-chip { margin: 0; }
+
+.org-marks .logo,
+.company-head .logo,
+.press-card .logo,
+.cover .logo,
+.cert .logo,
+.school .logo,
+.honor .logo,
+.talk .logo,
+.seal .logo,
+.timeline .logo {
+  height: auto;
+  max-height: 2.6rem;
+  width: auto;
+  max-width: 11rem;
+}
+
+.logo-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.logo-pair .logo {
+  height: 2rem;
+  width: auto;
+  max-width: 4.5rem;
+}
+
+.course-list {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+}
+
+.course-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.7rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.course-list .org-marks { margin: 0; }
+
+.hero-actions .logo-chip.is-inline {
+  vertical-align: middle;
+}
+
+.hero-employer { margin: 0.85rem 0 0.2rem; }
+
+.hero-employer .logo-chip {
+  min-height: 3.4rem;
+  padding: 0.45rem 0.85rem;
+}
+
+.hero-employer .logo {
+  height: auto;
+  max-height: 1.7rem;
+  max-width: 9rem;
+}
 
 .logo {
   display: block;
@@ -686,7 +776,12 @@ summary {
   padding: 0.7rem 0.45rem 0.6rem;
 }
 
-.stack-logos .logo { height: 2.15rem; max-width: 100%; }
+.stack-logos .logo {
+  height: auto;
+  max-height: 2.15rem;
+  width: auto;
+  max-width: 100%;
+}
 
 .stack-logos .mark-name {
   font-size: 0.72rem;

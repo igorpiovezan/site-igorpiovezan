@@ -849,7 +849,7 @@
       },
       {
         "name": "Windows Server",
-        "logo": "windows"
+        "logo": "windowsserver"
       },
       {
         "name": "BIND9"

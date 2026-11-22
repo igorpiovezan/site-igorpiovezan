@@ -420,7 +420,7 @@ def header(bundle, lang, page_id) -> str:
     )
 
 
-def footer(bundle, lang) -> str:
+def footer(bundle, lang, assets) -> str:
     site = bundle["site"]
     privacy = site["locales"][lang]["privacy"]
     notes = site["locales"][lang]["notes"]
@@ -431,9 +431,9 @@ def footer(bundle, lang) -> str:
         '<p class="profile-links">'
         f'<a href="{e(privacy)}">{e(ui(bundle, lang, "privacy"))}</a>'
         f'<a href="{e(notes)}">{e(ui(bundle, lang, "navNotes"))}</a>'
-        f'<a href="{e(site["linkedin"])}">LinkedIn</a>'
-        f'<a href="{e(site["github"])}">GitHub</a>'
-        f'{cv_links(bundle.get("_assets") or {})}'
+        f'{marked_link(assets, site["linkedin"], "LinkedIn", "linkedin")}'
+        f'{marked_link(assets, site["github"], "GitHub", "github")}'
+        f'{cv_links(assets)}'
         "</p></div></footer>"
     )
 
@@ -594,19 +594,189 @@ def validate_chapters(chapters: dict) -> None:
             require_locale(stage.get("line"), stage.get("id") or "stage")
 
 
-def logo_chip(assets, logo_id: str, labeled: bool = False, label: str = "") -> str:
+def logo_chip(assets, logo_id: str, labeled: bool = False, label: str = "", alt: str | None = None, inline: bool = False) -> str:
     logo = (assets.get("logos") or {}).get(logo_id or "")
     if not logo:
         return ""
     tone = " on-dark" if logo.get("chip") == "dark" else ""
     visible = label or logo.get("name") or ""
-    alt = "" if labeled else visible
+    if alt is None:
+        alt = "" if labeled or inline else visible
     name = f'<span class="mark-name">{e(visible)}</span>' if labeled and visible else ""
+    kind = " is-inline" if inline else ""
     return (
-        f'<span class="logo-chip{tone}">'
+        f'<span class="logo-chip{tone}{kind}">'
         f'<img class="logo" src="{e(logo["src"])}" width="{logo["w"]}" height="{logo["h"]}" alt="{e(alt)}" loading="lazy" decoding="async">'
         f"{name}</span>"
     )
+
+
+def org_marks(assets, *logo_ids: str) -> str:
+    chips = []
+    seen = set()
+    for logo_id in logo_ids:
+        if not logo_id or logo_id in seen:
+            continue
+        seen.add(logo_id)
+        chip = logo_chip(assets, logo_id, alt="")
+        if not chip:
+            raise SystemExit(f"missing logo file for {logo_id}")
+        chips.append(chip)
+    if not chips:
+        return ""
+    return f'<div class="org-marks">{"".join(chips)}</div>'
+
+
+def marked_link(assets, href: str, label: str, logo_id: str, extra: str = "") -> str:
+    icon = logo_chip(assets, logo_id, inline=True, alt="")
+    if logo_id and not icon:
+        raise SystemExit(f"missing logo file for {logo_id}")
+    return f'<a href="{e(href)}"{extra}>{icon}{e(label)}</a>'
+
+
+COMPANY_LOGOS = {
+    "segware": "segware",
+    "ace": "ace",
+    "dva": "mercedes",
+}
+
+ISSUER_LOGOS = {
+    "Amazon Web Services (AWS)": "aws",
+    "AWS": "aws",
+    "MIT Professional Education": "mit",
+    "MongoDB": "mongodb",
+    "Centro Universitário Municipal de São José": "usj",
+    "IFSC — Instituto Federal de Santa Catarina": "ifsc",
+    "ACE English Malta": "ace",
+    "RealCloud": "realcloud",
+    "NetSeg": "netseg",
+    "IT Forum": "itforum",
+    "Portal Security Brasil": "portalsecurity",
+    "TI Inside": "tiinside",
+    "Engenharia e": "engenhariae",
+    "IA Brasil Notícias": "iabrasil",
+    "Credly": "credly",
+    "Pensador": "pensador",
+    "SuperMe": "superme",
+    "Dale Carnegie Training": "dale",
+    "Segware": "segware",
+    "DVA Mercedes-Benz": "mercedes",
+}
+
+STACK_LOGOS = {
+    "WebAssembly": "webassembly",
+    "Thymeleaf": "thymeleaf",
+    "WildFly": "wildfly",
+    "WebRTC": "webrtc",
+    "AngularJS": "angular",
+    "Polymer": "polymerproject",
+    "Apigility": "apigility",
+    "Apache Samza": "samza",
+    "Microsoft SQL Server": "sqlserver",
+    "QuickSight": "aws",
+    "Power BI": "powerbi",
+    "SQL Server": "sqlserver",
+    "H2": "h2database",
+    "Memcached": "memcached",
+    "PrestoDB": "presto",
+    "Datomic": "datomic",
+    "OCI": "oracle",
+    "Squid": "squid",
+    "HHVM": "hhvm",
+    "Hyper-V": "microsoft",
+    "IIS": "microsoft",
+    "Cacti": "cacti",
+    "Spiceworks": "spiceworks",
+    "Elastix": "elastix",
+    "BIND9": "isc",
+    "Roundcube": "roundcube",
+    "Windows Server": "windowsserver",
+    "Active Directory": "microsoft",
+    "iptables": "netfilter",
+    "OWASP Top Ten": "owasp",
+    "xAI (Grok)": "xai",
+    "xAI (Grok, Grok Bot, Grok Build)": "xai",
+    "Kiro": "kiro",
+    "Kiro Crew": "kiro",
+    "Kiro CLI": "kiro",
+    "Opus": "anthropic",
+    "Luna": "openai",
+    "Terra": "openai",
+    "Sol": "openai",
+    "Fable": "anthropic",
+    "Nova Micro": "aws-nova",
+    "Drogon": "drogon",
+    "Inferentia": "aws-neuron",
+    "PHPUnit": "phpunit",
+    "FinOps": "finops",
+    "Backup": "aws-backup",
+    "VPN": "aws-vpn",
+    "AV1": "aomedia",
+    "Columnar storage (Parquet, ORC)": ("apacheparquet", "orc"),
+}
+
+
+def stack_logo_ids(item: dict) -> list[str]:
+    explicit = item.get("logo") or ""
+    if explicit:
+        return [explicit]
+    mapped = STACK_LOGOS.get(item["name"])
+    if not mapped:
+        return []
+    if isinstance(mapped, str):
+        return [mapped]
+    return list(mapped)
+
+
+def stack_chip(assets, item: dict) -> str:
+    ids = stack_logo_ids(item)
+    if not ids:
+        return ""
+    if len(ids) == 1:
+        chip = logo_chip(assets, ids[0], labeled=True, label=item["name"])
+        if not chip:
+            raise SystemExit(f"missing logo file for {ids[0]}")
+        return chip
+    images = []
+    for logo_id in ids:
+        logo = (assets.get("logos") or {}).get(logo_id)
+        if not logo:
+            raise SystemExit(f"missing logo file for {logo_id}")
+        images.append(
+            f'<img class="logo" src="{e(logo["src"])}" width="{logo["w"]}" height="{logo["h"]}" alt="" loading="lazy" decoding="async">'
+        )
+    return (
+        '<span class="logo-chip">'
+        f'<span class="logo-pair">{"".join(images)}</span>'
+        f'<span class="mark-name">{e(item["name"])}</span>'
+        "</span>"
+    )
+
+
+def talk_logo_ids(item: dict) -> list[str]:
+    url = item.get("url") or ""
+    title = (item.get("title") or {}).get("en") or ""
+    blob = f"{url} {title}".lower()
+    ids = []
+    if "realcloud" in blob or "real cloud" in blob:
+        ids.append("realcloud")
+    if "netseg" in blob or "yrm7_oimay8" in blob:
+        ids.append("netseg")
+    if "typ" in url.lower() or "25 years" in blob or "eletrônica" in ((item.get("title") or {}).get("pt-BR") or "").lower():
+        ids.append("segware")
+    if "isc brasil" in blob and "iscbrasil" not in ids:
+        ids.append("iscbrasil")
+    return ids
+
+
+def extra_logo_ids(blob: str) -> list[str]:
+    low = blob.lower()
+    ids = []
+    if "isc brasil" in low:
+        ids.append("iscbrasil")
+    if "exposec" in low:
+        ids.append("exposec")
+    return ids
 
 
 def validate_stack(bundle) -> None:
@@ -627,8 +797,7 @@ def render_stack_catalog(bundle, lang, assets) -> str:
         logos = []
         texts = []
         for item in group["items"]:
-            logo_id = item.get("logo") or ""
-            chip = logo_chip(assets, logo_id, labeled=True, label=item["name"]) if logo_id else ""
+            chip = stack_chip(assets, item)
             if chip:
                 logos.append(chip)
             else:
@@ -694,25 +863,27 @@ def render_hero(bundle, lang, assets) -> str:
         f'<li><strong>{e(item["value"])}</strong><span>{e(text(item["label"], lang))}</span></li>'
         for item in profile["impact"]
     )
+    employer = org_marks(assets, "segware")
     return (
         '<section class="hero"><div class="wrap hero-layout">'
-        '<div class="hero-copy">'
-        f'<p class="kicker">{e(text(profile["jobTitle"], lang))}, {e(profile["worksFor"]["name"])}</p>'
-        '<h1><span class="name-line">Igor Agenor</span><span class="name-line">Piovezan</span></h1>'
-        f'<p class="headline">{e(text(profile["headline"], lang))}</p>'
-        f'<p class="lede">{e(text(profile["location"]["label"], lang))}</p>'
-        '<p class="hero-actions">'
-        f'<a href="{e(bundle["site"]["linkedin"])}">LinkedIn</a>'
-        f'<a href="{e(bundle["site"]["github"])}">GitHub</a>'
-        f'{cv_links(assets)}'
-        f'<a href="#igor">{e(ui(bundle, lang, "publicStills"))}</a>'
-        "</p></div>"
         f'<figure class="{frame}">'
         '<div class="portrait-frame">'
         f'<img class="portrait-img" src="{e(src)}" width="{width}" height="{height}" alt="{e(alt)}" fetchpriority="high">'
         "</div>"
         f"<figcaption>{kicker}{e(caption)}</figcaption>"
         "</figure>"
+        '<div class="hero-copy">'
+        f'<p class="kicker">{e(text(profile["jobTitle"], lang))}, {e(profile["worksFor"]["name"])}</p>'
+        f'<div class="hero-employer">{employer}</div>'
+        '<h1><span class="name-line">Igor Agenor</span><span class="name-line">Piovezan</span></h1>'
+        f'<p class="headline">{e(text(profile["headline"], lang))}</p>'
+        f'<p class="lede">{e(text(profile["location"]["label"], lang))}</p>'
+        '<p class="hero-actions">'
+        f'{marked_link(assets, bundle["site"]["linkedin"], "LinkedIn", "linkedin")}'
+        f'{marked_link(assets, bundle["site"]["github"], "GitHub", "github")}'
+        f'{cv_links(assets)}'
+        f'<a href="#igor">{e(ui(bundle, lang, "publicStills"))}</a>'
+        "</p></div>"
         f'<ul class="proof" aria-label="{e(ui(bundle, lang, "impactTitle"))}">{stats}</ul>'
         "</div>"
         '<div class="wrap hero-context">'
@@ -731,7 +902,8 @@ def render_igor(bundle, lang, assets) -> str:
         if not still:
             continue
         when = footprint_when(item.get("date") or "", lang)
-        brand = logo_chip(assets, "netseg") if "yrm7_OIMaY8" in (item.get("url") or "") else ""
+        brand = org_marks(assets, *talk_logo_ids(item))
+        watch = logo_chip(assets, "youtube", inline=True, alt="") + e(ui(bundle, lang, "watchYouTube"))
         cards.append(
             f'<a class="still reveal" href="{e(item["url"])}" rel="noopener noreferrer">'
             '<span class="still-media">'
@@ -740,7 +912,7 @@ def render_igor(bundle, lang, assets) -> str:
             "</span><span class=\"still-copy\">"
             f"{brand}"
             f"<strong>{e(text(item['title'], lang))}</strong>"
-            f'<span class="muted">{e(ui(bundle, lang, "watchYouTube"))}'
+            f'<span class="muted">{watch}'
             f'{(" · " + e(when)) if when else ""}</span>'
             "</span></a>"
         )
@@ -819,7 +991,7 @@ def render_world(bundle, lang, assets) -> str:
         item = resolve_stage(bundle, stage, lang)
         plate = (
             '<article class="plate reveal">'
-            f'{logo_chip(assets, stage.get("logo") or "")}'
+            f'{org_marks(assets, stage.get("logo") or "")}'
             f'<p class="plate-index" aria-hidden="true">{number:02d}</p>'
             f'<h3><a href="{e(item["url"])}" rel="noopener noreferrer">{e(item["name"])}</a></h3>'
             f'<p>{e(item["line"])}</p>'
@@ -872,6 +1044,7 @@ def render_home(bundle, lang, assets) -> str:
             )
         grouped.append(
             '<article class="company"><div class="company-head">'
+            f'{org_marks(assets, COMPANY_LOGOS[company["id"]])}'
             f'<h3><a href="{e(company["url"])}">{e(company["name"])}</a></h3>'
             f'<p>{e(text(company["span"], lang))}</p>'
             f'<p class="muted">{e(text(company["summary"], lang))}</p>'
@@ -900,7 +1073,7 @@ def render_home(bundle, lang, assets) -> str:
     work = (
         f'<section class="band" id="work"><div class="wrap">{h2(CHAPTER["work"], ui(bundle, lang, "workTitle"))}'
         f'<h3>{e(text(project["name"], lang))}</h3>'
-        f'<p class="muted">{e(fmt_range(project["start"], project["end"], lang, ui(bundle, lang, "present")))} · {e(project["associated"])}</p>'
+        f'<p class="muted">{e(fmt_range(project["start"], project["end"], lang, ui(bundle, lang, "present")))} · {logo_chip(assets, ISSUER_LOGOS[project["associated"]], inline=True, alt="")}{e(project["associated"])}</p>'
         f'<p class="lede reveal">{e(text(project["summary"], lang))}</p>'
         f'<div class="work-grid">{"".join(work_cards)}</div>'
         "</div></section>"
@@ -914,7 +1087,11 @@ def render_home(bundle, lang, assets) -> str:
             link = f' <a href="{e(honor["url"])}">{e(label)}</a>'
         still = still_by_url(assets, honor.get("url") or "")
         thumb = f'{still_img(still, lazy=True)}'.replace("<img ", '<img class="thumb" ', 1) if still else ""
-        brand = logo_chip(assets, "netseg") if honor.get("issuer") == "NetSeg" else ""
+        brand = org_marks(
+            assets,
+            ISSUER_LOGOS[honor["issuer"]],
+            *extra_logo_ids(text(honor["title"], "en")),
+        )
         row = " media-row" if still else ""
         honors.append(
             f'<article class="honor{row}">'
@@ -932,6 +1109,7 @@ def render_home(bundle, lang, assets) -> str:
         summary = f'<p>{e(text(pub.get("summary"), lang))}</p>' if pub.get("summary") else ""
         pubs.append(
             '<article class="cover reveal">'
+            f'{org_marks(assets, ISSUER_LOGOS[pub["publisher"]])}'
             f'<p class="mast">{e(pub["publisher"])}</p>'
             f'<h4><a href="{e(pub["url"])}">{e(text(pub["title"], lang))}</a></h4>'
             f'{f"<p class=\"muted\">{e(when)}</p>" if when else ""}'
@@ -960,7 +1138,7 @@ def render_home(bundle, lang, assets) -> str:
             extra += f' <a href="{e(school["credentialUrl"])}">{e(ui(bundle, lang, "showCredential"))}</a>'
         for item in school.get("links") or []:
             extra += f' <a href="{e(item["url"])}">{e(item["label"])}</a>'
-        mark = logo_chip(assets, school_logos.get(school["school"], ""))
+        mark = org_marks(assets, school_logos[school["school"]])
         schools.append(
             '<article class="school">'
             f"{mark}"
@@ -985,15 +1163,29 @@ def render_home(bundle, lang, assets) -> str:
         summary = f'<p>{e(text(cert.get("summary"), lang))}</p>' if cert.get("summary") else ""
         certs.append(
             '<article class="cert">'
+            f'{org_marks(assets, ISSUER_LOGOS[cert["issuer"]])}'
             f'<h4>{e(text(cert["name"], lang))}</h4>'
             f'<p class="muted">{e(cert["issuer"])} · {" · ".join(bits)}{link}</p>'
             f"{summary}"
             "</article>"
         )
-    courses = "<ul>" + "".join(
-        f'<li>{e(item["name"])} <span class="muted">({e(ui(bundle, lang, "associated"))} {e(item["associated"])})</span></li>'
-        for item in creds["courses"]
-    ) + "</ul>"
+    course_rows = []
+    for item in creds["courses"]:
+        course_ids = []
+        if item["name"].startswith("MIT "):
+            course_ids.append("mit")
+        if item["name"].startswith("ACE "):
+            course_ids.append("ace")
+        if item["name"].startswith("Corel"):
+            course_ids.append("coreldraw")
+        course_ids.append(ISSUER_LOGOS[item["associated"]])
+        course_rows.append(
+            "<li>"
+            f'{org_marks(assets, *course_ids)}'
+            f'<span>{e(item["name"])} <span class="muted">({e(ui(bundle, lang, "associated"))} {e(item["associated"])})</span></span>'
+            "</li>"
+        )
+    courses = f'<ul class="course-list">{"".join(course_rows)}</ul>'
     featured_skills = chips(profile["featuredSkills"])
     all_skills = chips(profile["skills"])
     languages = "<ul>" + "".join(
@@ -1034,7 +1226,7 @@ def render_home(bundle, lang, assets) -> str:
             f'<h3>{e(post["title"])}</h3>'
             f'<p class="muted"><time datetime="{e(post["date"])}">{e(fmt_day(post["date"], lang))}</time></p>'
             f'<p>{e(post["excerpt"])}</p>'
-            f'<p><a href="{e(post["url"])}">{e(ui(bundle, lang, "onLinkedin"))}</a></p>'
+            f'<p>{marked_link(assets, post["url"], ui(bundle, lang, "onLinkedin"), "linkedin", " rel=\"noopener noreferrer\"")}</p>'
             "</article>"
         )
     notes = (
@@ -1083,15 +1275,23 @@ def render_footprint(bundle, lang: str, assets) -> str:
     def links(items) -> str:
         if not items:
             return ""
-        return "<p>" + " · ".join(
-            outbound(item["url"], text(item["label"], lang)) for item in items
-        ) + "</p>"
+        bits = []
+        for item in items:
+            label = text(item["label"], lang)
+            icon = ""
+            if text(item["label"], "en") == "Spotify":
+                icon = logo_chip(assets, "spotify", inline=True, alt="")
+            bits.append(
+                f'<a href="{e(item["url"])}" rel="noopener noreferrer">{icon}{e(label)}</a>'
+            )
+        return "<p>" + " · ".join(bits) + "</p>"
 
     press = []
     for item in data["press"]:
         when = footprint_when(item.get("date") or "", lang)
         press.append(
             '<article class="press-card reveal">'
+            f'{org_marks(assets, ISSUER_LOGOS[item["outlet"]], *extra_logo_ids(text(item["title"], "en")))}'
             f'<p class="mast">{e(item["outlet"])}</p>'
             f'<h4>{outbound(item["url"], text(item["title"], lang))}</h4>'
             f'{f"<p class=\"muted\">{e(when)}</p>" if when else ""}'
@@ -1113,12 +1313,14 @@ def render_footprint(bundle, lang: str, assets) -> str:
         else:
             media = '<span class="play" aria-hidden="true"></span>'
             facade = "video-facade"
+        watch = logo_chip(assets, "youtube", inline=True, alt="") + e(ui(bundle, lang, "watchYouTube"))
         talks.append(
             '<article class="talk">'
+            f'{org_marks(assets, *talk_logo_ids(item))}'
             f'<a class="{facade}" href="{e(item["url"])}" rel="noopener noreferrer">'
             f"{media}<span>"
             f'<strong>{e(text(item["title"], lang))}</strong>'
-            f'<span class="muted">{e(ui(bundle, lang, "watchYouTube"))}'
+            f'<span class="muted">{watch}'
             f'{(" · " + e(when)) if when else ""}</span>'
             "</span></a>"
             f'<p>{e(text(item["summary"], lang))}</p>'
@@ -1128,14 +1330,13 @@ def render_footprint(bundle, lang: str, assets) -> str:
     credentials = []
     for item in data["credentials"]:
         badge = badge_for(assets, item["url"])
+        badge_art = ""
         if badge:
-            mark = (
+            badge_art = (
                 f'<img class="badge-art" src="{e(badge["src"])}" width="{badge["w"]}" height="{badge["h"]}" '
                 'alt="" loading="lazy" decoding="async">'
             )
-        else:
-            label = seal_label(text(item["title"], lang), item["issuer"])
-            mark = f'<p class="seal-mark" aria-hidden="true">{e(label)}</p>'
+        mark = org_marks(assets, ISSUER_LOGOS[item["issuer"]]) + badge_art
         credentials.append(
             '<article class="seal">'
             f"{mark}"
@@ -1146,8 +1347,15 @@ def render_footprint(bundle, lang: str, assets) -> str:
         )
     milestones = []
     for item in data["milestones"]:
+        title_en = text(item["title"], "en")
+        milestone_ids = []
+        if "IFSC" in title_en:
+            milestone_ids.append("ifsc")
+        if "USJ" in title_en:
+            milestone_ids.append("usj")
         milestones.append(
             "<li>"
+            f'{org_marks(assets, *milestone_ids)}'
             f'<p class="when">{e(text(item["when"], lang))}</p>'
             "<h4>"
             f'{e(text(item["title"], lang))}'
@@ -1161,6 +1369,7 @@ def render_footprint(bundle, lang: str, assets) -> str:
     for item in data["elsewhere"]:
         elsewhere.append(
             "<li>"
+            f'{org_marks(assets, ISSUER_LOGOS[text(item["title"], "en")])}'
             f'{outbound(item["url"], text(item["title"], lang))}. '
             f'{e(text(item["summary"], lang))}'
             "</li>"
@@ -1183,6 +1392,8 @@ def render_footprint(bundle, lang: str, assets) -> str:
 
 
 def render_notes(bundle, lang) -> str:
+    assets = bundle["_assets"]
+
     def block(post) -> str:
         title = ui(bundle, lang, "imagePost") if post.get("imageOnly") else post["title"]
         excerpt = f'<p>{e(post["excerpt"])}</p>' if post.get("excerpt") else ""
@@ -1197,7 +1408,7 @@ def render_notes(bundle, lang) -> str:
             f'<h3>{e(title)}</h3>'
             f'<p class="muted"><time datetime="{e(post["date"])}">{e(fmt_day(post["date"], lang))}</time></p>'
             f"{who}{excerpt}"
-            f'<p><a href="{e(post["url"])}">{e(ui(bundle, lang, "onLinkedin"))}</a></p>'
+            f'<p>{marked_link(assets, post["url"], ui(bundle, lang, "onLinkedin"), "linkedin", " rel=\"noopener noreferrer\"")}</p>'
             "</article>"
         )
 
@@ -1254,7 +1465,7 @@ def render_404(bundle, css, ga) -> str:
         + f'<p lang="pt-BR">{e(ui(bundle, "pt-BR", "notFoundBody"))}</p>'
         + '<p><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Início</a></p>'
         + "</div></main>"
-        + footer(bundle, "en")
+        + footer(bundle, "en", assets)
         + consent(bundle, "en")
         + f'<script src="{e(assets["motion"])}"></script>'
         + f'<script src="{e(assets["analytics"])}" defer></script>'
@@ -1615,7 +1826,7 @@ def build(env: str, out: Path) -> None:
             + '<body>\n<div class="progress" aria-hidden="true"></div>\n'
             + header(bundle, lang, page["id"])
             + f'<main id="content">{main}</main>'
-            + footer(bundle, lang)
+            + footer(bundle, lang, assets)
             + consent(bundle, lang)
             + f'<script src="{e(assets["motion"])}"></script>'
             + f'<script src="{e(assets["analytics"])}" defer></script>'
