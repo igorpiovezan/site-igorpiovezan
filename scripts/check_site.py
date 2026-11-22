@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import re
 import json
 import subprocess
@@ -84,6 +85,39 @@ def check_prod(out: Path) -> None:
                 fail(f"{name} home JSON-LD must be a ProfilePage whose mainEntity is the person")
             if "Approved and ranked 8th, IFSC federal civil-service exam Edital 42/2014 (IT Technician)" not in html and "Aprovado e classificado em 8º lugar, concurso público federal do IFSC, Edital 42/2014 (Técnico em Tecnologia da Informação)" not in html:
                 fail(f"{name} missing the IFSC exam award")
+            for marker in (
+                'id="about"',
+                'id="igor"',
+                'id="technologies"',
+                'id="world"',
+                'id="experience"',
+                'id="work"',
+                'id="speaking"',
+                'id="footprint"',
+                'id="background"',
+                'id="notes"',
+                "15+",
+                "100+",
+                "16M+",
+                "2M+",
+                "prefers-reduced-motion",
+            ):
+                if marker not in html:
+                    fail(f"{name} missing {marker}")
+            media = json.loads((ROOT / "assets" / "media.json").read_text(encoding="utf-8"))
+            disclaimer = (
+                "not endorsements or partner logos"
+                if name == "index.html"
+                else "não endosso nem logos de parceria"
+            )
+            if disclaimer not in html:
+                fail(f"{name} must keep the organizations disclaimer")
+            if not media.get("portrait"):
+                expected = "Portrait reserved" if name == "index.html" else "Retrato reservado"
+                if expected not in html:
+                    fail(f"{name} must keep the portrait slot caption ({expected})")
+            elif "Portrait reserved" in html or "Retrato reservado" in html:
+                fail(f"{name} still shows the empty portrait slot")
         if "linkedin.com/in/igorpiovezan" not in html or "github.com/igorpiovezan" not in html:
             fail(f"{name} Person sameAs links missing")
         if name == "404.html":
@@ -173,6 +207,91 @@ def check_test(out: Path) -> None:
             fail(f"preview {path.name} must be noindex")
 
 
+def check_organization_marks(out: Path) -> None:
+    """Every organization slot must render a real mark, and branded stack items must not fall back to text."""
+    import build
+
+    stack = json.loads((ROOT / "content" / "stack.json").read_text(encoding="utf-8"))
+    text_only = []
+    branded = []
+    for group in stack:
+        for item in group["items"]:
+            if build.stack_logo_ids(item):
+                branded.append(item["name"])
+            else:
+                text_only.append(item["name"])
+    home_pages = ("index.html", "pt-br/index.html")
+    for name in home_pages:
+        html = (out / name).read_text(encoding="utf-8")
+        for classes in (
+            "company",
+            "school",
+            "cert",
+            "honor",
+            "press-card",
+            "cover",
+            "talk",
+            "seal",
+            "plate",
+        ):
+            blocks = re.findall(rf'<article class="{classes}[^"]*">.*?</article>', html, re.S)
+            if not blocks:
+                fail(f"{name} renders no {classes} organization blocks")
+            for block in blocks:
+                if 'class="logo"' not in block:
+                    fail(f"{name} renders a {classes} block without a mark")
+        for block in re.findall(r'<ul class="plain-list">(.*?)</ul>', html, re.S):
+            items = re.findall(r"<li>.*?</li>", block, re.S)
+            if not items:
+                fail(f"{name} elsewhere list is empty")
+            for item in items:
+                if 'class="logo"' not in item:
+                    fail(f"{name} renders an elsewhere organization without a mark")
+        for item in re.findall(r'<ol class="timeline">(.*?)</ol>', html, re.S):
+            for entry in re.findall(r"<li>.*?</li>", item, re.S):
+                if ("IFSC" in entry or "USJ" in entry) and 'class="logo"' not in entry:
+                    fail(f"{name} renders IFSC or USJ in the timeline without a mark")
+        rest = []
+        for block in re.findall(r'<ul class="chips stack-rest">(.*?)</ul>', html, re.S):
+            rest.extend(re.findall(r"<li>(.*?)</li>", block, re.S))
+        if sorted(rest) != sorted(text_only):
+            extra = sorted(set(rest) - set(text_only))
+            missing = sorted(set(text_only) - set(rest))
+            fail(f"{name} stack text chips do not match unmarked concepts: extra {extra[:6]} missing {missing[:6]}")
+        for brand in branded:
+            if f">{brand}<" not in html and f">{brand}</span>" not in html:
+                # labeled chips put the name in mark-name
+                if brand not in html:
+                    fail(f"{name} drops branded stack item {brand}")
+        for link_label in ("LinkedIn", "GitHub", "YouTube"):
+            if link_label in html and 'class="logo"' not in html:
+                fail(f"{name} names {link_label} without any mark")
+
+
+CV_SPECS = (
+    ("assets/cv/igor-piovezan-linkedin-en.pdf", "Download CV (English)", "igor-piovezan-linkedin-en.pdf", "en"),
+    ("assets/cv/igor-piovezan-linkedin-pt-br.pdf", "Baixar CV (Português)", "igor-piovezan-linkedin-pt-br.pdf", "pt-BR"),
+)
+
+
+def check_cvs(out: Path) -> None:
+    pages = [path.read_text(encoding="utf-8") for path in html_files(out)]
+    for rel, label, filename, lang in CV_SPECS:
+        src = ROOT / rel
+        if not src.is_file():
+            fail(f"{rel} must be present so the {label} button is always shown")
+        digest = hashlib.sha256(src.read_bytes()).hexdigest()[:10]
+        hashed = f"/assets/{src.stem}-{digest}{src.suffix}"
+        if not (out / hashed.lstrip("/")).is_file():
+            fail(f"build did not copy {rel} to a content-hashed asset")
+        needle = f'href="{hashed}" download="{filename}" lang="{lang}"'
+        for html in pages:
+            if needle not in html or f">{label}<" not in html:
+                fail(f"pages must offer {label}")
+            if "LinkedIn gerou" in html or "LinkedIn generated" in html:
+                fail("pages must not claim LinkedIn generated a résumé")
+
+
 def check_source_id() -> None:
     hits = []
     for path in (ROOT / "content").rglob("*.json"):
@@ -200,6 +319,9 @@ def main() -> None:
         build("test", preview)
         check_prod(prod)
         check_test(preview)
+        check_organization_marks(prod)
+        check_cvs(prod)
+        check_cvs(preview)
     print("site checks passed")
 
 
