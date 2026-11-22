@@ -30,12 +30,21 @@ def tracked_files() -> list[Path]:
     return files
 
 
+# Igor approved the contact block inside these two résumé PDFs only.
+CV_CONTACT_OK = {
+    "assets/cv/igor-piovezan-linkedin-en.pdf",
+    "assets/cv/igor-piovezan-linkedin-pt-br.pdf",
+}
+
+
 def main() -> None:
     failures = []
     for path in tracked_files():
         if not path.is_file():
             continue
         if path.suffix.lower() in {".png", ".webp", ".ico"}:
+            continue
+        if path.relative_to(ROOT).as_posix() in CV_CONTACT_OK:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         for label, pattern in PATTERNS:

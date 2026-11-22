@@ -213,20 +213,12 @@ CV_SPECS = (
 )
 
 
-def check_cvs(out: Path, warn_missing: bool) -> None:
+def check_cvs(out: Path) -> None:
     pages = [path.read_text(encoding="utf-8") for path in html_files(out)]
     for rel, label, filename, lang in CV_SPECS:
         src = ROOT / rel
         if not src.is_file():
-            if warn_missing:
-                print(
-                    f"warning: {rel} is not in the repo yet, so the “{label}” button is hidden",
-                    file=sys.stderr,
-                )
-            for html in pages:
-                if label in html or f'download="{filename}"' in html:
-                    fail(f"{rel} is missing, but a download button was published")
-            continue
+            fail(f"{rel} must be present so the {label} button is always shown")
         digest = hashlib.sha256(src.read_bytes()).hexdigest()[:10]
         hashed = f"/assets/{src.stem}-{digest}{src.suffix}"
         if not (out / hashed.lstrip("/")).is_file():
@@ -234,7 +226,9 @@ def check_cvs(out: Path, warn_missing: bool) -> None:
         needle = f'href="{hashed}" download="{filename}" lang="{lang}"'
         for html in pages:
             if needle not in html or f">{label}<" not in html:
-                fail(f"pages must offer {label} when {rel} is present")
+                fail(f"pages must offer {label}")
+            if "LinkedIn gerou" in html or "LinkedIn generated" in html:
+                fail("pages must not claim LinkedIn generated a résumé")
 
 
 def check_source_id() -> None:
@@ -264,8 +258,8 @@ def main() -> None:
         build("test", preview)
         check_prod(prod)
         check_test(preview)
-        check_cvs(prod, warn_missing=True)
-        check_cvs(preview, warn_missing=False)
+        check_cvs(prod)
+        check_cvs(preview)
     print("site checks passed")
 
 

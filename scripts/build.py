@@ -137,8 +137,10 @@ def write_hashed(src: Path, dest_dir: Path) -> str:
 
 def load_cvs(dest_dir: Path) -> list[dict]:
     found = []
+    missing = []
     for item in CVS:
         if not item["file"].is_file():
+            missing.append(item["download"])
             continue
         found.append({
             "href": write_hashed(item["file"], dest_dir),
@@ -146,6 +148,8 @@ def load_cvs(dest_dir: Path) -> list[dict]:
             "label": item["label"],
             "lang": item["lang"],
         })
+    if missing:
+        raise SystemExit("résumé PDF missing, so its download button cannot be shown: " + ", ".join(missing))
     return found
 
 

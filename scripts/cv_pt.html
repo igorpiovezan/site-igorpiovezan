@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Currículo — Igor Agenor Piovezan</title>
+<style>
+  @page {
+    size: letter;
+    margin: 0 0 26pt 0;
+    background: linear-gradient(to right, #293e49 0, #293e49 202pt, #ffffff 202pt);
+    @bottom-right {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: "Liberation Sans", Arial, sans-serif;
+      font-size: 9pt;
+      color: #111;
+      margin-right: 28pt;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { margin: 0; }
+
+  body {
+    margin: 36pt 28pt 10pt 222pt;
+    color: #191919;
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.35;
+  }
+
+  aside {
+    float: left;
+    width: 166pt;
+    margin: 0 0 0 -200pt;
+    color: #fff;
+    font-size: 10pt;
+    line-height: 1.25;
+  }
+
+  aside h2 {
+    margin: 14pt 0 5pt;
+    color: #e1e9ee;
+    font-size: 12.5pt;
+    font-weight: 500;
+    line-height: 1.15;
+  }
+
+  aside h2:first-child { margin-top: 0; }
+
+  aside p { margin: 0 0 2.5pt; }
+
+  aside .gap { margin-top: 6pt; }
+
+  aside .muted { color: #a9b1b6; }
+
+  aside a { color: #fff; text-decoration: none; }
+
+  h1 {
+    margin: 2pt 0 6pt;
+    font-size: 26pt;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .headline {
+    margin: 0;
+    font-size: 12pt;
+    line-height: 1.35;
+    font-weight: 400;
+  }
+
+  .where {
+    margin: 8pt 0 0;
+    color: #b1b1b1;
+    font-size: 12pt;
+  }
+
+  h2 {
+    margin: 18pt 0 8pt;
+    font-size: 15.8pt;
+    font-weight: 500;
+    line-height: 1.15;
+    break-after: avoid;
+  }
+
+  h2:first-of-type { margin-top: 16pt; }
+
+  .summary {
+    margin: 0;
+    font-size: 12pt;
+    line-height: 1.45;
+  }
+
+  .company {
+    margin: 14pt 0 0;
+    font-size: 12pt;
+    font-weight: 700;
+    break-after: avoid;
+  }
+
+  .span {
+    margin: 1pt 0 8pt;
+    font-size: 10.5pt;
+    font-weight: 400;
+  }
+
+  h3 {
+    margin: 11pt 0 1pt;
+    font-size: 11.5pt;
+    font-weight: 700;
+    break-after: avoid;
+  }
+
+  .when { margin: 0; font-size: 10.5pt; }
+
+  .loc {
+    margin: 0 0 4pt;
+    color: #b1b1b1;
+    font-size: 10.5pt;
+  }
+
+  .body, .edu p { margin: 0 0 4pt; font-size: 10.5pt; line-height: 1.55; }
+
+  .edu h3 { margin-top: 12pt; }
+
+  .label { font-weight: 700; }
+</style>
+</head>
+<body>
+  <aside>
+    <h2>Contato</h2>
+    <p>{{PHONE}} <span class="muted">(Celular)</span></p>
+    <p>{{EMAIL}}</p>
+    <p class="gap"><a href="https://www.linkedin.com/in/igorpiovezan">{{LINKEDIN}}</a></p>
+    <p class="muted">(LinkedIn)</p>
+    <p><a href="https://igorpiovezan.com">{{SITE}}</a> <span class="muted">(Pessoal)</span></p>
+
+    <h2>Principais competências</h2>
+    <p>Inteligência artificial (IA)</p>
+    <p>Gestão da tecnologia</p>
+    <p>Amazon Web Services (AWS)</p>
+
+    <h2>Idiomas</h2>
+    <p>Português <span class="muted">(Nativo ou bilíngue)</span></p>
+    <p>Inglês <span class="muted">(Nativo ou bilíngue)</span></p>
+    <p>Espanhol <span class="muted">(Proficiência profissional plena)</span></p>
+    <p>Chinês <span class="muted">(Básico)</span></p>
+    <p>Francês <span class="muted">(Básico)</span></p>
+
+    <h2>Certificações</h2>
+    <p>Análise e Desenvolvimento de Sistemas – graduação (Análise e Desenvolvimento de Sistemas - Graduação)</p>
+    <p>MIT - Technology Management: Roadmap &amp; Development</p>
+    <p>AWS Certified Database - Specialty</p>
+    <p>Técnico integrado de ensino médio em telecomunicações, com especialização em redes de computadores</p>
+    <p>C100DBA: MongoDB Certified DBA Associate Exam</p>
+
+    <h2>Honras e prêmios</h2>
+    <p>Palestrante - AWS Summit São Paulo</p>
+    <p>6 vezes no AWS re:Invent (Las Vegas)</p>
+    <p>Convidado - NetSeg Videocast, ISC Brasil 2024</p>
+    <p>Convidado, Real Cloud Talks episódio 5</p>
+    <p>Citado no case MongoDB Atlas Data Federation</p>
+
+    <h2>Publicações</h2>
+    <p>Segware usa IA generativa e reduz em 50% tempo de resposta de operadores</p>
+    <p>With Atlas Data Federation, Segware tames growing demands of security companies affordably</p>
+    <p>https://www.realcloud.ai/case-segware: Segware e RealCloud: transformando a gestão de eventos de alarme com IA generativa na AWS</p>
+  </aside>
+  <main>
+    <h1>Igor Agenor Piovezan</h1>
+    <p class="headline">CTO na Segware | AI First | Certificações em AWS, MongoDB e gestão da tecnologia | Especialista em FinOps | Conectando estratégia, tecnologia, pessoas, produto e gestão de projetos | Liderando mais de 100 | Impulsionando a inovação | 6 vezes no AWS re:Invent</p>
+    <p class="where">São Paulo, São Paulo, Brasil</p>
+
+    <h2>Resumo</h2>
+    <p class="summary">Sou o CTO da Segware, empresa na fronteira da segurança eletrônica, do videomonitoramento, dos sistemas multifamiliares para condomínios inteligentes, do ecossistema de VoIP, do controle de acesso, da portaria remota, da conveniência no condomínio e das integrações de IoT. Com mais de 15 anos em tecnologia, incluindo mais de uma década de crescimento de desenvolvedor full-stack a CTO, trago uma base multidisciplinar em software, infraestrutura de nuvem e hardware. Essa experiência me permite conduzir a tecnologia de ponta a ponta e transformá-la em produtos confiáveis, que protegem o que mais importa para as pessoas. Lidero mais de 100 profissionais de tecnologia nos pilares de Tecnologia, Pessoas e Projetos, conectando a estratégia do C-level aos times que entregam todos os dias. Minha mentalidade é “AI First”: priorizo embutir a inteligência artificial na forma como desenhamos produtos, processos e decisões. O que me move é gerar valor, em escala e de forma sustentável: • Escala com impacto real: nossas plataformas atendem mais de 16 milhões de usuários e processam dados em tempo real de meio milhão de painéis de alarme, centenas de milhares de dispositivos de controle de acesso e centenas de milhares de canais de vídeo em câmeras, DVRs e NVRs. • IA em produção: modelos preditivos que reduzem furtos e falsos alarmes ao longo de bilhões de eventos, sustentando ambientes mais seguros para os usuários finais. • Tecnologia encontra finanças (FinOps): trato o custo como métrica de engenharia de primeira classe, do faturamento por telemetria e por cliente à negociação com fornecedores e ao ganho de margem. • Pessoas em primeiro lugar: formo e desenvolvo times de alta performance e novas lideranças, numa cultura de autonomia, qualidade e inovação. Sou um CTO hands-on. Quando realmente importa, entro de corpo inteiro: desenho arquiteturas e planejo o código com a IA apoiando cada passo, e sigo imerso com o time, lendo, revisando, escrevendo e discutindo o que vem depois. Acredito que o papel do CTO é conectar tecnologia, produto, pessoas e negócio em torno de uma visão clara, equilibrando a velocidade de hoje com a sustentabilidade de amanhã. Formação: MIT Professional Education (Technology Management), certificações AWS e MongoDB, e 6 vezes no AWS re:Invent. Vamos conversar sobre liderança de tecnologia, IA e o futuro da segurança e da vida inteligente. Site: https://igorpiovezan.com</p>
+
+    <h2>Experiência</h2>
+    <p class="company">Segware</p>
+    <p class="span">10 anos e 11 meses</p>
+
+    <h3>Diretor de Tecnologia (CTO)</h3>
+    <p class="when">setembro de 2025 – atual (1 ano e 3 meses)</p>
+    <p class="loc">São Paulo, Brasil</p>
+    <p class="body">Liderança de mais de 100 pessoas - adoção de desenvolvimento orientado a especificação com IA para mais de 100 desenvolvedores de software - SDLC com IA incorporada - governança corporativa completa do ecossistema de IA - promove a elevação de lideranças intermediárias a coordenadores de tribo, agrupando times por domínio e dando autonomia sobre estratégia, pessoas e entrega, com KPIs claros - modelos Opus, Grok, Luna, Terra, Sol, Fable e Nova Micro para raciocínio avançado com múltiplos agentes - stack completa da xAI: Grok, Grok Bot e Grok Build - Cursor Teams e Enterprise, com agentes, cloud agents, regras e revisões de código - stack completa da OpenAI: ChatGPT, Codex e OpenAI API - stack completa da Anthropic: Claude, Claude Code e Claude API - stack completa do Kiro: Kiro, Kiro Crew e Kiro CLI - integrações de ponta a ponta ligando agentes de IA a nuvem, repositórios, CI/CD, observabilidade, chamados, e-mail, chat e sistemas internos - revisão de código multimodelo com IA em 100% dos PRs e da CI - LMs e VMs (vídeo) pequenos para escalar com menor custo - LVMs (vídeo) - agêntico - LLMs multimodais e em tempo real para prompting de áudio, vídeo e contexto - MCPs, powers, steerings, hooks, agentes e bases de conhecimento - Nova Sonic 2 para canais bidirecionais de áudio e vídeo no mesmo contexto de LLM e LVM - operação contínua de IA com KPIs e FinOps</p>
+
+    <h3>Encarregado de dados (DPO)</h3>
+    <p class="when">agosto de 2020 – atual (6 anos e 4 meses)</p>
+    <p class="loc">Campinas, São Paulo, Brasil</p>
+    <p class="body">Estes são os objetivos e os domínios de segurança principais: proteção de dados - LGPD - GDPR - mapeamento de dados - descarte de dados pessoais - política de privacidade - termos e condições de uso - conformidade de políticas - conformidade de processos - SAST (Static Application Security Testing) - DAST (Dynamic Application Security Testing) - SIEM (Security Information and Event Management) - WAF (Web Application Firewall) - IDS/IPS (Intrusion Detection/Prevention System) - IAM (Identity and Access Management) - RBAC (Role-Based Access Control) - EDR (Endpoint Detection and Response) - XDR (Extended Detection and Response) - MDR (Managed Detection and Response) - DLP (Data Loss Prevention) - VA/PT (Vulnerability Assessment/Penetration Testing) - SOAR (Security Orchestration, Automation, and Response)</p>
+
+    <h3>Gerente de engenharia de negócios</h3>
+    <p class="when">janeiro de 2022 – setembro de 2025 (3 anos e 9 meses)</p>
+    <p class="loc">Campinas, São Paulo, Brasil</p>
+    <p class="body">A união entre as áreas de negócio e a engenharia de produto permite conexão e crescimento rápidos. Organizações que trabalham assim aceleram a criação e a evolução de produtos para a base atual e para novos mercados. Objetivos: otimização de processos - aumento de produtividade - redução de custo - satisfação do cliente - crescimento sustentável - formação e desenvolvimento de lideranças - inovação de produtos e serviços - adaptação às mudanças de mercado - garantia de conformidade - garantia de qualidade - fortalecimento de parcerias - aumento de rentabilidade - alinhamento estratégico - melhoria contínua - expansão de mercado - aumento da base de clientes - fidelização - melhora da experiência do cliente - expansão para novos mercados - análise e melhora da satisfação do cliente - desenvolvimento de novas parcerias de negócio - aumento de receita. Competências: metodologias ágeis de desenvolvimento de software - gestão de risco - decisão estratégica - comunicação - análise de dados - gestão de recursos - gestão de conflitos - gestão de desempenho - pensamento crítico - negociação - relação com fornecedores - relação com clientes - desenvolvimento de fornecedores - desenvolvimento de clientes - inteligência de mercado - análise de tendência de mercado - desenvolvimento de novos negócios - gestão de portfólio de produtos - AI First - engenharia de contexto - engenharia de prompt - vetorização de dados para IA - engenharia de conhecimento - Model Context Protocol (MCP) - construção de regras de IA - construção de guardrails de IA - framework de ética de IA - protocolos de privacidade de dados - interpretabilidade de modelos - estratégias de mitigação de viés - infraestrutura de IA escalável - treinamento contínuo de modelos - monitoramento de desempenho de IA - desenho da colaboração entre pessoas e IA - AI vibe coding - AI MCPs - desenvolvimento de especificação em spec mode - revisão completa com IA, incluindo análises e simulações de segurança para CI/CD - descrições de steerings de IA - AI hooks</p>
+
+    <h3>Gerente de tecnologia</h3>
+    <p class="when">abril de 2021 – setembro de 2025 (4 anos e 6 meses)</p>
+    <p class="loc">Campinas, São Paulo, Brasil</p>
+    <p class="body">Conecta a gestão estratégica à operação tática, lidera outras lideranças e responde pelos pilares de Tecnologia, Pessoas e Projetos. Entrega eficiência monetária com análise financeira e gestão de orçamento. Forma times de alta performance numa cultura de inovação e criatividade. Aplica experiência sólida em desenvolvimento de software em nuvem para resolver problemas complexos. Apoia-se em liderança técnica e comunicação para integrar times, engajar stakeholders e alinhar os objetivos estratégicos da organização. Objetivos: análise financeira - gestão de orçamento - eficiência monetária - formação de times - gestão da tecnologia - gestão de pessoas - gestão de projetos - gestão de produto - gestão de roadmap - gestão de backlog - implementação de OKR (Objectives and Key Results) - acompanhamento de KPI (Key Performance Indicator) - garantia de conformidade - apresentação de resultados - melhoria contínua de processos - desenvolvimento de competências - aumento de produtividade - redução de custo operacional - engajamento do time - inovação e criatividade - satisfação do cliente - expansão de mercado - alinhamento estratégico - desenvolvimento de parcerias. Competências: Rust - Samza - WebAssembly - M3 - inteligência artificial - análise preditiva - vetorização de dados - aprendizado supervisionado - feedback - gestão de conflitos - gestão de prazos - liderança - orientação técnica - eficiência operacional - gestão de líderes - gestão de tech leads - arquitetura - liderança técnica - construção de plataforma - comunicação - resolução de problemas complexos - integração interpessoal - decisões estruturadas - análise de dados - metodologias ágeis (SCRUM, Kanban) - gestão de mudanças GMUD - planejamento estratégico - engajamento de stakeholders - desenvolvimento de talentos - inovação tecnológica - gestão de risco - conformidade - segurança da informação - sustentabilidade - transformação digital - arquitetura de solução - governança de TI</p>
+
+    <h3>Gerente de engenharia de software</h3>
+    <p class="when">janeiro de 2021 – setembro de 2025 (4 anos e 9 meses)</p>
+    <p class="loc">Campinas, São Paulo, Brasil</p>
+    <p class="body">Liderou iniciativas com impacto medido (mais detalhe em Projetos). Monitoramento de alarmes: entregou dados confiáveis e em tempo real de 500 mil painéis de alarme e 10 milhões de sensores para dezenas de milhares de usuários em operação contínua, reduzindo de forma relevante o tempo de resposta a eventos críticos. Controle de acesso: integrou hardware diverso e reconhecimento facial, melhorando o dia a dia de mais de um milhão de moradores de condomínios. IA: implementou modelos preditivos que ajudaram a reduzir furtos e falsos alarmes a partir de bilhões de registros. Videomonitoramento em nuvem: construiu um sistema de vigilância escalável, com áudio bidirecional, preparado para implantação global de grandes frotas de câmeras.</p>
+
+    <h3>Gerente de engenharia de confiabilidade</h3>
+    <p class="when">agosto de 2018 – abril de 2021 (2 anos e 9 meses)</p>
+    <p class="loc">Florianópolis, Santa Catarina, Brasil</p>
+    <p class="body">Confiabilidade, segurança e finanças são três pilares essenciais. Provedores de nuvem: AWS - OVH - GCP - Azure - OCI - IBM Cloud. Experiência profissional com serviços AWS: Athena - Glue - Lake Formation - EMR - Kinesis - QuickSight - OpenSearch - MSK - EventBridge - SNS - SQS - MQ - Well-Architected Tool - Chime - Savings Plans - Cost Explorer - Cost and Usage Report - Budgets - Compute Optimizer - EC2 Auto Scaling - Elastic Beanstalk - Lambda - EC2 - EC2 Spot Instances - Lightsail - Fargate - EKS - ECR - Marketplace - ECS - DynamoDB - DocumentDB - RDS - MemoryDB for Redis - Aurora - ElastiCache - Keyspaces - Redshift - CodeDeploy - CLI - CodeBuild - CodeCommit - CodeArtifact - Correto - CloudShell - SES - API Gateway - Device Farm - IoT - DevOps Guru - SageMaker - Inferentia - SageMaker Studio - PyTorch on AWS - Rekognition - DevOps Guru for RDS - Organizations - CloudWatch - Managed Grafana - CloudTrail - Management Console - Config - Systems Manager - CloudFormation - Management Console Mobile - Control Tower - Trusted Advisor - Kinesis Video Streams - DMS - DataSync - Global Accelerator - PrivateLink - Route 53 - ELB - VPN - CloudFront - VPC - Detective - IAM - Certificate Manager - Artifact - Network Firewall - Shield - Cognito - Security Hub - WAF - KMS - GuardDuty - Inspector - Macie - S3 Glacier Instant Retrieval - EBS Snapshot Archive - FSx - S3 Glacier - EFS - EBS - S3 - Backup. Complementos: Docker Swarm - Microsoft SQL Server - Terraform - Ansible - Puppet - Jenkins - CI/CD - Hadoop - Spark - Hive - Grafana - Prometheus - InfluxDB</p>
+
+    <h3>Desenvolvedor full-stack</h3>
+    <p class="when">janeiro de 2016 – agosto de 2018 (2 anos e 8 meses)</p>
+    <p class="loc">Florianópolis, Santa Catarina</p>
+    <p class="body">Para chegar ao resultado, o foco é o desenvolvimento e a execução do software em cada etapa do projeto. Conceitos essenciais: multithreading - computação paralela - eficiência computacional e complexidade de algoritmos - gestão de memória - gestão de estado distribuído - arquiteturas assíncronas não bloqueantes - programação reativa - programação funcional - escalabilidade horizontal - big data (velocidade, variedade e volume) - armazenamento colunar (Apache Parquet, Apache ORC) - indexação - data warehouse - análise de dados - arquitetura com serviços - arquitetura com microsserviços - monolito - Test Driven Development (TDD) - teste unitário - teste de integração - teste de ponta a ponta (E2E) - teste de carga - blue/green - canary release - arquitetura multi-região (multicontinental) - IoT (Internet of Things) - SaaS (Software as a Service). Principais tecnologias, frameworks e bibliotecas: Java - Javascript - NodeJS - Python - Shell Script - Scala - Typescript - PHP - Ruby - C++ - Go - Kotlin - C# - Nginx - HAProxy - Apache HTTP - Squid - Docker - Docker compose - Docker Swarm - Kubernetes - HTTP - TCP - UDP - Websocket - Grafana - Prometheus - ReactJS - Angular - Ionic - React Native - Spring Framework - Spring Boot - Spring Data - Spring Security - Spring Session - Spring Batch - Spring AMPQ - Spring for Apache Kafka - Spring Shell - Thymeleaf - Swagger - Express - GraphQL - Drogon - Symphony - Zend Framework - Apigility - Jest - Mocha - JUnit - Cypress E2E - Apache Spark - Hadoop - Apache Hive - Apache Tomcat - WildFly - ffmpeg - H264 - H265 - VP9 - AV1 - HTTP Live Stream (HLS) - WebRTC - Socket.io - Power BI - OWASP Top Ten - Sonar. Armazenamento de dados: MySQL - PostgreSQL - SQL Server - Oracle - SQLite - H2 - Amazon Aurora - Aurora MySQL - Aurora Postgres - Aurora Postgres Babelfish - DynamoDB - MongoDB - DocumentDB - Elasticsearch - Redis - Memcached - Redshift - AWS Athena - PrestoDB - Apache Cassandra - Datomic - Prometheus.</p>
+
+    <h3>Estágio de estudos</h3>
+    <p class="when">março de 2017 – maio de 2017 (3 meses)</p>
+    <p class="loc">Malta</p>
+    <p class="body">Estágio para estudo formal de inglês em Malta, no continente europeu.</p>
+
+    <p class="company">DVA Mercedes-Benz</p>
+    <p class="span">3 anos e 11 meses</p>
+
+    <h3>Desenvolvedor web PHP</h3>
+    <p class="when">janeiro de 2014 – janeiro de 2016 (2 anos e 1 mês)</p>
+    <p class="loc">São José, Santa Catarina, Brasil</p>
+    <p class="body">Desenvolvimento web - HTML - CSS - SASS - COMPASS - LESS - JavaScript - jQuery - bootstrap - jQuery Mobile - jQuery UI - Ajax - requireJs - AngularJs - Polymer - React - CoffeeScript - SASS - LESS - PHP - Java EE - desenvolvimento PHP orientado a objetos avançado - design patterns - Composer - Zend Framework 2 - CakePHP - Symfony 2 - Laravel - CodeIgniter - Apigility - REST - RPC - SOAP - arquiteturas baseadas em microsserviços - desenvolvimento PHP orientado a testes com TDD (Test Driven Development) - PHPUnit - WebSockets com PHP - NoSQL - Git - WordPress - OpenCart - design responsivo - desenvolvimento de aplicativos móveis híbridos com tecnologias web - Ionic SDK - AngularJs - Apache Cordova - PHP CLI (Command Line Interface) - modelagem e administração de banco de dados - MySQL - SQL Server - SQL - Transaction SQL - Oracle - PL/SQL - HHVM Hack - desenvolvimento ágil de software - SCRUM - DevOps - administração de ambiente virtual - VMware - Hyper-V - Vagrant - puppet - Docker - Shell Script (bash)</p>
+
+    <h3>Administrador de redes</h3>
+    <p class="when">junho de 2012 – janeiro de 2016 (3 anos e 8 meses)</p>
+    <p class="loc">São José, Santa Catarina, Brasil</p>
+    <p class="body">Administração de infraestrutura de rede Windows e Linux: - servidor web - Apache - IIS - Nginx - HHVM - HipHop - máquina virtual - servidor de banco de dados - MySQL - SQL Server - Oracle - servidor de domínio e administração de usuários - Active Directory - SAMBA - Remote Desktop Server (antigo Terminal Server, hoje RDS) - virtualização de sistemas operacionais de servidor - VMware - Hyper-V - monitoramento de rede via SNMP - Spiceworks - Cacti - servidor de arquivos - SMB - NFS - servidor SIP PABX - Asterisk - SNEP - Elastix - firewall - pfSense - iptables - Windows server - servidor DNS - BIND9 - Windows Server DNS - VPN - OpenVPN - proxy web - Squid - servidor de e-mail - Postfix - webmail Roundcube - montagem e manutenção (preventiva e corretiva) de computadores - instalação e configuração de sistemas operacionais em desktops e servidores</p>
+
+    <h3>Analista de tecnologia da informação</h3>
+    <p class="when">março de 2012 – janeiro de 2016 (3 anos e 11 meses)</p>
+    <p class="loc">Florianópolis, Santa Catarina, Brasil</p>
+    <p class="body">Atuei em desenvolvimento de software, administração de infraestrutura de TI, suporte aos colaboradores e design gráfico: - montagem e manutenção (preventiva e corretiva) de computadores - verificação inicial de problemas de impressora - design gráfico - Adobe Photoshop - CorelDRAW - ilustrações vetoriais - montagem e manutenção de servidores - administração de CPD (centro de processamento de dados) - instalação e configuração de sistemas operacionais em desktops e servidores - suporte ao usuário.</p>
+
+    <h3>Designer gráfico</h3>
+    <p class="when">maio de 2012 – agosto de 2013 (1 ano e 4 meses)</p>
+    <p class="loc">São José, Santa Catarina, Brasil</p>
+    <p class="body">Design gráfico: vetores - CorelDraw e edição de imagem - Adobe Photoshop</p>
+
+    <h2>Formação acadêmica</h2>
+    <div class="edu">
+      <h3>MIT Professional Education</h3>
+      <p>Pós-graduação, programa do Massachusetts Institute of Technology - Technology Management: Roadmap &amp; Development · (julho de 2023 – outubro de 2023)</p>
+      <h3>IFSC - Instituto Federal de Santa Catarina</h3>
+      <p>Técnico integrado, telecomunicações com sistemas de computação, redes e telecomunicações · (janeiro de 2010 – dezembro de 2014)</p>
+      <h3>Centro Universitário Municipal de São José</h3>
+      <p>Graduação, Análise e Desenvolvimento de Sistemas, programação de computadores · (janeiro de 2015 – dezembro de 2017)</p>
+      <h3>ACE ENGLISH MALTA</h3>
+      <p>Curso profissional, nível de inglês · (março de 2017 – maio de 2017)</p>
+      <h3>Dale Carnegie Training</h3>
+      <p>Desenvolvimento de negócios e liderança · (outubro de 2025 – fevereiro de 2026)</p>
+    </div>
+  </main>
+</body>
+</html>
